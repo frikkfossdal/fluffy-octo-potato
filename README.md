@@ -13,4 +13,4 @@ TODO: Post the main slicer code and explain it
 
 1. Create toolpaths from sliced meshes
 2. Implement simulation of the physical system.
-3. Optimize the toolpaths for multiheaded system. Think a good start here could be to investigate how genetic algorithms are used in to optimize trajectories in robotics.
+3. Optimize the toolpaths for multiheaded system. Think a good start here could be to investigate how genetic algorithms are used  to optimize trajectories in robotics.
