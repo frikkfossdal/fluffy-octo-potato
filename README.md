@@ -1,5 +1,5 @@
 # fluffy-octo-potato
-A Openframeworks application for doing multi-headed additive manufacturing. The application is currently only working as a slicer. Long term goal is to optimize and generate toolpaths the indevidual extruders. The application is part of a ongoing research project with Fellesverkstedet in Oslo, and their work on [Fabricatable Machines](https://github.com/fellesverkstedet/fabricatable-machines)
+An Openframeworks application for doing multi-headed additive manufacturing. The application is currently only working as a slicer. Long term goal is to optimize and generate toolpaths the indevidual extruders. The application is part of a ongoing research project with Fellesverkstedet in Oslo, and their work on [Fabricatable Machines](https://github.com/fellesverkstedet/fabricatable-machines)
 
 Currently under heavy development.
 
