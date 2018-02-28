@@ -33,7 +33,10 @@ void Triangles::setZmax(float z){
     }
 }
 void Triangles::show(){
-    //ofDrawTriangle(v0.x, v0.y, v0.z, v1.x, v1.y, v1.z,v2.x,v2.y,v2.z);
+    for(auto it = points.begin(); it != points.end(); it++){
+        ofSetColor(0, 255, 0);
+        ofDrawCircle(it->x, it->y, it->z, 1);
+    }
 }
 //sorts the points in triangle after z height. important for triangle intersection sometime later
 struct compareVector{

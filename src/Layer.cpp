@@ -1,4 +1,4 @@
-//
+    //
 //  Layer.cpp
 //  slicer
 //
@@ -50,13 +50,8 @@ void Layer::calculate(std::vector<Triangles> triangles){
         //2. If all of the triangle is under layerHeight -> delete It    --> zMax < layerHeight
         //
         //check if heighest point of triangle is under layer. If so, remove from active triangle list
-        if(t->zMax < layerHeight){
-        }
-        else if(t->zMin > layerHeight){
-            
-        }
-        //else check
-        else{
+        if(t->zMax > layerHeight && t->zMin < layerHeight && t->zMin > 0)
+        {
             //create temp buff of points that is used in intersection calculation
             std::vector<ofVec3f> topSide;
             std::vector<ofVec3f> bottomSide;
@@ -116,4 +111,9 @@ void Layer::calculateInterPoints(ofVec3f target0, ofVec3f target1, ofVec3f orig)
 
     intersectionpoints.push_back(interPoint0);
     intersectionpoints.push_back(interPoint1);
+    
+    if(target0.squareDistance(interPoint0) > 50)
+    {
+        //std::cout << "trond e best" << endl; 
+    }
 }

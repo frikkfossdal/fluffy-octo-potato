@@ -8,20 +8,19 @@
 #include "Model.hpp"
 
 Model::Model(){
-    threeDeeFile.loadModel("Rack.stl");
+    threeDeeFile.loadModel("01.liver.stl");
     //
     fixPosition();
     setup();
 }
 void Model::setup(){
-    parameters.add(layerIndex.set("layer: ",0,0,190));
+    parameters.add(layerIndex.set("layer: ",0,0,400));
     
 }
 void Model::showModel(){
     ofSetLineWidth(1);
     ofSetColor(255,10);
     threeDeeFile.drawWireframe();
-   
 }
 void Model::showDisco(){
      layers[layerIndex].show();
@@ -97,7 +96,7 @@ void Model::findPerim(){
     layerMin = firstTriangle.zMin;
 }
 void Model::createLayers(){
-    layerHeight = 0.1;
+    layerHeight = 1;
     int numberOfLayers = (layerMax-layerMin)/layerHeight;
     for(int i = 0; i < numberOfLayers; i++)
     {
