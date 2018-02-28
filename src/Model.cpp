@@ -8,7 +8,7 @@
 #include "Model.hpp"
 
 Model::Model(){
-    threeDeeFile.loadModel("01.liver.stl");
+    threeDeeFile.loadModel("Rack.stl");
     //
     fixPosition();
     setup();
@@ -96,7 +96,7 @@ void Model::findPerim(){
     layerMin = firstTriangle.zMin;
 }
 void Model::createLayers(){
-    layerHeight = 1;
+    layerHeight = 0.1;
     int numberOfLayers = (layerMax-layerMin)/layerHeight;
     for(int i = 0; i < numberOfLayers; i++)
     {

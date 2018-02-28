@@ -17,6 +17,7 @@ public:
     //Variables;
     ofxAssimpModelLoader threeDeeFile;
     float layerHeight;
+    int numberOfLayers; 
     std::vector<Triangles> triangleList;
     std::vector<Layer> layers;
     float layerMax;

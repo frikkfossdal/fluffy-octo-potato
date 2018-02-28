@@ -21,7 +21,7 @@ void ofApp::draw(){
     ofBackground(55);
     slicerSettings.draw();
     cam.begin();
-    ofDrawGrid();
+    //ofDrawGrid();
     objectToSlice.showModel();
     objectToSlice.showDisco();
     cam.end(); 

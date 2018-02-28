@@ -50,7 +50,7 @@ void Layer::calculate(std::vector<Triangles> triangles){
         //2. If all of the triangle is under layerHeight -> delete It    --> zMax < layerHeight
         //
         //check if heighest point of triangle is under layer. If so, remove from active triangle list
-        if(t->zMax > layerHeight && t->zMin < layerHeight && t->zMin > 0)
+        if(t->zMax > layerHeight && t->zMin < layerHeight)
         {
             //create temp buff of points that is used in intersection calculation
             std::vector<ofVec3f> topSide;
@@ -96,8 +96,21 @@ void Layer::calculate(std::vector<Triangles> triangles){
 }
 void Layer::calculateInterPoints(ofVec3f target0, ofVec3f target1, ofVec3f orig)
 {
-    ofVec3f vec0 = orig.operator-=(target0);
-    ofVec3f vec1 = orig.operator-=(target1);
+    if(target0.z < 0)
+    {
+        
+    }
+    if(target1.z < 0)
+    {
+        
+    }
+    if(orig.z < 0){
+        
+    }
+    //There seems to be something fishy with how the values are treated in memory. For some reason,
+    // orig is calculated with crazy values. Check this.....
+    ofVec3f vec0 = orig.operator-(target0);
+    ofVec3f vec1 = orig.operator-(target1);
     
     float t0 = (layerHeight-target0.z)/vec0.z;
     float t1 = (layerHeight-target1.z)/vec1.z;
