@@ -8,11 +8,11 @@
 #include "Model.hpp"
 
 Model::Model(){
-    threeDeeFile.loadModel("Body1.stl");
+    threeDeeFile.loadModel("Rack.stl");
     setup();
 }
 void Model::setup(){
-    parameters.add(layerIndex.set("layer: ",0,0,300));
+    parameters.add(layerIndex.set("layer: ",0,0,100));
     
 }
 void Model::showModel(){
@@ -21,17 +21,23 @@ void Model::showModel(){
     threeDeeFile.drawWireframe();
    
 }
-void Model::showDisco(int index){
+void Model::showDisco(){
      layers[layerIndex].show();
 }
 
 void Model::incSlice(){
+    //1. Build triangle-list
     buildTriangles();
-    sortTriangles();
+    //2. Create layers
     createLayers();
-    std::vector<Triangles> activeTriangleList = triangleList;
+    //3. Loop trough all layers and slice the triangles
+    //First, decide where to control the active triangles. This is key if you fant your slicing to be fast.
     
+    std::vector<Triangles> activeTriangleList = triangleList;
     for(auto it = layers.begin(); it !=layers.end(); it++){
+        //two steps
+        //1. add relevant triangles to active triangles. Delete if processing is finished
+        //2. calculate all triangle intersections 
         activeTriangleList = it->checkTriangles(activeTriangleList); 
     }
 }
@@ -63,7 +69,8 @@ void Model::buildTriangles(){
         loopIndex++;
         }
     }
-    //find zmax and zmin for all triangles
+    //Sort all triangles
+    sortTriangles();
 }
 struct compareVector{
     bool operator()(Triangles &a, Triangles &b)

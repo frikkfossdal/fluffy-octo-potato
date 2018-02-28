@@ -25,7 +25,6 @@ void Layer::show(){
 //Rewrite this function. First, add all triangles to active that has zmin under layerHeight. Then remove all triangles that har a zmax under layerHeight
 std::vector<Triangles> Layer::checkTriangles(std::vector<Triangles> triangles){
     //For every triangle
-    int index = 0;
     for(auto t = triangles.begin(); t != triangles.end();){
         //logic
         //Remember: only do calculations on necassary triangles. I think it makes sence to do all the
@@ -85,8 +84,6 @@ std::vector<Triangles> Layer::checkTriangles(std::vector<Triangles> triangles){
             }
         }
         t++;
-        std::cout << index << endl;
-        index++;
     }
         
     return triangles;

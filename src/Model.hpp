@@ -32,7 +32,7 @@ public:
     void slice();
     void constructContour();
     void showModel();
-    void showDisco(int index); 
+    void showDisco(); 
     void incSlice();
     
 private:
