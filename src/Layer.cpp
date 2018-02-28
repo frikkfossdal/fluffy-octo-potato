@@ -30,9 +30,8 @@ std::vector<Triangles> Layer::checkTriangles(std::vector<Triangles> triangles){
         if(t->zMax < layerHeight){
             t = triangles.erase(t);
         }
-        else if(t->zMin>layerHeight){
-            
-        }
+        //Check if the lowest point in triangle is under layer. If not, dont use the value in the calculation under. 
+
         //else check
         else{
             //create temp buff of points that is used in intersection calculation
