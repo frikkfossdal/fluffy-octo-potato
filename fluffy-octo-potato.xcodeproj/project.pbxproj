@@ -1,2051 +1,672 @@
-<?xml version="1.0"?>
-<plist version="1.0">
-	<dict>
-		<key>archiveVersion</key>
-		<string>1</string>
-		<key>classes</key>
-		<dict />
-		<key>objectVersion</key>
-		<string>46</string>
-		<key>objects</key>
-		<dict>
-			<key>B208DD03ADBA37CD598B0B5B</key>
-			<dict>
-				<key>explicitFileType</key>
-				<string>sourcecode.c.h</string>
-				<key>fileEncoding</key>
-				<string>30</string>
-				<key>isa</key>
-				<string>PBXFileReference</string>
-				<key>name</key>
-				<string>ofxToggle.h</string>
-				<key>path</key>
-				<string>../../../GoogleDrive/FRES/Research/2017/OpenFX/addons/ofxGui/src/ofxToggle.h</string>
-				<key>sourceTree</key>
-				<string>SOURCE_ROOT</string>
-			</dict>
-			<key>542DAFE777601AC8D4168B87</key>
-			<dict>
-				<key>fileRef</key>
-				<string>A77A4F276EA452D9C01994BC</string>
-				<key>isa</key>
-				<string>PBXBuildFile</string>
-			</dict>
-			<key>A77A4F276EA452D9C01994BC</key>
-			<dict>
-				<key>explicitFileType</key>
-				<string>sourcecode.cpp.cpp</string>
-				<key>fileEncoding</key>
-				<string>30</string>
-				<key>isa</key>
-				<string>PBXFileReference</string>
-				<key>name</key>
-				<string>ofxToggle.cpp</string>
-				<key>path</key>
-				<string>../../../GoogleDrive/FRES/Research/2017/OpenFX/addons/ofxGui/src/ofxToggle.cpp</string>
-				<key>sourceTree</key>
-				<string>SOURCE_ROOT</string>
-			</dict>
-			<key>68752934A07E8A886B1485ED</key>
-			<dict>
-				<key>explicitFileType</key>
-				<string>sourcecode.c.h</string>
-				<key>fileEncoding</key>
-				<string>30</string>
-				<key>isa</key>
-				<string>PBXFileReference</string>
-				<key>name</key>
-				<string>ofxSliderGroup.h</string>
-				<key>path</key>
-				<string>../../../GoogleDrive/FRES/Research/2017/OpenFX/addons/ofxGui/src/ofxSliderGroup.h</string>
-				<key>sourceTree</key>
-				<string>SOURCE_ROOT</string>
-			</dict>
-			<key>0BA048EDC9D29F8025096181</key>
-			<dict>
-				<key>fileRef</key>
-				<string>2977C2B310934051B9365A4C</string>
-				<key>isa</key>
-				<string>PBXBuildFile</string>
-			</dict>
-			<key>2977C2B310934051B9365A4C</key>
-			<dict>
-				<key>explicitFileType</key>
-				<string>sourcecode.cpp.cpp</string>
-				<key>fileEncoding</key>
-				<string>30</string>
-				<key>isa</key>
-				<string>PBXFileReference</string>
-				<key>name</key>
-				<string>ofxSliderGroup.cpp</string>
-				<key>path</key>
-				<string>../../../GoogleDrive/FRES/Research/2017/OpenFX/addons/ofxGui/src/ofxSliderGroup.cpp</string>
-				<key>sourceTree</key>
-				<string>SOURCE_ROOT</string>
-			</dict>
-			<key>6021EA0E1FBEDAAE19FF9DF6</key>
-			<dict>
-				<key>explicitFileType</key>
-				<string>sourcecode.c.h</string>
-				<key>fileEncoding</key>
-				<string>30</string>
-				<key>isa</key>
-				<string>PBXFileReference</string>
-				<key>name</key>
-				<string>ofxSlider.h</string>
-				<key>path</key>
-				<string>../../../GoogleDrive/FRES/Research/2017/OpenFX/addons/ofxGui/src/ofxSlider.h</string>
-				<key>sourceTree</key>
-				<string>SOURCE_ROOT</string>
-			</dict>
-			<key>AEDB7EF24B3B9F5D804DD91A</key>
-			<dict>
-				<key>fileRef</key>
-				<string>31CBF242115D8F7CDF2FDF07</string>
-				<key>isa</key>
-				<string>PBXBuildFile</string>
-			</dict>
-			<key>31CBF242115D8F7CDF2FDF07</key>
-			<dict>
-				<key>explicitFileType</key>
-				<string>sourcecode.cpp.cpp</string>
-				<key>fileEncoding</key>
-				<string>30</string>
-				<key>isa</key>
-				<string>PBXFileReference</string>
-				<key>name</key>
-				<string>ofxSlider.cpp</string>
-				<key>path</key>
-				<string>../../../GoogleDrive/FRES/Research/2017/OpenFX/addons/ofxGui/src/ofxSlider.cpp</string>
-				<key>sourceTree</key>
-				<string>SOURCE_ROOT</string>
-			</dict>
-			<key>D7D01B9904FCF1954D533CEE</key>
-			<dict>
-				<key>explicitFileType</key>
-				<string>sourcecode.c.h</string>
-				<key>fileEncoding</key>
-				<string>30</string>
-				<key>isa</key>
-				<string>PBXFileReference</string>
-				<key>name</key>
-				<string>ofxPanel.h</string>
-				<key>path</key>
-				<string>../../../GoogleDrive/FRES/Research/2017/OpenFX/addons/ofxGui/src/ofxPanel.h</string>
-				<key>sourceTree</key>
-				<string>SOURCE_ROOT</string>
-			</dict>
-			<key>3973E9CEF21ADF4CA9912CD3</key>
-			<dict>
-				<key>fileRef</key>
-				<string>34CE0D4A15B353A11EB85DB5</string>
-				<key>isa</key>
-				<string>PBXBuildFile</string>
-			</dict>
-			<key>34CE0D4A15B353A11EB85DB5</key>
-			<dict>
-				<key>explicitFileType</key>
-				<string>sourcecode.cpp.cpp</string>
-				<key>fileEncoding</key>
-				<string>30</string>
-				<key>isa</key>
-				<string>PBXFileReference</string>
-				<key>name</key>
-				<string>ofxPanel.cpp</string>
-				<key>path</key>
-				<string>../../../GoogleDrive/FRES/Research/2017/OpenFX/addons/ofxGui/src/ofxPanel.cpp</string>
-				<key>sourceTree</key>
-				<string>SOURCE_ROOT</string>
-			</dict>
-			<key>7B387B61DFD556A9E5D39FCA</key>
-			<dict>
-				<key>explicitFileType</key>
-				<string>sourcecode.c.h</string>
-				<key>fileEncoding</key>
-				<string>30</string>
-				<key>isa</key>
-				<string>PBXFileReference</string>
-				<key>name</key>
-				<string>ofxLabel.h</string>
-				<key>path</key>
-				<string>../../../GoogleDrive/FRES/Research/2017/OpenFX/addons/ofxGui/src/ofxLabel.h</string>
-				<key>sourceTree</key>
-				<string>SOURCE_ROOT</string>
-			</dict>
-			<key>20E2BE42416B256B9CD104BF</key>
-			<dict>
-				<key>fileRef</key>
-				<string>4C1D69C75F624DF2662E019A</string>
-				<key>isa</key>
-				<string>PBXBuildFile</string>
-			</dict>
-			<key>4C1D69C75F624DF2662E019A</key>
-			<dict>
-				<key>explicitFileType</key>
-				<string>sourcecode.cpp.cpp</string>
-				<key>fileEncoding</key>
-				<string>30</string>
-				<key>isa</key>
-				<string>PBXFileReference</string>
-				<key>name</key>
-				<string>ofxLabel.cpp</string>
-				<key>path</key>
-				<string>../../../GoogleDrive/FRES/Research/2017/OpenFX/addons/ofxGui/src/ofxLabel.cpp</string>
-				<key>sourceTree</key>
-				<string>SOURCE_ROOT</string>
-			</dict>
-			<key>F7A347D1FCF70C2ABB610E3F</key>
-			<dict>
-				<key>explicitFileType</key>
-				<string>sourcecode.c.h</string>
-				<key>fileEncoding</key>
-				<string>30</string>
-				<key>isa</key>
-				<string>PBXFileReference</string>
-				<key>name</key>
-				<string>ofxGuiGroup.h</string>
-				<key>path</key>
-				<string>../../../GoogleDrive/FRES/Research/2017/OpenFX/addons/ofxGui/src/ofxGuiGroup.h</string>
-				<key>sourceTree</key>
-				<string>SOURCE_ROOT</string>
-			</dict>
-			<key>C2DAD524A75C109CFFC3F00B</key>
-			<dict>
-				<key>fileRef</key>
-				<string>661F7699D10727D152F12A99</string>
-				<key>isa</key>
-				<string>PBXBuildFile</string>
-			</dict>
-			<key>661F7699D10727D152F12A99</key>
-			<dict>
-				<key>explicitFileType</key>
-				<string>sourcecode.cpp.cpp</string>
-				<key>fileEncoding</key>
-				<string>30</string>
-				<key>isa</key>
-				<string>PBXFileReference</string>
-				<key>name</key>
-				<string>ofxGuiGroup.cpp</string>
-				<key>path</key>
-				<string>../../../GoogleDrive/FRES/Research/2017/OpenFX/addons/ofxGui/src/ofxGuiGroup.cpp</string>
-				<key>sourceTree</key>
-				<string>SOURCE_ROOT</string>
-			</dict>
-			<key>160C89830FB012128A41F844</key>
-			<dict>
-				<key>explicitFileType</key>
-				<string>sourcecode.c.h</string>
-				<key>fileEncoding</key>
-				<string>30</string>
-				<key>isa</key>
-				<string>PBXFileReference</string>
-				<key>name</key>
-				<string>ofxGui.h</string>
-				<key>path</key>
-				<string>../../../GoogleDrive/FRES/Research/2017/OpenFX/addons/ofxGui/src/ofxGui.h</string>
-				<key>sourceTree</key>
-				<string>SOURCE_ROOT</string>
-			</dict>
-			<key>284391E331F91D212E6962CB</key>
-			<dict>
-				<key>explicitFileType</key>
-				<string>sourcecode.c.h</string>
-				<key>fileEncoding</key>
-				<string>30</string>
-				<key>isa</key>
-				<string>PBXFileReference</string>
-				<key>name</key>
-				<string>ofxButton.h</string>
-				<key>path</key>
-				<string>../../../GoogleDrive/FRES/Research/2017/OpenFX/addons/ofxGui/src/ofxButton.h</string>
-				<key>sourceTree</key>
-				<string>SOURCE_ROOT</string>
-			</dict>
-			<key>44E51110EB898DEACF0EE367</key>
-			<dict>
-				<key>fileRef</key>
-				<string>FD039C483EDC17A542BF50EC</string>
-				<key>isa</key>
-				<string>PBXBuildFile</string>
-			</dict>
-			<key>FD039C483EDC17A542BF50EC</key>
-			<dict>
-				<key>explicitFileType</key>
-				<string>sourcecode.cpp.cpp</string>
-				<key>fileEncoding</key>
-				<string>30</string>
-				<key>isa</key>
-				<string>PBXFileReference</string>
-				<key>name</key>
-				<string>ofxButton.cpp</string>
-				<key>path</key>
-				<string>../../../GoogleDrive/FRES/Research/2017/OpenFX/addons/ofxGui/src/ofxButton.cpp</string>
-				<key>sourceTree</key>
-				<string>SOURCE_ROOT</string>
-			</dict>
-			<key>5FC7FBD366AAD8A2DAC5DFC1</key>
-			<dict>
-				<key>explicitFileType</key>
-				<string>sourcecode.c.h</string>
-				<key>fileEncoding</key>
-				<string>30</string>
-				<key>isa</key>
-				<string>PBXFileReference</string>
-				<key>name</key>
-				<string>ofxBaseGui.h</string>
-				<key>path</key>
-				<string>../../../GoogleDrive/FRES/Research/2017/OpenFX/addons/ofxGui/src/ofxBaseGui.h</string>
-				<key>sourceTree</key>
-				<string>SOURCE_ROOT</string>
-			</dict>
-			<key>A763ED608B35AE3310251DEE</key>
-			<dict>
-				<key>children</key>
-				<array>
-					<string>80542D580A673970EE906F4D</string>
-					<string>5FC7FBD366AAD8A2DAC5DFC1</string>
-					<string>FD039C483EDC17A542BF50EC</string>
-					<string>284391E331F91D212E6962CB</string>
-					<string>160C89830FB012128A41F844</string>
-					<string>661F7699D10727D152F12A99</string>
-					<string>F7A347D1FCF70C2ABB610E3F</string>
-					<string>4C1D69C75F624DF2662E019A</string>
-					<string>7B387B61DFD556A9E5D39FCA</string>
-					<string>34CE0D4A15B353A11EB85DB5</string>
-					<string>D7D01B9904FCF1954D533CEE</string>
-					<string>31CBF242115D8F7CDF2FDF07</string>
-					<string>6021EA0E1FBEDAAE19FF9DF6</string>
-					<string>2977C2B310934051B9365A4C</string>
-					<string>68752934A07E8A886B1485ED</string>
-					<string>A77A4F276EA452D9C01994BC</string>
-					<string>B208DD03ADBA37CD598B0B5B</string>
-				</array>
-				<key>isa</key>
-				<string>PBXGroup</string>
-				<key>name</key>
-				<string>src</string>
-				<key>sourceTree</key>
-				<string>&lt;group&gt;</string>
-			</dict>
-			<key>480A780D8D0308AE4A368801</key>
-			<dict>
-				<key>children</key>
-				<array>
-					<string>A763ED608B35AE3310251DEE</string>
-				</array>
-				<key>isa</key>
-				<string>PBXGroup</string>
-				<key>name</key>
-				<string>ofxGui</string>
-				<key>sourceTree</key>
-				<string>&lt;group&gt;</string>
-			</dict>
-			<key>EFB3CF0ACFBEF8480FCE9882</key>
-			<dict>
-				<key>fileRef</key>
-				<string>80542D580A673970EE906F4D</string>
-				<key>isa</key>
-				<string>PBXBuildFile</string>
-			</dict>
-			<key>80542D580A673970EE906F4D</key>
-			<dict>
-				<key>explicitFileType</key>
-				<string>sourcecode.cpp.cpp</string>
-				<key>fileEncoding</key>
-				<string>30</string>
-				<key>isa</key>
-				<string>PBXFileReference</string>
-				<key>name</key>
-				<string>ofxBaseGui.cpp</string>
-				<key>path</key>
-				<string>../../../GoogleDrive/FRES/Research/2017/OpenFX/addons/ofxGui/src/ofxBaseGui.cpp</string>
-				<key>sourceTree</key>
-				<string>SOURCE_ROOT</string>
-			</dict>
-			<key>783203ECFDE9736EAB5F85F2</key>
-			<dict>
-				<key>explicitFileType</key>
-				<string>sourcecode.c.h</string>
-				<key>fileEncoding</key>
-				<string>30</string>
-				<key>isa</key>
-				<string>PBXFileReference</string>
-				<key>name</key>
-				<string>version.h</string>
-				<key>path</key>
-				<string>../../../GoogleDrive/FRES/Research/2017/OpenFX/addons/ofxAssimpModelLoader/libs/assimp/include/assimp/version.h</string>
-				<key>sourceTree</key>
-				<string>SOURCE_ROOT</string>
-			</dict>
-			<key>B1E616BAC89886B6EE8D0247</key>
-			<dict>
-				<key>explicitFileType</key>
-				<string>sourcecode.c.h</string>
-				<key>fileEncoding</key>
-				<string>30</string>
-				<key>isa</key>
-				<string>PBXFileReference</string>
-				<key>name</key>
-				<string>vector3.h</string>
-				<key>path</key>
-				<string>../../../GoogleDrive/FRES/Research/2017/OpenFX/addons/ofxAssimpModelLoader/libs/assimp/include/assimp/vector3.h</string>
-				<key>sourceTree</key>
-				<string>SOURCE_ROOT</string>
-			</dict>
-			<key>0BC2AF64B38819984EF53E9C</key>
-			<dict>
-				<key>explicitFileType</key>
-				<string>sourcecode.c.h</string>
-				<key>fileEncoding</key>
-				<string>30</string>
-				<key>isa</key>
-				<string>PBXFileReference</string>
-				<key>name</key>
-				<string>vector2.h</string>
-				<key>path</key>
-				<string>../../../GoogleDrive/FRES/Research/2017/OpenFX/addons/ofxAssimpModelLoader/libs/assimp/include/assimp/vector2.h</string>
-				<key>sourceTree</key>
-				<string>SOURCE_ROOT</string>
-			</dict>
-			<key>09BA74BAB3E48197059D3F83</key>
-			<dict>
-				<key>explicitFileType</key>
-				<string>sourcecode.c.h</string>
-				<key>fileEncoding</key>
-				<string>30</string>
-				<key>isa</key>
-				<string>PBXFileReference</string>
-				<key>name</key>
-				<string>types.h</string>
-				<key>path</key>
-				<string>../../../GoogleDrive/FRES/Research/2017/OpenFX/addons/ofxAssimpModelLoader/libs/assimp/include/assimp/types.h</string>
-				<key>sourceTree</key>
-				<string>SOURCE_ROOT</string>
-			</dict>
-			<key>A626A0BBD1444BB9DBD0C16C</key>
-			<dict>
-				<key>explicitFileType</key>
-				<string>sourcecode.c.h</string>
-				<key>fileEncoding</key>
-				<string>30</string>
-				<key>isa</key>
-				<string>PBXFileReference</string>
-				<key>name</key>
-				<string>texture.h</string>
-				<key>path</key>
-				<string>../../../GoogleDrive/FRES/Research/2017/OpenFX/addons/ofxAssimpModelLoader/libs/assimp/include/assimp/texture.h</string>
-				<key>sourceTree</key>
-				<string>SOURCE_ROOT</string>
-			</dict>
-			<key>CAA06BB444103E423AC97AE9</key>
-			<dict>
-				<key>explicitFileType</key>
-				<string>sourcecode.c.h</string>
-				<key>fileEncoding</key>
-				<string>30</string>
-				<key>isa</key>
-				<string>PBXFileReference</string>
-				<key>name</key>
-				<string>scene.h</string>
-				<key>path</key>
-				<string>../../../GoogleDrive/FRES/Research/2017/OpenFX/addons/ofxAssimpModelLoader/libs/assimp/include/assimp/scene.h</string>
-				<key>sourceTree</key>
-				<string>SOURCE_ROOT</string>
-			</dict>
-			<key>CF122B12B7571B1FCB6A95F1</key>
-			<dict>
-				<key>explicitFileType</key>
-				<string>sourcecode.c.h</string>
-				<key>fileEncoding</key>
-				<string>30</string>
-				<key>isa</key>
-				<string>PBXFileReference</string>
-				<key>name</key>
-				<string>quaternion.h</string>
-				<key>path</key>
-				<string>../../../GoogleDrive/FRES/Research/2017/OpenFX/addons/ofxAssimpModelLoader/libs/assimp/include/assimp/quaternion.h</string>
-				<key>sourceTree</key>
-				<string>SOURCE_ROOT</string>
-			</dict>
-			<key>DC82A6CFEF0786DED06887D3</key>
-			<dict>
-				<key>explicitFileType</key>
-				<string>sourcecode.c.h</string>
-				<key>fileEncoding</key>
-				<string>30</string>
-				<key>isa</key>
-				<string>PBXFileReference</string>
-				<key>name</key>
-				<string>ProgressHandler.hpp</string>
-				<key>path</key>
-				<string>../../../GoogleDrive/FRES/Research/2017/OpenFX/addons/ofxAssimpModelLoader/libs/assimp/include/assimp/ProgressHandler.hpp</string>
-				<key>sourceTree</key>
-				<string>SOURCE_ROOT</string>
-			</dict>
-			<key>1E9610AA2347E4CB106EF734</key>
-			<dict>
-				<key>explicitFileType</key>
-				<string>sourcecode.c.h</string>
-				<key>fileEncoding</key>
-				<string>30</string>
-				<key>isa</key>
-				<string>PBXFileReference</string>
-				<key>name</key>
-				<string>postprocess.h</string>
-				<key>path</key>
-				<string>../../../GoogleDrive/FRES/Research/2017/OpenFX/addons/ofxAssimpModelLoader/libs/assimp/include/assimp/postprocess.h</string>
-				<key>sourceTree</key>
-				<string>SOURCE_ROOT</string>
-			</dict>
-			<key>4A19A69C98082C07D10FDF6B</key>
-			<dict>
-				<key>explicitFileType</key>
-				<string>sourcecode.c.h</string>
-				<key>fileEncoding</key>
-				<string>30</string>
-				<key>isa</key>
-				<string>PBXFileReference</string>
-				<key>name</key>
-				<string>NullLogger.hpp</string>
-				<key>path</key>
-				<string>../../../GoogleDrive/FRES/Research/2017/OpenFX/addons/ofxAssimpModelLoader/libs/assimp/include/assimp/NullLogger.hpp</string>
-				<key>sourceTree</key>
-				<string>SOURCE_ROOT</string>
-			</dict>
-			<key>31F103F5660F60F9B686FAFA</key>
-			<dict>
-				<key>explicitFileType</key>
-				<string>sourcecode.c.h</string>
-				<key>fileEncoding</key>
-				<string>30</string>
-				<key>isa</key>
-				<string>PBXFileReference</string>
-				<key>name</key>
-				<string>metadata.h</string>
-				<key>path</key>
-				<string>../../../GoogleDrive/FRES/Research/2017/OpenFX/addons/ofxAssimpModelLoader/libs/assimp/include/assimp/metadata.h</string>
-				<key>sourceTree</key>
-				<string>SOURCE_ROOT</string>
-			</dict>
-			<key>7C9B8B3712DC9D5878035E27</key>
-			<dict>
-				<key>explicitFileType</key>
-				<string>sourcecode.c.h</string>
-				<key>fileEncoding</key>
-				<string>30</string>
-				<key>isa</key>
-				<string>PBXFileReference</string>
-				<key>name</key>
-				<string>mesh.h</string>
-				<key>path</key>
-				<string>../../../GoogleDrive/FRES/Research/2017/OpenFX/addons/ofxAssimpModelLoader/libs/assimp/include/assimp/mesh.h</string>
-				<key>sourceTree</key>
-				<string>SOURCE_ROOT</string>
-			</dict>
-			<key>88AFA51B2C541D9EA24632CB</key>
-			<dict>
-				<key>explicitFileType</key>
-				<string>sourcecode.c.h</string>
-				<key>fileEncoding</key>
-				<string>30</string>
-				<key>isa</key>
-				<string>PBXFileReference</string>
-				<key>name</key>
-				<string>matrix4x4.h</string>
-				<key>path</key>
-				<string>../../../GoogleDrive/FRES/Research/2017/OpenFX/addons/ofxAssimpModelLoader/libs/assimp/include/assimp/matrix4x4.h</string>
-				<key>sourceTree</key>
-				<string>SOURCE_ROOT</string>
-			</dict>
-			<key>3544D81CDBD5088A41E7A7BA</key>
-			<dict>
-				<key>explicitFileType</key>
-				<string>sourcecode.c.h</string>
-				<key>fileEncoding</key>
-				<string>30</string>
-				<key>isa</key>
-				<string>PBXFileReference</string>
-				<key>name</key>
-				<string>matrix3x3.h</string>
-				<key>path</key>
-				<string>../../../GoogleDrive/FRES/Research/2017/OpenFX/addons/ofxAssimpModelLoader/libs/assimp/include/assimp/matrix3x3.h</string>
-				<key>sourceTree</key>
-				<string>SOURCE_ROOT</string>
-			</dict>
-			<key>ED96C0333045A67DAD384EE4</key>
-			<dict>
-				<key>explicitFileType</key>
-				<string>sourcecode.c.h</string>
-				<key>fileEncoding</key>
-				<string>30</string>
-				<key>isa</key>
-				<string>PBXFileReference</string>
-				<key>name</key>
-				<string>material.h</string>
-				<key>path</key>
-				<string>../../../GoogleDrive/FRES/Research/2017/OpenFX/addons/ofxAssimpModelLoader/libs/assimp/include/assimp/material.h</string>
-				<key>sourceTree</key>
-				<string>SOURCE_ROOT</string>
-			</dict>
-			<key>69BE3AF39495BC9B7EE23205</key>
-			<dict>
-				<key>explicitFileType</key>
-				<string>sourcecode.c.h</string>
-				<key>fileEncoding</key>
-				<string>30</string>
-				<key>isa</key>
-				<string>PBXFileReference</string>
-				<key>name</key>
-				<string>LogStream.hpp</string>
-				<key>path</key>
-				<string>../../../GoogleDrive/FRES/Research/2017/OpenFX/addons/ofxAssimpModelLoader/libs/assimp/include/assimp/LogStream.hpp</string>
-				<key>sourceTree</key>
-				<string>SOURCE_ROOT</string>
-			</dict>
-			<key>549158AC742047364663F056</key>
-			<dict>
-				<key>explicitFileType</key>
-				<string>sourcecode.c.h</string>
-				<key>fileEncoding</key>
-				<string>30</string>
-				<key>isa</key>
-				<string>PBXFileReference</string>
-				<key>name</key>
-				<string>Logger.hpp</string>
-				<key>path</key>
-				<string>../../../GoogleDrive/FRES/Research/2017/OpenFX/addons/ofxAssimpModelLoader/libs/assimp/include/assimp/Logger.hpp</string>
-				<key>sourceTree</key>
-				<string>SOURCE_ROOT</string>
-			</dict>
-			<key>6EA9F26EE0D15067A17EBD4B</key>
-			<dict>
-				<key>explicitFileType</key>
-				<string>sourcecode.c.h</string>
-				<key>fileEncoding</key>
-				<string>30</string>
-				<key>isa</key>
-				<string>PBXFileReference</string>
-				<key>name</key>
-				<string>light.h</string>
-				<key>path</key>
-				<string>../../../GoogleDrive/FRES/Research/2017/OpenFX/addons/ofxAssimpModelLoader/libs/assimp/include/assimp/light.h</string>
-				<key>sourceTree</key>
-				<string>SOURCE_ROOT</string>
-			</dict>
-			<key>FD4C303643C5DEEA6E3C7563</key>
-			<dict>
-				<key>explicitFileType</key>
-				<string>sourcecode.c.h</string>
-				<key>fileEncoding</key>
-				<string>30</string>
-				<key>isa</key>
-				<string>PBXFileReference</string>
-				<key>name</key>
-				<string>IOSystem.hpp</string>
-				<key>path</key>
-				<string>../../../GoogleDrive/FRES/Research/2017/OpenFX/addons/ofxAssimpModelLoader/libs/assimp/include/assimp/IOSystem.hpp</string>
-				<key>sourceTree</key>
-				<string>SOURCE_ROOT</string>
-			</dict>
-			<key>E2D33C7E607E6667AD133714</key>
-			<dict>
-				<key>explicitFileType</key>
-				<string>sourcecode.c.h</string>
-				<key>fileEncoding</key>
-				<string>30</string>
-				<key>isa</key>
-				<string>PBXFileReference</string>
-				<key>name</key>
-				<string>IOStream.hpp</string>
-				<key>path</key>
-				<string>../../../GoogleDrive/FRES/Research/2017/OpenFX/addons/ofxAssimpModelLoader/libs/assimp/include/assimp/IOStream.hpp</string>
-				<key>sourceTree</key>
-				<string>SOURCE_ROOT</string>
-			</dict>
-			<key>44E1646DEF5B54BB82AA56A2</key>
-			<dict>
-				<key>explicitFileType</key>
-				<string>sourcecode.c.h</string>
-				<key>fileEncoding</key>
-				<string>30</string>
-				<key>isa</key>
-				<string>PBXFileReference</string>
-				<key>name</key>
-				<string>importerdesc.h</string>
-				<key>path</key>
-				<string>../../../GoogleDrive/FRES/Research/2017/OpenFX/addons/ofxAssimpModelLoader/libs/assimp/include/assimp/importerdesc.h</string>
-				<key>sourceTree</key>
-				<string>SOURCE_ROOT</string>
-			</dict>
-			<key>AB3DFEA80BCD2B0AF5AC38CA</key>
-			<dict>
-				<key>explicitFileType</key>
-				<string>sourcecode.c.h</string>
-				<key>fileEncoding</key>
-				<string>30</string>
-				<key>isa</key>
-				<string>PBXFileReference</string>
-				<key>name</key>
-				<string>Importer.hpp</string>
-				<key>path</key>
-				<string>../../../GoogleDrive/FRES/Research/2017/OpenFX/addons/ofxAssimpModelLoader/libs/assimp/include/assimp/Importer.hpp</string>
-				<key>sourceTree</key>
-				<string>SOURCE_ROOT</string>
-			</dict>
-			<key>CB048A15646EB579148B5D96</key>
-			<dict>
-				<key>explicitFileType</key>
-				<string>sourcecode.c.h</string>
-				<key>fileEncoding</key>
-				<string>30</string>
-				<key>isa</key>
-				<string>PBXFileReference</string>
-				<key>name</key>
-				<string>Exporter.hpp</string>
-				<key>path</key>
-				<string>../../../GoogleDrive/FRES/Research/2017/OpenFX/addons/ofxAssimpModelLoader/libs/assimp/include/assimp/Exporter.hpp</string>
-				<key>sourceTree</key>
-				<string>SOURCE_ROOT</string>
-			</dict>
-			<key>AE22A39CA36CE12980FA5835</key>
-			<dict>
-				<key>explicitFileType</key>
-				<string>sourcecode.c.h</string>
-				<key>fileEncoding</key>
-				<string>30</string>
-				<key>isa</key>
-				<string>PBXFileReference</string>
-				<key>name</key>
-				<string>defs.h</string>
-				<key>path</key>
-				<string>../../../GoogleDrive/FRES/Research/2017/OpenFX/addons/ofxAssimpModelLoader/libs/assimp/include/assimp/defs.h</string>
-				<key>sourceTree</key>
-				<string>SOURCE_ROOT</string>
-			</dict>
-			<key>4F35341C3DFC9EE1A38D5291</key>
-			<dict>
-				<key>explicitFileType</key>
-				<string>sourcecode.c.h</string>
-				<key>fileEncoding</key>
-				<string>30</string>
-				<key>isa</key>
-				<string>PBXFileReference</string>
-				<key>name</key>
-				<string>DefaultLogger.hpp</string>
-				<key>path</key>
-				<string>../../../GoogleDrive/FRES/Research/2017/OpenFX/addons/ofxAssimpModelLoader/libs/assimp/include/assimp/DefaultLogger.hpp</string>
-				<key>sourceTree</key>
-				<string>SOURCE_ROOT</string>
-			</dict>
-			<key>D69F6831E52F1088FF0A9D72</key>
-			<dict>
-				<key>explicitFileType</key>
-				<string>sourcecode.c.h</string>
-				<key>fileEncoding</key>
-				<string>30</string>
-				<key>isa</key>
-				<string>PBXFileReference</string>
-				<key>name</key>
-				<string>config.h</string>
-				<key>path</key>
-				<string>../../../GoogleDrive/FRES/Research/2017/OpenFX/addons/ofxAssimpModelLoader/libs/assimp/include/assimp/config.h</string>
-				<key>sourceTree</key>
-				<string>SOURCE_ROOT</string>
-			</dict>
-			<key>25BB05A8FAB38496A007A1F4</key>
-			<dict>
-				<key>explicitFileType</key>
-				<string>sourcecode.c.h</string>
-				<key>fileEncoding</key>
-				<string>30</string>
-				<key>isa</key>
-				<string>PBXFileReference</string>
-				<key>name</key>
-				<string>pushpack1.h</string>
-				<key>path</key>
-				<string>../../../GoogleDrive/FRES/Research/2017/OpenFX/addons/ofxAssimpModelLoader/libs/assimp/include/assimp/Compiler/pushpack1.h</string>
-				<key>sourceTree</key>
-				<string>SOURCE_ROOT</string>
-			</dict>
-			<key>8CB473B2FC349A6339C5CAF9</key>
-			<dict>
-				<key>explicitFileType</key>
-				<string>sourcecode.c.h</string>
-				<key>fileEncoding</key>
-				<string>30</string>
-				<key>isa</key>
-				<string>PBXFileReference</string>
-				<key>name</key>
-				<string>pstdint.h</string>
-				<key>path</key>
-				<string>../../../GoogleDrive/FRES/Research/2017/OpenFX/addons/ofxAssimpModelLoader/libs/assimp/include/assimp/Compiler/pstdint.h</string>
-				<key>sourceTree</key>
-				<string>SOURCE_ROOT</string>
-			</dict>
-			<key>B77F1220F7C30BFF6034CC97</key>
-			<dict>
-				<key>children</key>
-				<array>
-					<string>078270B72326F14E03B26857</string>
-					<string>8CB473B2FC349A6339C5CAF9</string>
-					<string>25BB05A8FAB38496A007A1F4</string>
-				</array>
-				<key>isa</key>
-				<string>PBXGroup</string>
-				<key>name</key>
-				<string>Compiler</string>
-				<key>sourceTree</key>
-				<string>&lt;group&gt;</string>
-			</dict>
-			<key>078270B72326F14E03B26857</key>
-			<dict>
-				<key>explicitFileType</key>
-				<string>sourcecode.c.h</string>
-				<key>fileEncoding</key>
-				<string>30</string>
-				<key>isa</key>
-				<string>PBXFileReference</string>
-				<key>name</key>
-				<string>poppack1.h</string>
-				<key>path</key>
-				<string>../../../GoogleDrive/FRES/Research/2017/OpenFX/addons/ofxAssimpModelLoader/libs/assimp/include/assimp/Compiler/poppack1.h</string>
-				<key>sourceTree</key>
-				<string>SOURCE_ROOT</string>
-			</dict>
-			<key>1091B21FF51BE3B13240AF0E</key>
-			<dict>
-				<key>explicitFileType</key>
-				<string>sourcecode.c.h</string>
-				<key>fileEncoding</key>
-				<string>30</string>
-				<key>isa</key>
-				<string>PBXFileReference</string>
-				<key>name</key>
-				<string>color4.h</string>
-				<key>path</key>
-				<string>../../../GoogleDrive/FRES/Research/2017/OpenFX/addons/ofxAssimpModelLoader/libs/assimp/include/assimp/color4.h</string>
-				<key>sourceTree</key>
-				<string>SOURCE_ROOT</string>
-			</dict>
-			<key>633BFF69041AF196A2BD4329</key>
-			<dict>
-				<key>explicitFileType</key>
-				<string>sourcecode.c.h</string>
-				<key>fileEncoding</key>
-				<string>30</string>
-				<key>isa</key>
-				<string>PBXFileReference</string>
-				<key>name</key>
-				<string>cimport.h</string>
-				<key>path</key>
-				<string>../../../GoogleDrive/FRES/Research/2017/OpenFX/addons/ofxAssimpModelLoader/libs/assimp/include/assimp/cimport.h</string>
-				<key>sourceTree</key>
-				<string>SOURCE_ROOT</string>
-			</dict>
-			<key>7B5D4D265C47BC66803D4148</key>
-			<dict>
-				<key>explicitFileType</key>
-				<string>sourcecode.c.h</string>
-				<key>fileEncoding</key>
-				<string>30</string>
-				<key>isa</key>
-				<string>PBXFileReference</string>
-				<key>name</key>
-				<string>cfileio.h</string>
-				<key>path</key>
-				<string>../../../GoogleDrive/FRES/Research/2017/OpenFX/addons/ofxAssimpModelLoader/libs/assimp/include/assimp/cfileio.h</string>
-				<key>sourceTree</key>
-				<string>SOURCE_ROOT</string>
-			</dict>
-			<key>678831FB26540DDCDEDB7104</key>
-			<dict>
-				<key>explicitFileType</key>
-				<string>sourcecode.c.h</string>
-				<key>fileEncoding</key>
-				<string>30</string>
-				<key>isa</key>
-				<string>PBXFileReference</string>
-				<key>name</key>
-				<string>cexport.h</string>
-				<key>path</key>
-				<string>../../../GoogleDrive/FRES/Research/2017/OpenFX/addons/ofxAssimpModelLoader/libs/assimp/include/assimp/cexport.h</string>
-				<key>sourceTree</key>
-				<string>SOURCE_ROOT</string>
-			</dict>
-			<key>23214F957E2EB505C2E7F3ED</key>
-			<dict>
-				<key>explicitFileType</key>
-				<string>sourcecode.c.h</string>
-				<key>fileEncoding</key>
-				<string>30</string>
-				<key>isa</key>
-				<string>PBXFileReference</string>
-				<key>name</key>
-				<string>camera.h</string>
-				<key>path</key>
-				<string>../../../GoogleDrive/FRES/Research/2017/OpenFX/addons/ofxAssimpModelLoader/libs/assimp/include/assimp/camera.h</string>
-				<key>sourceTree</key>
-				<string>SOURCE_ROOT</string>
-			</dict>
-			<key>5DEDBA94E02930F561F3AD9E</key>
-			<dict>
-				<key>explicitFileType</key>
-				<string>sourcecode.c.h</string>
-				<key>fileEncoding</key>
-				<string>30</string>
-				<key>isa</key>
-				<string>PBXFileReference</string>
-				<key>name</key>
-				<string>anim.h</string>
-				<key>path</key>
-				<string>../../../GoogleDrive/FRES/Research/2017/OpenFX/addons/ofxAssimpModelLoader/libs/assimp/include/assimp/anim.h</string>
-				<key>sourceTree</key>
-				<string>SOURCE_ROOT</string>
-			</dict>
-			<key>67AD613537D3ED7FD883659E</key>
-			<dict>
-				<key>children</key>
-				<array>
-					<string>12AA7580D2A366AF0CB1AC87</string>
-					<string>5DEDBA94E02930F561F3AD9E</string>
-					<string>23214F957E2EB505C2E7F3ED</string>
-					<string>678831FB26540DDCDEDB7104</string>
-					<string>7B5D4D265C47BC66803D4148</string>
-					<string>633BFF69041AF196A2BD4329</string>
-					<string>1091B21FF51BE3B13240AF0E</string>
-					<string>B77F1220F7C30BFF6034CC97</string>
-					<string>D69F6831E52F1088FF0A9D72</string>
-					<string>4F35341C3DFC9EE1A38D5291</string>
-					<string>AE22A39CA36CE12980FA5835</string>
-					<string>CB048A15646EB579148B5D96</string>
-					<string>AB3DFEA80BCD2B0AF5AC38CA</string>
-					<string>44E1646DEF5B54BB82AA56A2</string>
-					<string>E2D33C7E607E6667AD133714</string>
-					<string>FD4C303643C5DEEA6E3C7563</string>
-					<string>6EA9F26EE0D15067A17EBD4B</string>
-					<string>549158AC742047364663F056</string>
-					<string>69BE3AF39495BC9B7EE23205</string>
-					<string>ED96C0333045A67DAD384EE4</string>
-					<string>3544D81CDBD5088A41E7A7BA</string>
-					<string>88AFA51B2C541D9EA24632CB</string>
-					<string>7C9B8B3712DC9D5878035E27</string>
-					<string>31F103F5660F60F9B686FAFA</string>
-					<string>4A19A69C98082C07D10FDF6B</string>
-					<string>1E9610AA2347E4CB106EF734</string>
-					<string>DC82A6CFEF0786DED06887D3</string>
-					<string>CF122B12B7571B1FCB6A95F1</string>
-					<string>CAA06BB444103E423AC97AE9</string>
-					<string>A626A0BBD1444BB9DBD0C16C</string>
-					<string>09BA74BAB3E48197059D3F83</string>
-					<string>0BC2AF64B38819984EF53E9C</string>
-					<string>B1E616BAC89886B6EE8D0247</string>
-					<string>783203ECFDE9736EAB5F85F2</string>
-				</array>
-				<key>isa</key>
-				<string>PBXGroup</string>
-				<key>name</key>
-				<string>assimp</string>
-				<key>sourceTree</key>
-				<string>&lt;group&gt;</string>
-			</dict>
-			<key>EEFDD7AE0009AE6F77EF2A93</key>
-			<dict>
-				<key>children</key>
-				<array>
-					<string>67AD613537D3ED7FD883659E</string>
-				</array>
-				<key>isa</key>
-				<string>PBXGroup</string>
-				<key>name</key>
-				<string>include</string>
-				<key>sourceTree</key>
-				<string>&lt;group&gt;</string>
-			</dict>
-			<key>59905D957FDE48902CF1F729</key>
-			<dict>
-				<key>children</key>
-				<array>
-					<string>EEFDD7AE0009AE6F77EF2A93</string>
-				</array>
-				<key>isa</key>
-				<string>PBXGroup</string>
-				<key>name</key>
-				<string>assimp</string>
-				<key>sourceTree</key>
-				<string>&lt;group&gt;</string>
-			</dict>
-			<key>C721A9AF1157766AFE54645E</key>
-			<dict>
-				<key>children</key>
-				<array>
-					<string>59905D957FDE48902CF1F729</string>
-				</array>
-				<key>isa</key>
-				<string>PBXGroup</string>
-				<key>name</key>
-				<string>libs</string>
-				<key>sourceTree</key>
-				<string>&lt;group&gt;</string>
-			</dict>
-			<key>12AA7580D2A366AF0CB1AC87</key>
-			<dict>
-				<key>explicitFileType</key>
-				<string>sourcecode.c.h</string>
-				<key>fileEncoding</key>
-				<string>30</string>
-				<key>isa</key>
-				<string>PBXFileReference</string>
-				<key>name</key>
-				<string>ai_assert.h</string>
-				<key>path</key>
-				<string>../../../GoogleDrive/FRES/Research/2017/OpenFX/addons/ofxAssimpModelLoader/libs/assimp/include/assimp/ai_assert.h</string>
-				<key>sourceTree</key>
-				<string>SOURCE_ROOT</string>
-			</dict>
-			<key>4A992588BD14EA81FE22B163</key>
-			<dict>
-				<key>explicitFileType</key>
-				<string>sourcecode.c.h</string>
-				<key>fileEncoding</key>
-				<string>30</string>
-				<key>isa</key>
-				<string>PBXFileReference</string>
-				<key>name</key>
-				<string>ofxAssimpUtils.h</string>
-				<key>path</key>
-				<string>../../../GoogleDrive/FRES/Research/2017/OpenFX/addons/ofxAssimpModelLoader/src/ofxAssimpUtils.h</string>
-				<key>sourceTree</key>
-				<string>SOURCE_ROOT</string>
-			</dict>
-			<key>94A5C44FD2512464F373A9C7</key>
-			<dict>
-				<key>explicitFileType</key>
-				<string>sourcecode.c.h</string>
-				<key>fileEncoding</key>
-				<string>30</string>
-				<key>isa</key>
-				<string>PBXFileReference</string>
-				<key>name</key>
-				<string>ofxAssimpTexture.h</string>
-				<key>path</key>
-				<string>../../../GoogleDrive/FRES/Research/2017/OpenFX/addons/ofxAssimpModelLoader/src/ofxAssimpTexture.h</string>
-				<key>sourceTree</key>
-				<string>SOURCE_ROOT</string>
-			</dict>
-			<key>D5500C9B2DFD0C111421E874</key>
-			<dict>
-				<key>fileRef</key>
-				<string>AE77628A21F8887D6FDAD445</string>
-				<key>isa</key>
-				<string>PBXBuildFile</string>
-			</dict>
-			<key>AE77628A21F8887D6FDAD445</key>
-			<dict>
-				<key>explicitFileType</key>
-				<string>sourcecode.cpp.cpp</string>
-				<key>fileEncoding</key>
-				<string>30</string>
-				<key>isa</key>
-				<string>PBXFileReference</string>
-				<key>name</key>
-				<string>ofxAssimpTexture.cpp</string>
-				<key>path</key>
-				<string>../../../GoogleDrive/FRES/Research/2017/OpenFX/addons/ofxAssimpModelLoader/src/ofxAssimpTexture.cpp</string>
-				<key>sourceTree</key>
-				<string>SOURCE_ROOT</string>
-			</dict>
-			<key>C2B3E2CF03902BB68E92565A</key>
-			<dict>
-				<key>explicitFileType</key>
-				<string>sourcecode.c.h</string>
-				<key>fileEncoding</key>
-				<string>30</string>
-				<key>isa</key>
-				<string>PBXFileReference</string>
-				<key>name</key>
-				<string>ofxAssimpModelLoader.h</string>
-				<key>path</key>
-				<string>../../../GoogleDrive/FRES/Research/2017/OpenFX/addons/ofxAssimpModelLoader/src/ofxAssimpModelLoader.h</string>
-				<key>sourceTree</key>
-				<string>SOURCE_ROOT</string>
-			</dict>
-			<key>9E68D584D79E2A4AD37DA0FD</key>
-			<dict>
-				<key>fileRef</key>
-				<string>C9A6685651610FF88906716F</string>
-				<key>isa</key>
-				<string>PBXBuildFile</string>
-			</dict>
-			<key>C9A6685651610FF88906716F</key>
-			<dict>
-				<key>explicitFileType</key>
-				<string>sourcecode.cpp.cpp</string>
-				<key>fileEncoding</key>
-				<string>30</string>
-				<key>isa</key>
-				<string>PBXFileReference</string>
-				<key>name</key>
-				<string>ofxAssimpModelLoader.cpp</string>
-				<key>path</key>
-				<string>../../../GoogleDrive/FRES/Research/2017/OpenFX/addons/ofxAssimpModelLoader/src/ofxAssimpModelLoader.cpp</string>
-				<key>sourceTree</key>
-				<string>SOURCE_ROOT</string>
-			</dict>
-			<key>6108A1708FC98D54C76852F8</key>
-			<dict>
-				<key>explicitFileType</key>
-				<string>sourcecode.c.h</string>
-				<key>fileEncoding</key>
-				<string>30</string>
-				<key>isa</key>
-				<string>PBXFileReference</string>
-				<key>name</key>
-				<string>ofxAssimpMeshHelper.h</string>
-				<key>path</key>
-				<string>../../../GoogleDrive/FRES/Research/2017/OpenFX/addons/ofxAssimpModelLoader/src/ofxAssimpMeshHelper.h</string>
-				<key>sourceTree</key>
-				<string>SOURCE_ROOT</string>
-			</dict>
-			<key>8E47115F6332FEDBD23663D7</key>
-			<dict>
-				<key>fileRef</key>
-				<string>74F6C85401D42211778DC118</string>
-				<key>isa</key>
-				<string>PBXBuildFile</string>
-			</dict>
-			<key>74F6C85401D42211778DC118</key>
-			<dict>
-				<key>explicitFileType</key>
-				<string>sourcecode.cpp.cpp</string>
-				<key>fileEncoding</key>
-				<string>30</string>
-				<key>isa</key>
-				<string>PBXFileReference</string>
-				<key>name</key>
-				<string>ofxAssimpMeshHelper.cpp</string>
-				<key>path</key>
-				<string>../../../GoogleDrive/FRES/Research/2017/OpenFX/addons/ofxAssimpModelLoader/src/ofxAssimpMeshHelper.cpp</string>
-				<key>sourceTree</key>
-				<string>SOURCE_ROOT</string>
-			</dict>
-			<key>F2D9885C38B0530A3EFD0F92</key>
-			<dict>
-				<key>explicitFileType</key>
-				<string>sourcecode.c.h</string>
-				<key>fileEncoding</key>
-				<string>30</string>
-				<key>isa</key>
-				<string>PBXFileReference</string>
-				<key>name</key>
-				<string>ofxAssimpAnimation.h</string>
-				<key>path</key>
-				<string>../../../GoogleDrive/FRES/Research/2017/OpenFX/addons/ofxAssimpModelLoader/src/ofxAssimpAnimation.h</string>
-				<key>sourceTree</key>
-				<string>SOURCE_ROOT</string>
-			</dict>
-			<key>9D99F547CA5C0ECCB9EB9806</key>
-			<dict>
-				<key>children</key>
-				<array>
-					<string>1E663B13AAFC2C0C3AA51738</string>
-					<string>F2D9885C38B0530A3EFD0F92</string>
-					<string>74F6C85401D42211778DC118</string>
-					<string>6108A1708FC98D54C76852F8</string>
-					<string>C9A6685651610FF88906716F</string>
-					<string>C2B3E2CF03902BB68E92565A</string>
-					<string>AE77628A21F8887D6FDAD445</string>
-					<string>94A5C44FD2512464F373A9C7</string>
-					<string>4A992588BD14EA81FE22B163</string>
-				</array>
-				<key>isa</key>
-				<string>PBXGroup</string>
-				<key>name</key>
-				<string>src</string>
-				<key>sourceTree</key>
-				<string>&lt;group&gt;</string>
-			</dict>
-			<key>2C8F245ACBE61E28646C17F2</key>
-			<dict>
-				<key>children</key>
-				<array>
-					<string>9D99F547CA5C0ECCB9EB9806</string>
-					<string>C721A9AF1157766AFE54645E</string>
-				</array>
-				<key>isa</key>
-				<string>PBXGroup</string>
-				<key>name</key>
-				<string>ofxAssimpModelLoader</string>
-				<key>sourceTree</key>
-				<string>&lt;group&gt;</string>
-			</dict>
-			<key>70E35C6750AF4FCAC48490B1</key>
-			<dict>
-				<key>fileRef</key>
-				<string>1E663B13AAFC2C0C3AA51738</string>
-				<key>isa</key>
-				<string>PBXBuildFile</string>
-			</dict>
-			<key>1E663B13AAFC2C0C3AA51738</key>
-			<dict>
-				<key>explicitFileType</key>
-				<string>sourcecode.cpp.cpp</string>
-				<key>fileEncoding</key>
-				<string>30</string>
-				<key>isa</key>
-				<string>PBXFileReference</string>
-				<key>name</key>
-				<string>ofxAssimpAnimation.cpp</string>
-				<key>path</key>
-				<string>../../../GoogleDrive/FRES/Research/2017/OpenFX/addons/ofxAssimpModelLoader/src/ofxAssimpAnimation.cpp</string>
-				<key>sourceTree</key>
-				<string>SOURCE_ROOT</string>
-			</dict>
-			<key>5A830A79EDE6A5D227F0907B</key>
-			<dict>
-				<key>explicitFileType</key>
-				<string>sourcecode.c.h</string>
-				<key>fileEncoding</key>
-				<string>30</string>
-				<key>isa</key>
-				<string>PBXFileReference</string>
-				<key>name</key>
-				<string>Triangles.hpp</string>
-				<key>path</key>
-				<string>src/Triangles.hpp</string>
-				<key>sourceTree</key>
-				<string>SOURCE_ROOT</string>
-			</dict>
-			<key>C173EFE44C762BD73E8FBAE9</key>
-			<dict>
-				<key>fileRef</key>
-				<string>2DDD15DAEC85EBCBCC1200F8</string>
-				<key>isa</key>
-				<string>PBXBuildFile</string>
-			</dict>
-			<key>2DDD15DAEC85EBCBCC1200F8</key>
-			<dict>
-				<key>explicitFileType</key>
-				<string>sourcecode.cpp.cpp</string>
-				<key>fileEncoding</key>
-				<string>30</string>
-				<key>isa</key>
-				<string>PBXFileReference</string>
-				<key>name</key>
-				<string>Triangles.cpp</string>
-				<key>path</key>
-				<string>src/Triangles.cpp</string>
-				<key>sourceTree</key>
-				<string>SOURCE_ROOT</string>
-			</dict>
-			<key>F5AAC52851768570FE602C6B</key>
-			<dict>
-				<key>explicitFileType</key>
-				<string>sourcecode.c.h</string>
-				<key>fileEncoding</key>
-				<string>30</string>
-				<key>isa</key>
-				<string>PBXFileReference</string>
-				<key>name</key>
-				<string>Model.hpp</string>
-				<key>path</key>
-				<string>src/Model.hpp</string>
-				<key>sourceTree</key>
-				<string>SOURCE_ROOT</string>
-			</dict>
-			<key>FA235767FD63BFDBEF5292F9</key>
-			<dict>
-				<key>fileRef</key>
-				<string>C8430E4BD04F96280E680470</string>
-				<key>isa</key>
-				<string>PBXBuildFile</string>
-			</dict>
-			<key>C8430E4BD04F96280E680470</key>
-			<dict>
-				<key>explicitFileType</key>
-				<string>sourcecode.cpp.cpp</string>
-				<key>fileEncoding</key>
-				<string>30</string>
-				<key>isa</key>
-				<string>PBXFileReference</string>
-				<key>name</key>
-				<string>Model.cpp</string>
-				<key>path</key>
-				<string>src/Model.cpp</string>
-				<key>sourceTree</key>
-				<string>SOURCE_ROOT</string>
-			</dict>
-			<key>E7318ACE4246DAAB94ABC6E1</key>
-			<dict>
-				<key>explicitFileType</key>
-				<string>sourcecode.c.h</string>
-				<key>fileEncoding</key>
-				<string>30</string>
-				<key>isa</key>
-				<string>PBXFileReference</string>
-				<key>name</key>
-				<string>Layer.hpp</string>
-				<key>path</key>
-				<string>src/Layer.hpp</string>
-				<key>sourceTree</key>
-				<string>SOURCE_ROOT</string>
-			</dict>
-			<key>7455350C809AAAADD1A8E9BF</key>
-			<dict>
-				<key>fileRef</key>
-				<string>961049863D8C691271E7D396</string>
-				<key>isa</key>
-				<string>PBXBuildFile</string>
-			</dict>
-			<key>961049863D8C691271E7D396</key>
-			<dict>
-				<key>explicitFileType</key>
-				<string>sourcecode.cpp.cpp</string>
-				<key>fileEncoding</key>
-				<string>30</string>
-				<key>isa</key>
-				<string>PBXFileReference</string>
-				<key>name</key>
-				<string>Layer.cpp</string>
-				<key>path</key>
-				<string>src/Layer.cpp</string>
-				<key>sourceTree</key>
-				<string>SOURCE_ROOT</string>
-			</dict>
-			<key>6948EE371B920CB800B5AC1A</key>
-			<dict>
-				<key>children</key>
-				<array />
-				<key>isa</key>
-				<string>PBXGroup</string>
-				<key>name</key>
-				<string>local_addons</string>
-				<key>sourceTree</key>
-				<string>&lt;group&gt;</string>
-			</dict>
-			<key>BB4B014C10F69532006C3DED</key>
-			<dict>
-				<key>children</key>
-				<array>
-					<string>2C8F245ACBE61E28646C17F2</string>
-					<string>480A780D8D0308AE4A368801</string>
-				</array>
-				<key>isa</key>
-				<string>PBXGroup</string>
-				<key>name</key>
-				<string>addons</string>
-				<key>sourceTree</key>
-				<string>&lt;group&gt;</string>
-			</dict>
-			<key>E4328143138ABC890047C5CB</key>
-			<dict>
-				<key>isa</key>
-				<string>PBXFileReference</string>
-				<key>lastKnownFileType</key>
-				<string>wrapper.pb-project</string>
-				<key>name</key>
-				<string>openFrameworksLib.xcodeproj</string>
-				<key>path</key>
-				<string>../../../GoogleDrive/FRES/Research/2017/OpenFX/libs/openFrameworksCompiled/project/osx/openFrameworksLib.xcodeproj</string>
-				<key>sourceTree</key>
-				<string>SOURCE_ROOT</string>
-			</dict>
-			<key>E4328144138ABC890047C5CB</key>
-			<dict>
-				<key>children</key>
-				<array>
-					<string>E4328148138ABC890047C5CB</string>
-				</array>
-				<key>isa</key>
-				<string>PBXGroup</string>
-				<key>name</key>
-				<string>Products</string>
-				<key>sourceTree</key>
-				<string>&lt;group&gt;</string>
-			</dict>
-			<key>E4328147138ABC890047C5CB</key>
-			<dict>
-				<key>containerPortal</key>
-				<string>E4328143138ABC890047C5CB</string>
-				<key>isa</key>
-				<string>PBXContainerItemProxy</string>
-				<key>proxyType</key>
-				<string>2</string>
-				<key>remoteGlobalIDString</key>
-				<string>E4B27C1510CBEB8E00536013</string>
-				<key>remoteInfo</key>
-				<string>openFrameworks</string>
-			</dict>
-			<key>E4328148138ABC890047C5CB</key>
-			<dict>
-				<key>fileType</key>
-				<string>archive.ar</string>
-				<key>isa</key>
-				<string>PBXReferenceProxy</string>
-				<key>path</key>
-				<string>openFrameworksDebug.a</string>
-				<key>remoteRef</key>
-				<string>E4328147138ABC890047C5CB</string>
-				<key>sourceTree</key>
-				<string>BUILT_PRODUCTS_DIR</string>
-			</dict>
-			<key>E4328149138ABC9F0047C5CB</key>
-			<dict>
-				<key>fileRef</key>
-				<string>E4328148138ABC890047C5CB</string>
-				<key>isa</key>
-				<string>PBXBuildFile</string>
-			</dict>
-			<key>E4B69B4A0A3A1720003C02F2</key>
-			<dict>
-				<key>children</key>
-				<array>
-					<string>E4B6FCAD0C3E899E008CF71C</string>
-					<string>E4EB6923138AFD0F00A09F29</string>
-					<string>E4B69E1C0A3A1BDC003C02F2</string>
-					<string>E4EEC9E9138DF44700A80321</string>
-					<string>BB4B014C10F69532006C3DED</string>
-					<string>6948EE371B920CB800B5AC1A</string>
-					<string>E4B69B5B0A3A1756003C02F2</string>
-				</array>
-				<key>isa</key>
-				<string>PBXGroup</string>
-				<key>sourceTree</key>
-				<string>&lt;group&gt;</string>
-			</dict>
-			<key>E4B69B4C0A3A1720003C02F2</key>
-			<dict>
-				<key>attributes</key>
-				<dict>
-					<key>LastUpgradeCheck</key>
-					<string>0600</string>
-				</dict>
-				<key>buildConfigurationList</key>
-				<string>E4B69B4D0A3A1720003C02F2</string>
-				<key>compatibilityVersion</key>
-				<string>Xcode 3.2</string>
-				<key>developmentRegion</key>
-				<string>English</string>
-				<key>hasScannedForEncodings</key>
-				<string>0</string>
-				<key>isa</key>
-				<string>PBXProject</string>
-				<key>knownRegions</key>
-				<array>
-					<string>English</string>
-					<string>Japanese</string>
-					<string>French</string>
-					<string>German</string>
-				</array>
-				<key>mainGroup</key>
-				<string>E4B69B4A0A3A1720003C02F2</string>
-				<key>productRefGroup</key>
-				<string>E4B69B4A0A3A1720003C02F2</string>
-				<key>projectDirPath</key>
-				<string />
-				<key>projectReferences</key>
-				<array>
-					<dict>
-						<key>ProductGroup</key>
-						<string>E4328144138ABC890047C5CB</string>
-						<key>ProjectRef</key>
-						<string>E4328143138ABC890047C5CB</string>
-					</dict>
-				</array>
-				<key>projectRoot</key>
-				<string />
-				<key>targets</key>
-				<array>
-					<string>E4B69B5A0A3A1756003C02F2</string>
-				</array>
-			</dict>
-			<key>E4B69B4D0A3A1720003C02F2</key>
-			<dict>
-				<key>buildConfigurations</key>
-				<array>
-					<string>E4B69B4E0A3A1720003C02F2</string>
-					<string>E4B69B4F0A3A1720003C02F2</string>
-				</array>
-				<key>defaultConfigurationIsVisible</key>
-				<string>0</string>
-				<key>defaultConfigurationName</key>
-				<string>Release</string>
-				<key>isa</key>
-				<string>XCConfigurationList</string>
-			</dict>
-			<key>E4B69B4E0A3A1720003C02F2</key>
-			<dict>
-				<key>baseConfigurationReference</key>
-				<string>E4EB6923138AFD0F00A09F29</string>
-				<key>buildSettings</key>
-				<dict>
-					<key>OTHER_LDFLAGS</key>
-					<array>
-						<string>$(OF_CORE_FRAMEWORKS) $(OF_CORE_LIBS)</string>
-						<string>../../../GoogleDrive/FRES/Research/2017/OpenFX/addons/ofxAssimpModelLoader/libs/assimp/lib/osx/assimp.a</string>
-					</array>
-					<key>HEADER_SEARCH_PATHS</key>
-					<array>
-						<string>$(OF_CORE_HEADERS)</string>
-						<string>src</string>
-						<string>../../../GoogleDrive/FRES/Research/2017/OpenFX/addons/ofxAssimpModelLoader/libs</string>
-						<string>../../../GoogleDrive/FRES/Research/2017/OpenFX/addons/ofxAssimpModelLoader/libs/assimp</string>
-						<string>../../../GoogleDrive/FRES/Research/2017/OpenFX/addons/ofxAssimpModelLoader/libs/assimp/include</string>
-						<string>../../../GoogleDrive/FRES/Research/2017/OpenFX/addons/ofxAssimpModelLoader/libs/assimp/include/assimp</string>
-						<string>../../../GoogleDrive/FRES/Research/2017/OpenFX/addons/ofxAssimpModelLoader/libs/assimp/include/assimp/Compiler</string>
-						<string>../../../GoogleDrive/FRES/Research/2017/OpenFX/addons/ofxAssimpModelLoader/libs/assimp/lib</string>
-						<string>../../../GoogleDrive/FRES/Research/2017/OpenFX/addons/ofxAssimpModelLoader/libs/assimp/lib/emscripten</string>
-						<string>../../../GoogleDrive/FRES/Research/2017/OpenFX/addons/ofxAssimpModelLoader/libs/assimp/lib/osx</string>
-						<string>../../../GoogleDrive/FRES/Research/2017/OpenFX/addons/ofxAssimpModelLoader/libs/assimp/license</string>
-						<string>../../../GoogleDrive/FRES/Research/2017/OpenFX/addons/ofxAssimpModelLoader/src</string>
-						<string>../../../GoogleDrive/FRES/Research/2017/OpenFX/addons/ofxGui/src</string>
-					</array>
-					<key>CONFIGURATION_BUILD_DIR</key>
-					<string>$(SRCROOT)/bin/</string>
-					<key>COPY_PHASE_STRIP</key>
-					<string>NO</string>
-					<key>DEAD_CODE_STRIPPING</key>
-					<string>YES</string>
-					<key>GCC_AUTO_VECTORIZATION</key>
-					<string>YES</string>
-					<key>GCC_ENABLE_SSE3_EXTENSIONS</key>
-					<string>YES</string>
-					<key>GCC_ENABLE_SUPPLEMENTAL_SSE3_INSTRUCTIONS</key>
-					<string>YES</string>
-					<key>GCC_INLINES_ARE_PRIVATE_EXTERN</key>
-					<string>NO</string>
-					<key>GCC_OPTIMIZATION_LEVEL</key>
-					<string>0</string>
-					<key>GCC_SYMBOLS_PRIVATE_EXTERN</key>
-					<string>NO</string>
-					<key>GCC_WARN_ABOUT_DEPRECATED_FUNCTIONS</key>
-					<string>YES</string>
-					<key>GCC_WARN_ABOUT_INVALID_OFFSETOF_MACRO</key>
-					<string>NO</string>
-					<key>GCC_WARN_ALLOW_INCOMPLETE_PROTOCOL</key>
-					<string>NO</string>
-					<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
-					<string>NO</string>
-					<key>GCC_WARN_UNUSED_VALUE</key>
-					<string>NO</string>
-					<key>GCC_WARN_UNUSED_VARIABLE</key>
-					<string>NO</string>
-					<key>MACOSX_DEPLOYMENT_TARGET</key>
-					<string>10.8</string>
-					<key>ONLY_ACTIVE_ARCH</key>
-					<string>YES</string>
-					<key>OTHER_CPLUSPLUSFLAGS</key>
-					<array>
-						<string>-D__MACOSX_CORE__</string>
-						<string>-mtune=native</string>
-					</array>
-					<key>SDKROOT</key>
-					<string>macosx</string>
-				</dict>
-				<key>isa</key>
-				<string>XCBuildConfiguration</string>
-				<key>name</key>
-				<string>Debug</string>
-			</dict>
-			<key>E4B69B4F0A3A1720003C02F2</key>
-			<dict>
-				<key>baseConfigurationReference</key>
-				<string>E4EB6923138AFD0F00A09F29</string>
-				<key>buildSettings</key>
-				<dict>
-					<key>OTHER_LDFLAGS</key>
-					<array>
-						<string>$(OF_CORE_FRAMEWORKS) $(OF_CORE_LIBS)</string>
-						<string>../../../GoogleDrive/FRES/Research/2017/OpenFX/addons/ofxAssimpModelLoader/libs/assimp/lib/osx/assimp.a</string>
-					</array>
-					<key>HEADER_SEARCH_PATHS</key>
-					<array>
-						<string>$(OF_CORE_HEADERS)</string>
-						<string>src</string>
-						<string>../../../GoogleDrive/FRES/Research/2017/OpenFX/addons/ofxAssimpModelLoader/libs</string>
-						<string>../../../GoogleDrive/FRES/Research/2017/OpenFX/addons/ofxAssimpModelLoader/libs/assimp</string>
-						<string>../../../GoogleDrive/FRES/Research/2017/OpenFX/addons/ofxAssimpModelLoader/libs/assimp/include</string>
-						<string>../../../GoogleDrive/FRES/Research/2017/OpenFX/addons/ofxAssimpModelLoader/libs/assimp/include/assimp</string>
-						<string>../../../GoogleDrive/FRES/Research/2017/OpenFX/addons/ofxAssimpModelLoader/libs/assimp/include/assimp/Compiler</string>
-						<string>../../../GoogleDrive/FRES/Research/2017/OpenFX/addons/ofxAssimpModelLoader/libs/assimp/lib</string>
-						<string>../../../GoogleDrive/FRES/Research/2017/OpenFX/addons/ofxAssimpModelLoader/libs/assimp/lib/emscripten</string>
-						<string>../../../GoogleDrive/FRES/Research/2017/OpenFX/addons/ofxAssimpModelLoader/libs/assimp/lib/osx</string>
-						<string>../../../GoogleDrive/FRES/Research/2017/OpenFX/addons/ofxAssimpModelLoader/libs/assimp/license</string>
-						<string>../../../GoogleDrive/FRES/Research/2017/OpenFX/addons/ofxAssimpModelLoader/src</string>
-						<string>../../../GoogleDrive/FRES/Research/2017/OpenFX/addons/ofxGui/src</string>
-					</array>
-					<key>CONFIGURATION_BUILD_DIR</key>
-					<string>$(SRCROOT)/bin/</string>
-					<key>COPY_PHASE_STRIP</key>
-					<string>YES</string>
-					<key>DEAD_CODE_STRIPPING</key>
-					<string>YES</string>
-					<key>GCC_AUTO_VECTORIZATION</key>
-					<string>YES</string>
-					<key>GCC_ENABLE_SSE3_EXTENSIONS</key>
-					<string>YES</string>
-					<key>GCC_ENABLE_SUPPLEMENTAL_SSE3_INSTRUCTIONS</key>
-					<string>YES</string>
-					<key>GCC_INLINES_ARE_PRIVATE_EXTERN</key>
-					<string>NO</string>
-					<key>GCC_OPTIMIZATION_LEVEL</key>
-					<string>3</string>
-					<key>GCC_SYMBOLS_PRIVATE_EXTERN</key>
-					<string>NO</string>
-					<key>GCC_UNROLL_LOOPS</key>
-					<string>YES</string>
-					<key>GCC_WARN_ABOUT_DEPRECATED_FUNCTIONS</key>
-					<string>YES</string>
-					<key>GCC_WARN_ABOUT_INVALID_OFFSETOF_MACRO</key>
-					<string>NO</string>
-					<key>GCC_WARN_ALLOW_INCOMPLETE_PROTOCOL</key>
-					<string>NO</string>
-					<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
-					<string>NO</string>
-					<key>GCC_WARN_UNUSED_VALUE</key>
-					<string>NO</string>
-					<key>GCC_WARN_UNUSED_VARIABLE</key>
-					<string>NO</string>
-					<key>MACOSX_DEPLOYMENT_TARGET</key>
-					<string>10.8</string>
-					<key>OTHER_CPLUSPLUSFLAGS</key>
-					<array>
-						<string>-D__MACOSX_CORE__</string>
-						<string>-mtune=native</string>
-					</array>
-					<key>SDKROOT</key>
-					<string>macosx</string>
-				</dict>
-				<key>isa</key>
-				<string>XCBuildConfiguration</string>
-				<key>name</key>
-				<string>Release</string>
-			</dict>
-			<key>E4B69B580A3A1756003C02F2</key>
-			<dict>
-				<key>buildActionMask</key>
-				<string>2147483647</string>
-				<key>files</key>
-				<array>
-					<string>E4B69E200A3A1BDC003C02F2</string>
-					<string>E4B69E210A3A1BDC003C02F2</string>
-					<string>7455350C809AAAADD1A8E9BF</string>
-					<string>FA235767FD63BFDBEF5292F9</string>
-					<string>C173EFE44C762BD73E8FBAE9</string>
-					<string>70E35C6750AF4FCAC48490B1</string>
-					<string>8E47115F6332FEDBD23663D7</string>
-					<string>9E68D584D79E2A4AD37DA0FD</string>
-					<string>D5500C9B2DFD0C111421E874</string>
-					<string>EFB3CF0ACFBEF8480FCE9882</string>
-					<string>44E51110EB898DEACF0EE367</string>
-					<string>C2DAD524A75C109CFFC3F00B</string>
-					<string>20E2BE42416B256B9CD104BF</string>
-					<string>3973E9CEF21ADF4CA9912CD3</string>
-					<string>AEDB7EF24B3B9F5D804DD91A</string>
-					<string>0BA048EDC9D29F8025096181</string>
-					<string>542DAFE777601AC8D4168B87</string>
-				</array>
-				<key>isa</key>
-				<string>PBXSourcesBuildPhase</string>
-				<key>runOnlyForDeploymentPostprocessing</key>
-				<string>0</string>
-			</dict>
-			<key>E4B69B590A3A1756003C02F2</key>
-			<dict>
-				<key>buildActionMask</key>
-				<string>2147483647</string>
-				<key>files</key>
-				<array>
-					<string>E4328149138ABC9F0047C5CB</string>
-				</array>
-				<key>isa</key>
-				<string>PBXFrameworksBuildPhase</string>
-				<key>runOnlyForDeploymentPostprocessing</key>
-				<string>0</string>
-			</dict>
-			<key>E4B69B5A0A3A1756003C02F2</key>
-			<dict>
-				<key>buildConfigurationList</key>
-				<string>E4B69B5F0A3A1757003C02F2</string>
-				<key>buildPhases</key>
-				<array>
-					<string>E4B69B580A3A1756003C02F2</string>
-					<string>E4B69B590A3A1756003C02F2</string>
-					<string>E4B6FFFD0C3F9AB9008CF71C</string>
-					<string>E4C2427710CC5ABF004149E2</string>
-				</array>
-				<key>buildRules</key>
-				<array />
-				<key>dependencies</key>
-				<array>
-					<string>E4EEB9AC138B136A00A80321</string>
-				</array>
-				<key>isa</key>
-				<string>PBXNativeTarget</string>
-				<key>name</key>
-				<string>fluffy-octo-potato</string>
-				<key>productName</key>
-				<string>myOFApp</string>
-				<key>productReference</key>
-				<string>E4B69B5B0A3A1756003C02F2</string>
-				<key>productType</key>
-				<string>com.apple.product-type.application</string>
-			</dict>
-			<key>E4B69B5B0A3A1756003C02F2</key>
-			<dict>
-				<key>explicitFileType</key>
-				<string>wrapper.application</string>
-				<key>includeInIndex</key>
-				<string>0</string>
-				<key>isa</key>
-				<string>PBXFileReference</string>
-				<key>path</key>
-				<string>fluffy-octo-potatoDebug.app</string>
-				<key>sourceTree</key>
-				<string>BUILT_PRODUCTS_DIR</string>
-			</dict>
-			<key>E4B69B5F0A3A1757003C02F2</key>
-			<dict>
-				<key>buildConfigurations</key>
-				<array>
-					<string>E4B69B600A3A1757003C02F2</string>
-					<string>E4B69B610A3A1757003C02F2</string>
-				</array>
-				<key>defaultConfigurationIsVisible</key>
-				<string>0</string>
-				<key>defaultConfigurationName</key>
-				<string>Release</string>
-				<key>isa</key>
-				<string>XCConfigurationList</string>
-			</dict>
-			<key>E4B69B600A3A1757003C02F2</key>
-			<dict>
-				<key>baseConfigurationReference</key>
-				<string>E4EB6923138AFD0F00A09F29</string>
-				<key>buildSettings</key>
-				<dict>
-					<key>OTHER_LDFLAGS</key>
-					<array>
-						<string>$(OF_CORE_FRAMEWORKS) $(OF_CORE_LIBS)</string>
-						<string>../../../GoogleDrive/FRES/Research/2017/OpenFX/addons/ofxAssimpModelLoader/libs/assimp/lib/osx/assimp.a</string>
-					</array>
-					<key>HEADER_SEARCH_PATHS</key>
-					<array>
-						<string>$(OF_CORE_HEADERS)</string>
-						<string>src</string>
-						<string>../../../GoogleDrive/FRES/Research/2017/OpenFX/addons/ofxAssimpModelLoader/libs</string>
-						<string>../../../GoogleDrive/FRES/Research/2017/OpenFX/addons/ofxAssimpModelLoader/libs/assimp</string>
-						<string>../../../GoogleDrive/FRES/Research/2017/OpenFX/addons/ofxAssimpModelLoader/libs/assimp/include</string>
-						<string>../../../GoogleDrive/FRES/Research/2017/OpenFX/addons/ofxAssimpModelLoader/libs/assimp/include/assimp</string>
-						<string>../../../GoogleDrive/FRES/Research/2017/OpenFX/addons/ofxAssimpModelLoader/libs/assimp/include/assimp/Compiler</string>
-						<string>../../../GoogleDrive/FRES/Research/2017/OpenFX/addons/ofxAssimpModelLoader/libs/assimp/lib</string>
-						<string>../../../GoogleDrive/FRES/Research/2017/OpenFX/addons/ofxAssimpModelLoader/libs/assimp/lib/emscripten</string>
-						<string>../../../GoogleDrive/FRES/Research/2017/OpenFX/addons/ofxAssimpModelLoader/libs/assimp/lib/osx</string>
-						<string>../../../GoogleDrive/FRES/Research/2017/OpenFX/addons/ofxAssimpModelLoader/libs/assimp/license</string>
-						<string>../../../GoogleDrive/FRES/Research/2017/OpenFX/addons/ofxAssimpModelLoader/src</string>
-						<string>../../../GoogleDrive/FRES/Research/2017/OpenFX/addons/ofxGui/src</string>
-					</array>
-					<key>COMBINE_HIDPI_IMAGES</key>
-					<string>YES</string>
-					<key>COPY_PHASE_STRIP</key>
-					<string>NO</string>
-					<key>FRAMEWORK_SEARCH_PATHS</key>
-					<array>
-						<string>$(inherited)</string>
-						<string>$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1)</string>
-					</array>
-					<key>FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1</key>
-					<string>"$(SRCROOT)/../../../GoogleDrive/FRES/Research/2017/OpenFX/libs/glut/lib/osx"</string>
-					<key>GCC_DYNAMIC_NO_PIC</key>
-					<string>NO</string>
-					<key>GCC_GENERATE_DEBUGGING_SYMBOLS</key>
-					<string>YES</string>
-					<key>GCC_MODEL_TUNING</key>
-					<string>NONE</string>
-					<key>ICON</key>
-					<string>$(ICON_NAME_DEBUG)</string>
-					<key>ICON_FILE</key>
-					<string>$(ICON_FILE_PATH)$(ICON)</string>
-					<key>INFOPLIST_FILE</key>
-					<string>openFrameworks-Info.plist</string>
-					<key>INSTALL_PATH</key>
-					<string>/Applications</string>
-					<key>LIBRARY_SEARCH_PATHS</key>
-					<string>$(inherited)</string>
-					<key>PRODUCT_NAME</key>
-					<string>$(TARGET_NAME)Debug</string>
-					<key>WRAPPER_EXTENSION</key>
-					<string>app</string>
-				</dict>
-				<key>isa</key>
-				<string>XCBuildConfiguration</string>
-				<key>name</key>
-				<string>Debug</string>
-			</dict>
-			<key>E4B69B610A3A1757003C02F2</key>
-			<dict>
-				<key>baseConfigurationReference</key>
-				<string>E4EB6923138AFD0F00A09F29</string>
-				<key>buildSettings</key>
-				<dict>
-					<key>OTHER_LDFLAGS</key>
-					<array>
-						<string>$(OF_CORE_FRAMEWORKS) $(OF_CORE_LIBS)</string>
-						<string>../../../GoogleDrive/FRES/Research/2017/OpenFX/addons/ofxAssimpModelLoader/libs/assimp/lib/osx/assimp.a</string>
-					</array>
-					<key>HEADER_SEARCH_PATHS</key>
-					<array>
-						<string>$(OF_CORE_HEADERS)</string>
-						<string>src</string>
-						<string>../../../GoogleDrive/FRES/Research/2017/OpenFX/addons/ofxAssimpModelLoader/libs</string>
-						<string>../../../GoogleDrive/FRES/Research/2017/OpenFX/addons/ofxAssimpModelLoader/libs/assimp</string>
-						<string>../../../GoogleDrive/FRES/Research/2017/OpenFX/addons/ofxAssimpModelLoader/libs/assimp/include</string>
-						<string>../../../GoogleDrive/FRES/Research/2017/OpenFX/addons/ofxAssimpModelLoader/libs/assimp/include/assimp</string>
-						<string>../../../GoogleDrive/FRES/Research/2017/OpenFX/addons/ofxAssimpModelLoader/libs/assimp/include/assimp/Compiler</string>
-						<string>../../../GoogleDrive/FRES/Research/2017/OpenFX/addons/ofxAssimpModelLoader/libs/assimp/lib</string>
-						<string>../../../GoogleDrive/FRES/Research/2017/OpenFX/addons/ofxAssimpModelLoader/libs/assimp/lib/emscripten</string>
-						<string>../../../GoogleDrive/FRES/Research/2017/OpenFX/addons/ofxAssimpModelLoader/libs/assimp/lib/osx</string>
-						<string>../../../GoogleDrive/FRES/Research/2017/OpenFX/addons/ofxAssimpModelLoader/libs/assimp/license</string>
-						<string>../../../GoogleDrive/FRES/Research/2017/OpenFX/addons/ofxAssimpModelLoader/src</string>
-						<string>../../../GoogleDrive/FRES/Research/2017/OpenFX/addons/ofxGui/src</string>
-					</array>
-					<key>COMBINE_HIDPI_IMAGES</key>
-					<string>YES</string>
-					<key>COPY_PHASE_STRIP</key>
-					<string>YES</string>
-					<key>FRAMEWORK_SEARCH_PATHS</key>
-					<array>
-						<string>$(inherited)</string>
-						<string>$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1)</string>
-					</array>
-					<key>FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1</key>
-					<string>"$(SRCROOT)/../../../GoogleDrive/FRES/Research/2017/OpenFX/libs/glut/lib/osx"</string>
-					<key>GCC_GENERATE_DEBUGGING_SYMBOLS</key>
-					<string>YES</string>
-					<key>GCC_MODEL_TUNING</key>
-					<string>NONE</string>
-					<key>ICON</key>
-					<string>$(ICON_NAME_RELEASE)</string>
-					<key>ICON_FILE</key>
-					<string>$(ICON_FILE_PATH)$(ICON)</string>
-					<key>INFOPLIST_FILE</key>
-					<string>openFrameworks-Info.plist</string>
-					<key>INSTALL_PATH</key>
-					<string>/Applications</string>
-					<key>LIBRARY_SEARCH_PATHS</key>
-					<string>$(inherited)</string>
-					<key>PRODUCT_NAME</key>
-					<string>$(TARGET_NAME)</string>
-					<key>WRAPPER_EXTENSION</key>
-					<string>app</string>
-					<key>baseConfigurationReference</key>
-					<string>E4EB6923138AFD0F00A09F29</string>
-				</dict>
-				<key>isa</key>
-				<string>XCBuildConfiguration</string>
-				<key>name</key>
-				<string>Release</string>
-			</dict>
-			<key>E4B69E1C0A3A1BDC003C02F2</key>
-			<dict>
-				<key>children</key>
-				<array>
-					<string>E4B69E1D0A3A1BDC003C02F2</string>
-					<string>E4B69E1E0A3A1BDC003C02F2</string>
-					<string>E4B69E1F0A3A1BDC003C02F2</string>
-					<string>961049863D8C691271E7D396</string>
-					<string>E7318ACE4246DAAB94ABC6E1</string>
-					<string>C8430E4BD04F96280E680470</string>
-					<string>F5AAC52851768570FE602C6B</string>
-					<string>2DDD15DAEC85EBCBCC1200F8</string>
-					<string>5A830A79EDE6A5D227F0907B</string>
-				</array>
-				<key>isa</key>
-				<string>PBXGroup</string>
-				<key>path</key>
-				<string>src</string>
-				<key>sourceTree</key>
-				<string>SOURCE_ROOT</string>
-			</dict>
-			<key>E4B69E1D0A3A1BDC003C02F2</key>
-			<dict>
-				<key>fileEncoding</key>
-				<string>30</string>
-				<key>isa</key>
-				<string>PBXFileReference</string>
-				<key>lastKnownFileType</key>
-				<string>sourcecode.cpp.cpp</string>
-				<key>name</key>
-				<string>main.cpp</string>
-				<key>path</key>
-				<string>src/main.cpp</string>
-				<key>sourceTree</key>
-				<string>SOURCE_ROOT</string>
-			</dict>
-			<key>E4B69E1E0A3A1BDC003C02F2</key>
-			<dict>
-				<key>explicitFileType</key>
-				<string>sourcecode.cpp.cpp</string>
-				<key>fileEncoding</key>
-				<string>30</string>
-				<key>isa</key>
-				<string>PBXFileReference</string>
-				<key>name</key>
-				<string>ofApp.cpp</string>
-				<key>path</key>
-				<string>src/ofApp.cpp</string>
-				<key>sourceTree</key>
-				<string>SOURCE_ROOT</string>
-			</dict>
-			<key>E4B69E1F0A3A1BDC003C02F2</key>
-			<dict>
-				<key>fileEncoding</key>
-				<string>30</string>
-				<key>isa</key>
-				<string>PBXFileReference</string>
-				<key>lastKnownFileType</key>
-				<string>sourcecode.c.h</string>
-				<key>name</key>
-				<string>ofApp.h</string>
-				<key>path</key>
-				<string>src/ofApp.h</string>
-				<key>sourceTree</key>
-				<string>SOURCE_ROOT</string>
-			</dict>
-			<key>E4B69E200A3A1BDC003C02F2</key>
-			<dict>
-				<key>fileRef</key>
-				<string>E4B69E1D0A3A1BDC003C02F2</string>
-				<key>isa</key>
-				<string>PBXBuildFile</string>
-			</dict>
-			<key>E4B69E210A3A1BDC003C02F2</key>
-			<dict>
-				<key>fileRef</key>
-				<string>E4B69E1E0A3A1BDC003C02F2</string>
-				<key>isa</key>
-				<string>PBXBuildFile</string>
-			</dict>
-			<key>E4B6FCAD0C3E899E008CF71C</key>
-			<dict>
-				<key>fileEncoding</key>
-				<string>30</string>
-				<key>isa</key>
-				<string>PBXFileReference</string>
-				<key>lastKnownFileType</key>
-				<string>text.plist.xml</string>
-				<key>path</key>
-				<string>openFrameworks-Info.plist</string>
-				<key>sourceTree</key>
-				<string>&lt;group&gt;</string>
-			</dict>
-			<key>E4B6FFFD0C3F9AB9008CF71C</key>
-			<dict>
-				<key>buildActionMask</key>
-				<string>2147483647</string>
-				<key>files</key>
-				<array />
-				<key>inputPaths</key>
-				<array />
-				<key>isa</key>
-				<string>PBXShellScriptBuildPhase</string>
-				<key>outputPaths</key>
-				<array />
-				<key>runOnlyForDeploymentPostprocessing</key>
-				<string>0</string>
-				<key>shellPath</key>
-				<string>/bin/sh</string>
-				<key>shellScript</key>
-				<string>mkdir -p "$TARGET_BUILD_DIR/$PRODUCT_NAME.app/Contents/Resources/"
-# Copy default icon file into App/Resources
-rsync -aved "$ICON_FILE" "$TARGET_BUILD_DIR/$PRODUCT_NAME.app/Contents/Resources/"
-# Copy libfmod and change install directory for fmod to run
-rsync -aved ../../../GoogleDrive/FRES/Research/2017/OpenFX/libs/fmodex/lib/osx/libfmodex.dylib "$TARGET_BUILD_DIR/$PRODUCT_NAME.app/Contents/Frameworks/";
-install_name_tool -change @executable_path/libfmodex.dylib @executable_path/../Frameworks/libfmodex.dylib "$TARGET_BUILD_DIR/$PRODUCT_NAME.app/Contents/MacOS/$PRODUCT_NAME";
-# Copy GLUT framework (must remove for AppStore submissions)
-rsync -aved ../../../GoogleDrive/FRES/Research/2017/OpenFX/libs/glut/lib/osx/GLUT.framework "$TARGET_BUILD_DIR/$PRODUCT_NAME.app/Contents/Frameworks/"
-</string>
-			</dict>
-			<key>E4C2427710CC5ABF004149E2</key>
-			<dict>
-				<key>buildActionMask</key>
-				<string>2147483647</string>
-				<key>dstPath</key>
-				<string />
-				<key>dstSubfolderSpec</key>
-				<string>10</string>
-				<key>files</key>
-				<array />
-				<key>isa</key>
-				<string>PBXCopyFilesBuildPhase</string>
-				<key>runOnlyForDeploymentPostprocessing</key>
-				<string>0</string>
-			</dict>
-			<key>E4EB691F138AFCF100A09F29</key>
-			<dict>
-				<key>fileEncoding</key>
-				<string>4</string>
-				<key>isa</key>
-				<string>PBXFileReference</string>
-				<key>lastKnownFileType</key>
-				<string>text.xcconfig</string>
-				<key>name</key>
-				<string>CoreOF.xcconfig</string>
-				<key>path</key>
-				<string>../../../GoogleDrive/FRES/Research/2017/OpenFX/libs/openFrameworksCompiled/project/osx/CoreOF.xcconfig</string>
-				<key>sourceTree</key>
-				<string>SOURCE_ROOT</string>
-			</dict>
-			<key>E4EB6923138AFD0F00A09F29</key>
-			<dict>
-				<key>fileEncoding</key>
-				<string>4</string>
-				<key>isa</key>
-				<string>PBXFileReference</string>
-				<key>lastKnownFileType</key>
-				<string>text.xcconfig</string>
-				<key>path</key>
-				<string>Project.xcconfig</string>
-				<key>sourceTree</key>
-				<string>&lt;group&gt;</string>
-			</dict>
-			<key>E4EEB9AB138B136A00A80321</key>
-			<dict>
-				<key>containerPortal</key>
-				<string>E4328143138ABC890047C5CB</string>
-				<key>isa</key>
-				<string>PBXContainerItemProxy</string>
-				<key>proxyType</key>
-				<string>1</string>
-				<key>remoteGlobalIDString</key>
-				<string>E4B27C1410CBEB8E00536013</string>
-				<key>remoteInfo</key>
-				<string>openFrameworks</string>
-			</dict>
-			<key>E4EEB9AC138B136A00A80321</key>
-			<dict>
-				<key>isa</key>
-				<string>PBXTargetDependency</string>
-				<key>name</key>
-				<string>openFrameworks</string>
-				<key>targetProxy</key>
-				<string>E4EEB9AB138B136A00A80321</string>
-			</dict>
-			<key>E4EEC9E9138DF44700A80321</key>
-			<dict>
-				<key>children</key>
-				<array>
-					<string>E4EB691F138AFCF100A09F29</string>
-					<string>E4328143138ABC890047C5CB</string>
-				</array>
-				<key>isa</key>
-				<string>PBXGroup</string>
-				<key>name</key>
-				<string>openFrameworks</string>
-				<key>sourceTree</key>
-				<string>&lt;group&gt;</string>
-			</dict>
-		</dict>
-		<key>rootObject</key>
-		<string>E4B69B4C0A3A1720003C02F2</string>
-	</dict>
-</plist>
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0CD0970741020992FD2DED2B /* ofxAssimpAnimation.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 53077D011BC60577240958A6 /* ofxAssimpAnimation.cpp */; };
+		0F218CE4EC4CB5AED433F9DB /* ofxGuiGroup.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 93CDAE645861D07E0BFB45F3 /* ofxGuiGroup.cpp */; };
+		2F318DA353FC38E57246C360 /* ofxLabel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 347B93B3BFC7A17DF749EA61 /* ofxLabel.cpp */; };
+		53335A5B3FE5C13752145B02 /* ofxPanel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F669A50A08FF641984AFD083 /* ofxPanel.cpp */; };
+		7455350C809AAAADD1A8E9BF /* Layer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 961049863D8C691271E7D396 /* Layer.cpp */; };
+		754556E22847DEC6872624A6 /* ofxAssimpModelLoader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9EA797B88B06B50DB7AD91CC /* ofxAssimpModelLoader.cpp */; };
+		7D05FFAA137252CC03BC1866 /* ofxToggle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F3BA6681C0E362FF2DC627E7 /* ofxToggle.cpp */; };
+		9BF84441D5F78A9AF0ED083D /* ofxAssimpTexture.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5B49E8CD22BA5E21A057730F /* ofxAssimpTexture.cpp */; };
+		B335ACAD92025F11CBFDC96A /* ofxSliderGroup.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4AEC036B2C73D226728A0090 /* ofxSliderGroup.cpp */; };
+		BFDCCB3DB473D4288969CE45 /* ofxBaseGui.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F625F7E1C85F598FCB5ECB3F /* ofxBaseGui.cpp */; };
+		C173EFE44C762BD73E8FBAE9 /* Triangles.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2DDD15DAEC85EBCBCC1200F8 /* Triangles.cpp */; };
+		DF84C80D39F65D41A08CAF7D /* ofxButton.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7AE83C8928CE89A43730B0ED /* ofxButton.cpp */; };
+		E4328149138ABC9F0047C5CB /* openFrameworksDebug.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E4328148138ABC890047C5CB /* openFrameworksDebug.a */; };
+		E4B69E200A3A1BDC003C02F2 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4B69E1D0A3A1BDC003C02F2 /* main.cpp */; };
+		E4B69E210A3A1BDC003C02F2 /* ofApp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4B69E1E0A3A1BDC003C02F2 /* ofApp.cpp */; };
+		EB69E519E3029C37249FF616 /* ofxSlider.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9B0B67FBAED23D4959D6EDC9 /* ofxSlider.cpp */; };
+		F3045C4223AE7343048A0E41 /* ofxAssimpMeshHelper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF160DE0E1D3503F233453FC /* ofxAssimpMeshHelper.cpp */; };
+		FA235767FD63BFDBEF5292F9 /* Model.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C8430E4BD04F96280E680470 /* Model.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E4328147138ABC890047C5CB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E4328143138ABC890047C5CB /* openFrameworksLib.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = E4B27C1510CBEB8E00536013;
+			remoteInfo = openFrameworks;
+		};
+		E4EEB9AB138B136A00A80321 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E4328143138ABC890047C5CB /* openFrameworksLib.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = E4B27C1410CBEB8E00536013;
+			remoteInfo = openFrameworks;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		E4C2427710CC5ABF004149E2 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		02C0DA12C4595415020F32B9 /* vector2.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = vector2.h; path = ../../GoogleDrive/FRES/Research/2017/OpenFX/addons/ofxAssimpModelLoader/libs/assimp/include/assimp/vector2.h; sourceTree = SOURCE_ROOT; };
+		0AAF40379B57AFC73FF35300 /* ofxAssimpModelLoader.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ofxAssimpModelLoader.h; path = ../../GoogleDrive/FRES/Research/2017/OpenFX/addons/ofxAssimpModelLoader/src/ofxAssimpModelLoader.h; sourceTree = SOURCE_ROOT; };
+		0CDAF5D023F2E6EAD4F98FAF /* ofxAssimpMeshHelper.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ofxAssimpMeshHelper.h; path = ../../GoogleDrive/FRES/Research/2017/OpenFX/addons/ofxAssimpModelLoader/src/ofxAssimpMeshHelper.h; sourceTree = SOURCE_ROOT; };
+		0CEED46F63C4D7D27C7A3D01 /* config.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = config.h; path = ../../GoogleDrive/FRES/Research/2017/OpenFX/addons/ofxAssimpModelLoader/libs/assimp/include/assimp/config.h; sourceTree = SOURCE_ROOT; };
+		129E9C90DABE10FC9B6F6472 /* cfileio.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = cfileio.h; path = ../../GoogleDrive/FRES/Research/2017/OpenFX/addons/ofxAssimpModelLoader/libs/assimp/include/assimp/cfileio.h; sourceTree = SOURCE_ROOT; };
+		1420E3D8F8CA48E8185DEED7 /* ofxToggle.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ofxToggle.h; path = ../../GoogleDrive/FRES/Research/2017/OpenFX/addons/ofxGui/src/ofxToggle.h; sourceTree = SOURCE_ROOT; };
+		14A5A8A5E527D077ECBA0F62 /* ofxAssimpTexture.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ofxAssimpTexture.h; path = ../../GoogleDrive/FRES/Research/2017/OpenFX/addons/ofxAssimpModelLoader/src/ofxAssimpTexture.h; sourceTree = SOURCE_ROOT; };
+		1AE2D91D1C16E4F195DB6688 /* ofxAssimpUtils.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ofxAssimpUtils.h; path = ../../GoogleDrive/FRES/Research/2017/OpenFX/addons/ofxAssimpModelLoader/src/ofxAssimpUtils.h; sourceTree = SOURCE_ROOT; };
+		2194EFAFB7A25B744F520547 /* defs.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = defs.h; path = ../../GoogleDrive/FRES/Research/2017/OpenFX/addons/ofxAssimpModelLoader/libs/assimp/include/assimp/defs.h; sourceTree = SOURCE_ROOT; };
+		2C7268374E098FC46648E25F /* anim.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = anim.h; path = ../../GoogleDrive/FRES/Research/2017/OpenFX/addons/ofxAssimpModelLoader/libs/assimp/include/assimp/anim.h; sourceTree = SOURCE_ROOT; };
+		2DDD15DAEC85EBCBCC1200F8 /* Triangles.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = Triangles.cpp; path = src/Triangles.cpp; sourceTree = SOURCE_ROOT; };
+		347B93B3BFC7A17DF749EA61 /* ofxLabel.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = ofxLabel.cpp; path = ../../GoogleDrive/FRES/Research/2017/OpenFX/addons/ofxGui/src/ofxLabel.cpp; sourceTree = SOURCE_ROOT; };
+		3C4B88C36239551FED1847FB /* texture.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = texture.h; path = ../../GoogleDrive/FRES/Research/2017/OpenFX/addons/ofxAssimpModelLoader/libs/assimp/include/assimp/texture.h; sourceTree = SOURCE_ROOT; };
+		45CBDB0196554A3B7A63F9DD /* ofxBaseGui.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ofxBaseGui.h; path = ../../GoogleDrive/FRES/Research/2017/OpenFX/addons/ofxGui/src/ofxBaseGui.h; sourceTree = SOURCE_ROOT; };
+		4771E875923840BE248E7ACB /* color4.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = color4.h; path = ../../GoogleDrive/FRES/Research/2017/OpenFX/addons/ofxAssimpModelLoader/libs/assimp/include/assimp/color4.h; sourceTree = SOURCE_ROOT; };
+		47EF40FECF6373E6D0B6C24D /* LogStream.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = LogStream.hpp; path = ../../GoogleDrive/FRES/Research/2017/OpenFX/addons/ofxAssimpModelLoader/libs/assimp/include/assimp/LogStream.hpp; sourceTree = SOURCE_ROOT; };
+		4AEC036B2C73D226728A0090 /* ofxSliderGroup.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = ofxSliderGroup.cpp; path = ../../GoogleDrive/FRES/Research/2017/OpenFX/addons/ofxGui/src/ofxSliderGroup.cpp; sourceTree = SOURCE_ROOT; };
+		4D39CB0B04F31A54071A5A05 /* scene.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = scene.h; path = ../../GoogleDrive/FRES/Research/2017/OpenFX/addons/ofxAssimpModelLoader/libs/assimp/include/assimp/scene.h; sourceTree = SOURCE_ROOT; };
+		53077D011BC60577240958A6 /* ofxAssimpAnimation.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = ofxAssimpAnimation.cpp; path = ../../GoogleDrive/FRES/Research/2017/OpenFX/addons/ofxAssimpModelLoader/src/ofxAssimpAnimation.cpp; sourceTree = SOURCE_ROOT; };
+		5A830A79EDE6A5D227F0907B /* Triangles.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = Triangles.hpp; path = src/Triangles.hpp; sourceTree = SOURCE_ROOT; };
+		5B49E8CD22BA5E21A057730F /* ofxAssimpTexture.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = ofxAssimpTexture.cpp; path = ../../GoogleDrive/FRES/Research/2017/OpenFX/addons/ofxAssimpModelLoader/src/ofxAssimpTexture.cpp; sourceTree = SOURCE_ROOT; };
+		5CD8846C3F56DFC7C0A9A262 /* NullLogger.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = NullLogger.hpp; path = ../../GoogleDrive/FRES/Research/2017/OpenFX/addons/ofxAssimpModelLoader/libs/assimp/include/assimp/NullLogger.hpp; sourceTree = SOURCE_ROOT; };
+		6FB7EC2E4DF6590937262801 /* ofxAssimpAnimation.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ofxAssimpAnimation.h; path = ../../GoogleDrive/FRES/Research/2017/OpenFX/addons/ofxAssimpModelLoader/src/ofxAssimpAnimation.h; sourceTree = SOURCE_ROOT; };
+		72015A9F462581CFF1D108EB /* Exporter.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = Exporter.hpp; path = ../../GoogleDrive/FRES/Research/2017/OpenFX/addons/ofxAssimpModelLoader/libs/assimp/include/assimp/Exporter.hpp; sourceTree = SOURCE_ROOT; };
+		731B727C64C229584A7CCB51 /* ofxPanel.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ofxPanel.h; path = ../../GoogleDrive/FRES/Research/2017/OpenFX/addons/ofxGui/src/ofxPanel.h; sourceTree = SOURCE_ROOT; };
+		7400C8233826C91B6D52926B /* ProgressHandler.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ProgressHandler.hpp; path = ../../GoogleDrive/FRES/Research/2017/OpenFX/addons/ofxAssimpModelLoader/libs/assimp/include/assimp/ProgressHandler.hpp; sourceTree = SOURCE_ROOT; };
+		78C2F089025617FB25CB92DC /* types.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = types.h; path = ../../GoogleDrive/FRES/Research/2017/OpenFX/addons/ofxAssimpModelLoader/libs/assimp/include/assimp/types.h; sourceTree = SOURCE_ROOT; };
+		7AE83C8928CE89A43730B0ED /* ofxButton.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = ofxButton.cpp; path = ../../GoogleDrive/FRES/Research/2017/OpenFX/addons/ofxGui/src/ofxButton.cpp; sourceTree = SOURCE_ROOT; };
+		7B4E08C7D2160E65CBCC0BD0 /* matrix4x4.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = matrix4x4.h; path = ../../GoogleDrive/FRES/Research/2017/OpenFX/addons/ofxAssimpModelLoader/libs/assimp/include/assimp/matrix4x4.h; sourceTree = SOURCE_ROOT; };
+		7C8B2388FD82F3E5F0EAA588 /* ofxGui.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ofxGui.h; path = ../../GoogleDrive/FRES/Research/2017/OpenFX/addons/ofxGui/src/ofxGui.h; sourceTree = SOURCE_ROOT; };
+		80E24576B46B55080EA6A889 /* ofxSlider.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ofxSlider.h; path = ../../GoogleDrive/FRES/Research/2017/OpenFX/addons/ofxGui/src/ofxSlider.h; sourceTree = SOURCE_ROOT; };
+		827A411CE64B2A3AE1FAEF66 /* mesh.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = mesh.h; path = ../../GoogleDrive/FRES/Research/2017/OpenFX/addons/ofxAssimpModelLoader/libs/assimp/include/assimp/mesh.h; sourceTree = SOURCE_ROOT; };
+		8496EEA9B2CF3CBD541CF31F /* version.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = version.h; path = ../../GoogleDrive/FRES/Research/2017/OpenFX/addons/ofxAssimpModelLoader/libs/assimp/include/assimp/version.h; sourceTree = SOURCE_ROOT; };
+		85BB4996C1AC4B3F9D58B1EE /* quaternion.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = quaternion.h; path = ../../GoogleDrive/FRES/Research/2017/OpenFX/addons/ofxAssimpModelLoader/libs/assimp/include/assimp/quaternion.h; sourceTree = SOURCE_ROOT; };
+		9091B4CF1A99209E90DFCF28 /* camera.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = camera.h; path = ../../GoogleDrive/FRES/Research/2017/OpenFX/addons/ofxAssimpModelLoader/libs/assimp/include/assimp/camera.h; sourceTree = SOURCE_ROOT; };
+		932CC5E33624F3A1C34DCEBA /* cimport.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = cimport.h; path = ../../GoogleDrive/FRES/Research/2017/OpenFX/addons/ofxAssimpModelLoader/libs/assimp/include/assimp/cimport.h; sourceTree = SOURCE_ROOT; };
+		93CDAE645861D07E0BFB45F3 /* ofxGuiGroup.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = ofxGuiGroup.cpp; path = ../../GoogleDrive/FRES/Research/2017/OpenFX/addons/ofxGui/src/ofxGuiGroup.cpp; sourceTree = SOURCE_ROOT; };
+		961049863D8C691271E7D396 /* Layer.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = Layer.cpp; path = src/Layer.cpp; sourceTree = SOURCE_ROOT; };
+		98CFB6CD7210C5D93A6912CC /* DefaultLogger.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = DefaultLogger.hpp; path = ../../GoogleDrive/FRES/Research/2017/OpenFX/addons/ofxAssimpModelLoader/libs/assimp/include/assimp/DefaultLogger.hpp; sourceTree = SOURCE_ROOT; };
+		9B0B67FBAED23D4959D6EDC9 /* ofxSlider.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = ofxSlider.cpp; path = ../../GoogleDrive/FRES/Research/2017/OpenFX/addons/ofxGui/src/ofxSlider.cpp; sourceTree = SOURCE_ROOT; };
+		9EA797B88B06B50DB7AD91CC /* ofxAssimpModelLoader.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = ofxAssimpModelLoader.cpp; path = ../../GoogleDrive/FRES/Research/2017/OpenFX/addons/ofxAssimpModelLoader/src/ofxAssimpModelLoader.cpp; sourceTree = SOURCE_ROOT; };
+		A952A7B4ED0FCCD13B1FE200 /* IOStream.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = IOStream.hpp; path = ../../GoogleDrive/FRES/Research/2017/OpenFX/addons/ofxAssimpModelLoader/libs/assimp/include/assimp/IOStream.hpp; sourceTree = SOURCE_ROOT; };
+		B01B8FB5C0C548ACD6386A67 /* ai_assert.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ai_assert.h; path = ../../GoogleDrive/FRES/Research/2017/OpenFX/addons/ofxAssimpModelLoader/libs/assimp/include/assimp/ai_assert.h; sourceTree = SOURCE_ROOT; };
+		B4ED5E7F2EFBB54FF37FE2F2 /* pstdint.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = pstdint.h; path = ../../GoogleDrive/FRES/Research/2017/OpenFX/addons/ofxAssimpModelLoader/libs/assimp/include/assimp/Compiler/pstdint.h; sourceTree = SOURCE_ROOT; };
+		B56B6D37DD7EE8F7EAAE259C /* matrix3x3.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = matrix3x3.h; path = ../../GoogleDrive/FRES/Research/2017/OpenFX/addons/ofxAssimpModelLoader/libs/assimp/include/assimp/matrix3x3.h; sourceTree = SOURCE_ROOT; };
+		B9219093E8EFF18A93A765F1 /* cexport.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = cexport.h; path = ../../GoogleDrive/FRES/Research/2017/OpenFX/addons/ofxAssimpModelLoader/libs/assimp/include/assimp/cexport.h; sourceTree = SOURCE_ROOT; };
+		BAB5C8F4BA62AF7B384FC1A1 /* ofxSliderGroup.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ofxSliderGroup.h; path = ../../GoogleDrive/FRES/Research/2017/OpenFX/addons/ofxGui/src/ofxSliderGroup.h; sourceTree = SOURCE_ROOT; };
+		BF160DE0E1D3503F233453FC /* ofxAssimpMeshHelper.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = ofxAssimpMeshHelper.cpp; path = ../../GoogleDrive/FRES/Research/2017/OpenFX/addons/ofxAssimpModelLoader/src/ofxAssimpMeshHelper.cpp; sourceTree = SOURCE_ROOT; };
+		C49AF8837182081DBE923D34 /* ofxLabel.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ofxLabel.h; path = ../../GoogleDrive/FRES/Research/2017/OpenFX/addons/ofxGui/src/ofxLabel.h; sourceTree = SOURCE_ROOT; };
+		C8430E4BD04F96280E680470 /* Model.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = Model.cpp; path = src/Model.cpp; sourceTree = SOURCE_ROOT; };
+		CFFB60B7FF9BA2C0B0D8E6D3 /* Importer.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = Importer.hpp; path = ../../GoogleDrive/FRES/Research/2017/OpenFX/addons/ofxAssimpModelLoader/libs/assimp/include/assimp/Importer.hpp; sourceTree = SOURCE_ROOT; };
+		D4669185C775BA09EFB47079 /* vector3.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = vector3.h; path = ../../GoogleDrive/FRES/Research/2017/OpenFX/addons/ofxAssimpModelLoader/libs/assimp/include/assimp/vector3.h; sourceTree = SOURCE_ROOT; };
+		D5869134798923A3D1EE78A5 /* Logger.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = Logger.hpp; path = ../../GoogleDrive/FRES/Research/2017/OpenFX/addons/ofxAssimpModelLoader/libs/assimp/include/assimp/Logger.hpp; sourceTree = SOURCE_ROOT; };
+		D91C15E8E190C77F9482AD89 /* ofxGuiGroup.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ofxGuiGroup.h; path = ../../GoogleDrive/FRES/Research/2017/OpenFX/addons/ofxGui/src/ofxGuiGroup.h; sourceTree = SOURCE_ROOT; };
+		DE347AC2FF70485C59530070 /* poppack1.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = poppack1.h; path = ../../GoogleDrive/FRES/Research/2017/OpenFX/addons/ofxAssimpModelLoader/libs/assimp/include/assimp/Compiler/poppack1.h; sourceTree = SOURCE_ROOT; };
+		E368C734BD9D8B3788908324 /* pushpack1.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = pushpack1.h; path = ../../GoogleDrive/FRES/Research/2017/OpenFX/addons/ofxAssimpModelLoader/libs/assimp/include/assimp/Compiler/pushpack1.h; sourceTree = SOURCE_ROOT; };
+		E4328143138ABC890047C5CB /* openFrameworksLib.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = openFrameworksLib.xcodeproj; path = ../../GoogleDrive/FRES/Research/2017/OpenFX/libs/openFrameworksCompiled/project/osx/openFrameworksLib.xcodeproj; sourceTree = SOURCE_ROOT; };
+		E4B69B5B0A3A1756003C02F2 /* fluffy-octo-potatoDebug.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "fluffy-octo-potatoDebug.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E4B69E1D0A3A1BDC003C02F2 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = main.cpp; path = src/main.cpp; sourceTree = SOURCE_ROOT; };
+		E4B69E1E0A3A1BDC003C02F2 /* ofApp.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = ofApp.cpp; path = src/ofApp.cpp; sourceTree = SOURCE_ROOT; };
+		E4B69E1F0A3A1BDC003C02F2 /* ofApp.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = ofApp.h; path = src/ofApp.h; sourceTree = SOURCE_ROOT; };
+		E4B6FCAD0C3E899E008CF71C /* openFrameworks-Info.plist */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.plist.xml; path = "openFrameworks-Info.plist"; sourceTree = "<group>"; };
+		E4EB691F138AFCF100A09F29 /* CoreOF.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = CoreOF.xcconfig; path = ../../GoogleDrive/FRES/Research/2017/OpenFX/libs/openFrameworksCompiled/project/osx/CoreOF.xcconfig; sourceTree = SOURCE_ROOT; };
+		E4EB6923138AFD0F00A09F29 /* Project.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Project.xcconfig; sourceTree = "<group>"; };
+		E7318ACE4246DAAB94ABC6E1 /* Layer.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = Layer.hpp; path = src/Layer.hpp; sourceTree = SOURCE_ROOT; };
+		E8BDEEE4619F24B029672017 /* ofxButton.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ofxButton.h; path = ../../GoogleDrive/FRES/Research/2017/OpenFX/addons/ofxGui/src/ofxButton.h; sourceTree = SOURCE_ROOT; };
+		E8FB5B50CAD416894BC6D7BA /* light.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = light.h; path = ../../GoogleDrive/FRES/Research/2017/OpenFX/addons/ofxAssimpModelLoader/libs/assimp/include/assimp/light.h; sourceTree = SOURCE_ROOT; };
+		E931EB14E487AA01DF9E1AA7 /* postprocess.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = postprocess.h; path = ../../GoogleDrive/FRES/Research/2017/OpenFX/addons/ofxAssimpModelLoader/libs/assimp/include/assimp/postprocess.h; sourceTree = SOURCE_ROOT; };
+		E9933DAA8130CFDBEA2F5F4D /* metadata.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = metadata.h; path = ../../GoogleDrive/FRES/Research/2017/OpenFX/addons/ofxAssimpModelLoader/libs/assimp/include/assimp/metadata.h; sourceTree = SOURCE_ROOT; };
+		EB57EB5E8B4BBC8E46A2AA68 /* importerdesc.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = importerdesc.h; path = ../../GoogleDrive/FRES/Research/2017/OpenFX/addons/ofxAssimpModelLoader/libs/assimp/include/assimp/importerdesc.h; sourceTree = SOURCE_ROOT; };
+		F3BA6681C0E362FF2DC627E7 /* ofxToggle.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = ofxToggle.cpp; path = ../../GoogleDrive/FRES/Research/2017/OpenFX/addons/ofxGui/src/ofxToggle.cpp; sourceTree = SOURCE_ROOT; };
+		F5AAC52851768570FE602C6B /* Model.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = Model.hpp; path = src/Model.hpp; sourceTree = SOURCE_ROOT; };
+		F625F7E1C85F598FCB5ECB3F /* ofxBaseGui.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = ofxBaseGui.cpp; path = ../../GoogleDrive/FRES/Research/2017/OpenFX/addons/ofxGui/src/ofxBaseGui.cpp; sourceTree = SOURCE_ROOT; };
+		F62C632466E94E04909A495E /* material.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = material.h; path = ../../GoogleDrive/FRES/Research/2017/OpenFX/addons/ofxAssimpModelLoader/libs/assimp/include/assimp/material.h; sourceTree = SOURCE_ROOT; };
+		F669A50A08FF641984AFD083 /* ofxPanel.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = ofxPanel.cpp; path = ../../GoogleDrive/FRES/Research/2017/OpenFX/addons/ofxGui/src/ofxPanel.cpp; sourceTree = SOURCE_ROOT; };
+		FF732B09ACE64EE914A55DE4 /* IOSystem.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = IOSystem.hpp; path = ../../GoogleDrive/FRES/Research/2017/OpenFX/addons/ofxAssimpModelLoader/libs/assimp/include/assimp/IOSystem.hpp; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E4B69B590A3A1756003C02F2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E4328149138ABC9F0047C5CB /* openFrameworksDebug.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2C8F245ACBE61E28646C17F2 /* ofxAssimpModelLoader */ = {
+			isa = PBXGroup;
+			children = (
+				9D99F547CA5C0ECCB9EB9806 /* src */,
+				C721A9AF1157766AFE54645E /* libs */,
+			);
+			name = ofxAssimpModelLoader;
+			sourceTree = "<group>";
+		};
+		480A780D8D0308AE4A368801 /* ofxGui */ = {
+			isa = PBXGroup;
+			children = (
+				A763ED608B35AE3310251DEE /* src */,
+			);
+			name = ofxGui;
+			sourceTree = "<group>";
+		};
+		59905D957FDE48902CF1F729 /* assimp */ = {
+			isa = PBXGroup;
+			children = (
+				EEFDD7AE0009AE6F77EF2A93 /* include */,
+			);
+			name = assimp;
+			sourceTree = "<group>";
+		};
+		67AD613537D3ED7FD883659E /* assimp */ = {
+			isa = PBXGroup;
+			children = (
+				FF732B09ACE64EE914A55DE4 /* IOSystem.hpp */,
+				D5869134798923A3D1EE78A5 /* Logger.hpp */,
+				A952A7B4ED0FCCD13B1FE200 /* IOStream.hpp */,
+				2194EFAFB7A25B744F520547 /* defs.h */,
+				8496EEA9B2CF3CBD541CF31F /* version.h */,
+				7B4E08C7D2160E65CBCC0BD0 /* matrix4x4.h */,
+				CFFB60B7FF9BA2C0B0D8E6D3 /* Importer.hpp */,
+				129E9C90DABE10FC9B6F6472 /* cfileio.h */,
+				02C0DA12C4595415020F32B9 /* vector2.h */,
+				0CEED46F63C4D7D27C7A3D01 /* config.h */,
+				E8FB5B50CAD416894BC6D7BA /* light.h */,
+				78C2F089025617FB25CB92DC /* types.h */,
+				932CC5E33624F3A1C34DCEBA /* cimport.h */,
+				9091B4CF1A99209E90DFCF28 /* camera.h */,
+				B56B6D37DD7EE8F7EAAE259C /* matrix3x3.h */,
+				F62C632466E94E04909A495E /* material.h */,
+				B01B8FB5C0C548ACD6386A67 /* ai_assert.h */,
+				5CD8846C3F56DFC7C0A9A262 /* NullLogger.hpp */,
+				85BB4996C1AC4B3F9D58B1EE /* quaternion.h */,
+				98CFB6CD7210C5D93A6912CC /* DefaultLogger.hpp */,
+				E9933DAA8130CFDBEA2F5F4D /* metadata.h */,
+				827A411CE64B2A3AE1FAEF66 /* mesh.h */,
+				72015A9F462581CFF1D108EB /* Exporter.hpp */,
+				7400C8233826C91B6D52926B /* ProgressHandler.hpp */,
+				B9219093E8EFF18A93A765F1 /* cexport.h */,
+				4771E875923840BE248E7ACB /* color4.h */,
+				2C7268374E098FC46648E25F /* anim.h */,
+				E931EB14E487AA01DF9E1AA7 /* postprocess.h */,
+				3C4B88C36239551FED1847FB /* texture.h */,
+				EB57EB5E8B4BBC8E46A2AA68 /* importerdesc.h */,
+				B77F1220F7C30BFF6034CC97 /* Compiler */,
+				D4669185C775BA09EFB47079 /* vector3.h */,
+				4D39CB0B04F31A54071A5A05 /* scene.h */,
+				47EF40FECF6373E6D0B6C24D /* LogStream.hpp */,
+			);
+			name = assimp;
+			sourceTree = "<group>";
+		};
+		6948EE371B920CB800B5AC1A /* local_addons */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = local_addons;
+			sourceTree = "<group>";
+		};
+		9D99F547CA5C0ECCB9EB9806 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				BF160DE0E1D3503F233453FC /* ofxAssimpMeshHelper.cpp */,
+				6FB7EC2E4DF6590937262801 /* ofxAssimpAnimation.h */,
+				53077D011BC60577240958A6 /* ofxAssimpAnimation.cpp */,
+				5B49E8CD22BA5E21A057730F /* ofxAssimpTexture.cpp */,
+				14A5A8A5E527D077ECBA0F62 /* ofxAssimpTexture.h */,
+				9EA797B88B06B50DB7AD91CC /* ofxAssimpModelLoader.cpp */,
+				0CDAF5D023F2E6EAD4F98FAF /* ofxAssimpMeshHelper.h */,
+				1AE2D91D1C16E4F195DB6688 /* ofxAssimpUtils.h */,
+				0AAF40379B57AFC73FF35300 /* ofxAssimpModelLoader.h */,
+			);
+			name = src;
+			sourceTree = "<group>";
+		};
+		A763ED608B35AE3310251DEE /* src */ = {
+			isa = PBXGroup;
+			children = (
+				D91C15E8E190C77F9482AD89 /* ofxGuiGroup.h */,
+				F625F7E1C85F598FCB5ECB3F /* ofxBaseGui.cpp */,
+				4AEC036B2C73D226728A0090 /* ofxSliderGroup.cpp */,
+				F3BA6681C0E362FF2DC627E7 /* ofxToggle.cpp */,
+				7AE83C8928CE89A43730B0ED /* ofxButton.cpp */,
+				93CDAE645861D07E0BFB45F3 /* ofxGuiGroup.cpp */,
+				1420E3D8F8CA48E8185DEED7 /* ofxToggle.h */,
+				347B93B3BFC7A17DF749EA61 /* ofxLabel.cpp */,
+				80E24576B46B55080EA6A889 /* ofxSlider.h */,
+				7C8B2388FD82F3E5F0EAA588 /* ofxGui.h */,
+				45CBDB0196554A3B7A63F9DD /* ofxBaseGui.h */,
+				E8BDEEE4619F24B029672017 /* ofxButton.h */,
+				C49AF8837182081DBE923D34 /* ofxLabel.h */,
+				BAB5C8F4BA62AF7B384FC1A1 /* ofxSliderGroup.h */,
+				F669A50A08FF641984AFD083 /* ofxPanel.cpp */,
+				9B0B67FBAED23D4959D6EDC9 /* ofxSlider.cpp */,
+				731B727C64C229584A7CCB51 /* ofxPanel.h */,
+			);
+			name = src;
+			sourceTree = "<group>";
+		};
+		B77F1220F7C30BFF6034CC97 /* Compiler */ = {
+			isa = PBXGroup;
+			children = (
+				DE347AC2FF70485C59530070 /* poppack1.h */,
+				B4ED5E7F2EFBB54FF37FE2F2 /* pstdint.h */,
+				E368C734BD9D8B3788908324 /* pushpack1.h */,
+			);
+			name = Compiler;
+			sourceTree = "<group>";
+		};
+		BB4B014C10F69532006C3DED /* addons */ = {
+			isa = PBXGroup;
+			children = (
+				2C8F245ACBE61E28646C17F2 /* ofxAssimpModelLoader */,
+				480A780D8D0308AE4A368801 /* ofxGui */,
+			);
+			name = addons;
+			sourceTree = "<group>";
+		};
+		C721A9AF1157766AFE54645E /* libs */ = {
+			isa = PBXGroup;
+			children = (
+				59905D957FDE48902CF1F729 /* assimp */,
+			);
+			name = libs;
+			sourceTree = "<group>";
+		};
+		E4328144138ABC890047C5CB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E4328148138ABC890047C5CB /* openFrameworksDebug.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E4B69B4A0A3A1720003C02F2 = {
+			isa = PBXGroup;
+			children = (
+				E4B6FCAD0C3E899E008CF71C /* openFrameworks-Info.plist */,
+				E4EB6923138AFD0F00A09F29 /* Project.xcconfig */,
+				E4B69E1C0A3A1BDC003C02F2 /* src */,
+				E4EEC9E9138DF44700A80321 /* openFrameworks */,
+				BB4B014C10F69532006C3DED /* addons */,
+				6948EE371B920CB800B5AC1A /* local_addons */,
+				E4B69B5B0A3A1756003C02F2 /* fluffy-octo-potatoDebug.app */,
+			);
+			sourceTree = "<group>";
+		};
+		E4B69E1C0A3A1BDC003C02F2 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				E4B69E1D0A3A1BDC003C02F2 /* main.cpp */,
+				E4B69E1E0A3A1BDC003C02F2 /* ofApp.cpp */,
+				E4B69E1F0A3A1BDC003C02F2 /* ofApp.h */,
+				961049863D8C691271E7D396 /* Layer.cpp */,
+				E7318ACE4246DAAB94ABC6E1 /* Layer.hpp */,
+				2DDD15DAEC85EBCBCC1200F8 /* Triangles.cpp */,
+				F5AAC52851768570FE602C6B /* Model.hpp */,
+				5A830A79EDE6A5D227F0907B /* Triangles.hpp */,
+				C8430E4BD04F96280E680470 /* Model.cpp */,
+			);
+			path = src;
+			sourceTree = SOURCE_ROOT;
+		};
+		E4EEC9E9138DF44700A80321 /* openFrameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E4EB691F138AFCF100A09F29 /* CoreOF.xcconfig */,
+				E4328143138ABC890047C5CB /* openFrameworksLib.xcodeproj */,
+			);
+			name = openFrameworks;
+			sourceTree = "<group>";
+		};
+		EEFDD7AE0009AE6F77EF2A93 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				67AD613537D3ED7FD883659E /* assimp */,
+			);
+			name = include;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E4B69B5A0A3A1756003C02F2 /* fluffy-octo-potato */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E4B69B5F0A3A1757003C02F2 /* Build configuration list for PBXNativeTarget "fluffy-octo-potato" */;
+			buildPhases = (
+				E4B69B580A3A1756003C02F2 /* Sources */,
+				E4B69B590A3A1756003C02F2 /* Frameworks */,
+				E4B6FFFD0C3F9AB9008CF71C /* ShellScript */,
+				E4C2427710CC5ABF004149E2 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E4EEB9AC138B136A00A80321 /* PBXTargetDependency */,
+			);
+			name = "fluffy-octo-potato";
+			productName = myOFApp;
+			productReference = E4B69B5B0A3A1756003C02F2 /* fluffy-octo-potatoDebug.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E4B69B4C0A3A1720003C02F2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+			};
+			buildConfigurationList = E4B69B4D0A3A1720003C02F2 /* Build configuration list for PBXProject "fluffy-octo-potato" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = E4B69B4A0A3A1720003C02F2;
+			productRefGroup = E4B69B4A0A3A1720003C02F2;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = E4328144138ABC890047C5CB /* Products */;
+					ProjectRef = E4328143138ABC890047C5CB /* openFrameworksLib.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				E4B69B5A0A3A1756003C02F2 /* fluffy-octo-potato */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		E4328148138ABC890047C5CB /* openFrameworksDebug.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = openFrameworksDebug.a;
+			remoteRef = E4328147138ABC890047C5CB /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		E4B6FFFD0C3F9AB9008CF71C /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "mkdir -p \"$TARGET_BUILD_DIR/$PRODUCT_NAME.app/Contents/Resources/\"\n# Copy default icon file into App/Resources\nrsync -aved \"$ICON_FILE\" \"$TARGET_BUILD_DIR/$PRODUCT_NAME.app/Contents/Resources/\"\n# Copy libfmod and change install directory for fmod to run\nrsync -aved ../../GoogleDrive/FRES/Research/2017/OpenFX/libs/fmodex/lib/osx/libfmodex.dylib \"$TARGET_BUILD_DIR/$PRODUCT_NAME.app/Contents/Frameworks/\";\ninstall_name_tool -change @executable_path/libfmodex.dylib @executable_path/../Frameworks/libfmodex.dylib \"$TARGET_BUILD_DIR/$PRODUCT_NAME.app/Contents/MacOS/$PRODUCT_NAME\";\n# Copy GLUT framework (must remove for AppStore submissions)\nrsync -aved ../../GoogleDrive/FRES/Research/2017/OpenFX/libs/glut/lib/osx/GLUT.framework \"$TARGET_BUILD_DIR/$PRODUCT_NAME.app/Contents/Frameworks/\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E4B69B580A3A1756003C02F2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E4B69E200A3A1BDC003C02F2 /* main.cpp in Sources */,
+				E4B69E210A3A1BDC003C02F2 /* ofApp.cpp in Sources */,
+				7455350C809AAAADD1A8E9BF /* Layer.cpp in Sources */,
+				C173EFE44C762BD73E8FBAE9 /* Triangles.cpp in Sources */,
+				FA235767FD63BFDBEF5292F9 /* Model.cpp in Sources */,
+				F3045C4223AE7343048A0E41 /* ofxAssimpMeshHelper.cpp in Sources */,
+				0CD0970741020992FD2DED2B /* ofxAssimpAnimation.cpp in Sources */,
+				9BF84441D5F78A9AF0ED083D /* ofxAssimpTexture.cpp in Sources */,
+				754556E22847DEC6872624A6 /* ofxAssimpModelLoader.cpp in Sources */,
+				BFDCCB3DB473D4288969CE45 /* ofxBaseGui.cpp in Sources */,
+				B335ACAD92025F11CBFDC96A /* ofxSliderGroup.cpp in Sources */,
+				7D05FFAA137252CC03BC1866 /* ofxToggle.cpp in Sources */,
+				DF84C80D39F65D41A08CAF7D /* ofxButton.cpp in Sources */,
+				0F218CE4EC4CB5AED433F9DB /* ofxGuiGroup.cpp in Sources */,
+				2F318DA353FC38E57246C360 /* ofxLabel.cpp in Sources */,
+				53335A5B3FE5C13752145B02 /* ofxPanel.cpp in Sources */,
+				EB69E519E3029C37249FF616 /* ofxSlider.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E4EEB9AC138B136A00A80321 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = openFrameworks;
+			targetProxy = E4EEB9AB138B136A00A80321 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		E4B69B4E0A3A1720003C02F2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E4EB6923138AFD0F00A09F29 /* Project.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(SRCROOT)/bin/";
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				GCC_AUTO_VECTORIZATION = YES;
+				GCC_ENABLE_SSE3_EXTENSIONS = YES;
+				GCC_ENABLE_SUPPLEMENTAL_SSE3_INSTRUCTIONS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_DEPRECATED_FUNCTIONS = YES;
+				GCC_WARN_ABOUT_INVALID_OFFSETOF_MACRO = NO;
+				GCC_WARN_ALLOW_INCOMPLETE_PROTOCOL = NO;
+				GCC_WARN_UNINITIALIZED_AUTOS = NO;
+				GCC_WARN_UNUSED_VALUE = NO;
+				GCC_WARN_UNUSED_VARIABLE = NO;
+				HEADER_SEARCH_PATHS = (
+					"$(OF_CORE_HEADERS)",
+					src,
+					../../GoogleDrive/FRES/Research/2017/OpenFX/addons/ofxAssimpModelLoader/libs,
+					../../GoogleDrive/FRES/Research/2017/OpenFX/addons/ofxAssimpModelLoader/libs/assimp,
+					../../GoogleDrive/FRES/Research/2017/OpenFX/addons/ofxAssimpModelLoader/libs/assimp/include,
+					../../GoogleDrive/FRES/Research/2017/OpenFX/addons/ofxAssimpModelLoader/libs/assimp/include/assimp,
+					../../GoogleDrive/FRES/Research/2017/OpenFX/addons/ofxAssimpModelLoader/libs/assimp/include/assimp/Compiler,
+					../../GoogleDrive/FRES/Research/2017/OpenFX/addons/ofxAssimpModelLoader/libs/assimp/lib,
+					../../GoogleDrive/FRES/Research/2017/OpenFX/addons/ofxAssimpModelLoader/libs/assimp/lib/emscripten,
+					../../GoogleDrive/FRES/Research/2017/OpenFX/addons/ofxAssimpModelLoader/libs/assimp/lib/osx,
+					../../GoogleDrive/FRES/Research/2017/OpenFX/addons/ofxAssimpModelLoader/libs/assimp/license,
+					../../GoogleDrive/FRES/Research/2017/OpenFX/addons/ofxAssimpModelLoader/src,
+					../../GoogleDrive/FRES/Research/2017/OpenFX/addons/ofxGui/src,
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CPLUSPLUSFLAGS = (
+					"-D__MACOSX_CORE__",
+					"-mtune=native",
+				);
+				OTHER_LDFLAGS = (
+					"$(OF_CORE_FRAMEWORKS)",
+					"$(OF_CORE_LIBS)",
+					../../GoogleDrive/FRES/Research/2017/OpenFX/addons/ofxAssimpModelLoader/libs/assimp/lib/osx/assimp.a,
+				);
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		E4B69B4F0A3A1720003C02F2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E4EB6923138AFD0F00A09F29 /* Project.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(SRCROOT)/bin/";
+				COPY_PHASE_STRIP = YES;
+				DEAD_CODE_STRIPPING = YES;
+				GCC_AUTO_VECTORIZATION = YES;
+				GCC_ENABLE_SSE3_EXTENSIONS = YES;
+				GCC_ENABLE_SUPPLEMENTAL_SSE3_INSTRUCTIONS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_UNROLL_LOOPS = YES;
+				GCC_WARN_ABOUT_DEPRECATED_FUNCTIONS = YES;
+				GCC_WARN_ABOUT_INVALID_OFFSETOF_MACRO = NO;
+				GCC_WARN_ALLOW_INCOMPLETE_PROTOCOL = NO;
+				GCC_WARN_UNINITIALIZED_AUTOS = NO;
+				GCC_WARN_UNUSED_VALUE = NO;
+				GCC_WARN_UNUSED_VARIABLE = NO;
+				HEADER_SEARCH_PATHS = (
+					"$(OF_CORE_HEADERS)",
+					src,
+					../../GoogleDrive/FRES/Research/2017/OpenFX/addons/ofxAssimpModelLoader/libs,
+					../../GoogleDrive/FRES/Research/2017/OpenFX/addons/ofxAssimpModelLoader/libs/assimp,
+					../../GoogleDrive/FRES/Research/2017/OpenFX/addons/ofxAssimpModelLoader/libs/assimp/include,
+					../../GoogleDrive/FRES/Research/2017/OpenFX/addons/ofxAssimpModelLoader/libs/assimp/include/assimp,
+					../../GoogleDrive/FRES/Research/2017/OpenFX/addons/ofxAssimpModelLoader/libs/assimp/include/assimp/Compiler,
+					../../GoogleDrive/FRES/Research/2017/OpenFX/addons/ofxAssimpModelLoader/libs/assimp/lib,
+					../../GoogleDrive/FRES/Research/2017/OpenFX/addons/ofxAssimpModelLoader/libs/assimp/lib/emscripten,
+					../../GoogleDrive/FRES/Research/2017/OpenFX/addons/ofxAssimpModelLoader/libs/assimp/lib/osx,
+					../../GoogleDrive/FRES/Research/2017/OpenFX/addons/ofxAssimpModelLoader/libs/assimp/license,
+					../../GoogleDrive/FRES/Research/2017/OpenFX/addons/ofxAssimpModelLoader/src,
+					../../GoogleDrive/FRES/Research/2017/OpenFX/addons/ofxGui/src,
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				OTHER_CPLUSPLUSFLAGS = (
+					"-D__MACOSX_CORE__",
+					"-mtune=native",
+				);
+				OTHER_LDFLAGS = (
+					"$(OF_CORE_FRAMEWORKS)",
+					"$(OF_CORE_LIBS)",
+					../../GoogleDrive/FRES/Research/2017/OpenFX/addons/ofxAssimpModelLoader/libs/assimp/lib/osx/assimp.a,
+				);
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		E4B69B600A3A1757003C02F2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E4EB6923138AFD0F00A09F29 /* Project.xcconfig */;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
+				);
+				FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(SRCROOT)/../../GoogleDrive/FRES/Research/2017/OpenFX/libs/glut/lib/osx\"";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_MODEL_TUNING = NONE;
+				HEADER_SEARCH_PATHS = (
+					"$(OF_CORE_HEADERS)",
+					src,
+					../../GoogleDrive/FRES/Research/2017/OpenFX/addons/ofxAssimpModelLoader/libs,
+					../../GoogleDrive/FRES/Research/2017/OpenFX/addons/ofxAssimpModelLoader/libs/assimp,
+					../../GoogleDrive/FRES/Research/2017/OpenFX/addons/ofxAssimpModelLoader/libs/assimp/include,
+					../../GoogleDrive/FRES/Research/2017/OpenFX/addons/ofxAssimpModelLoader/libs/assimp/include/assimp,
+					../../GoogleDrive/FRES/Research/2017/OpenFX/addons/ofxAssimpModelLoader/libs/assimp/include/assimp/Compiler,
+					../../GoogleDrive/FRES/Research/2017/OpenFX/addons/ofxAssimpModelLoader/libs/assimp/lib,
+					../../GoogleDrive/FRES/Research/2017/OpenFX/addons/ofxAssimpModelLoader/libs/assimp/lib/emscripten,
+					../../GoogleDrive/FRES/Research/2017/OpenFX/addons/ofxAssimpModelLoader/libs/assimp/lib/osx,
+					../../GoogleDrive/FRES/Research/2017/OpenFX/addons/ofxAssimpModelLoader/libs/assimp/license,
+					../../GoogleDrive/FRES/Research/2017/OpenFX/addons/ofxAssimpModelLoader/src,
+					../../GoogleDrive/FRES/Research/2017/OpenFX/addons/ofxGui/src,
+				);
+				ICON = "$(ICON_NAME_DEBUG)";
+				ICON_FILE = "$(ICON_FILE_PATH)$(ICON)";
+				INFOPLIST_FILE = "openFrameworks-Info.plist";
+				INSTALL_PATH = /Applications;
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				OTHER_LDFLAGS = (
+					"$(OF_CORE_FRAMEWORKS)",
+					"$(OF_CORE_LIBS)",
+					../../GoogleDrive/FRES/Research/2017/OpenFX/addons/ofxAssimpModelLoader/libs/assimp/lib/osx/assimp.a,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)Debug";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		E4B69B610A3A1757003C02F2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E4EB6923138AFD0F00A09F29 /* Project.xcconfig */;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
+				);
+				FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(SRCROOT)/../../GoogleDrive/FRES/Research/2017/OpenFX/libs/glut/lib/osx\"";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_MODEL_TUNING = NONE;
+				HEADER_SEARCH_PATHS = (
+					"$(OF_CORE_HEADERS)",
+					src,
+					../../GoogleDrive/FRES/Research/2017/OpenFX/addons/ofxAssimpModelLoader/libs,
+					../../GoogleDrive/FRES/Research/2017/OpenFX/addons/ofxAssimpModelLoader/libs/assimp,
+					../../GoogleDrive/FRES/Research/2017/OpenFX/addons/ofxAssimpModelLoader/libs/assimp/include,
+					../../GoogleDrive/FRES/Research/2017/OpenFX/addons/ofxAssimpModelLoader/libs/assimp/include/assimp,
+					../../GoogleDrive/FRES/Research/2017/OpenFX/addons/ofxAssimpModelLoader/libs/assimp/include/assimp/Compiler,
+					../../GoogleDrive/FRES/Research/2017/OpenFX/addons/ofxAssimpModelLoader/libs/assimp/lib,
+					../../GoogleDrive/FRES/Research/2017/OpenFX/addons/ofxAssimpModelLoader/libs/assimp/lib/emscripten,
+					../../GoogleDrive/FRES/Research/2017/OpenFX/addons/ofxAssimpModelLoader/libs/assimp/lib/osx,
+					../../GoogleDrive/FRES/Research/2017/OpenFX/addons/ofxAssimpModelLoader/libs/assimp/license,
+					../../GoogleDrive/FRES/Research/2017/OpenFX/addons/ofxAssimpModelLoader/src,
+					../../GoogleDrive/FRES/Research/2017/OpenFX/addons/ofxGui/src,
+				);
+				ICON = "$(ICON_NAME_RELEASE)";
+				ICON_FILE = "$(ICON_FILE_PATH)$(ICON)";
+				INFOPLIST_FILE = "openFrameworks-Info.plist";
+				INSTALL_PATH = /Applications;
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				OTHER_LDFLAGS = (
+					"$(OF_CORE_FRAMEWORKS)",
+					"$(OF_CORE_LIBS)",
+					../../GoogleDrive/FRES/Research/2017/OpenFX/addons/ofxAssimpModelLoader/libs/assimp/lib/osx/assimp.a,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+				baseConfigurationReference = E4EB6923138AFD0F00A09F29;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E4B69B4D0A3A1720003C02F2 /* Build configuration list for PBXProject "fluffy-octo-potato" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E4B69B4E0A3A1720003C02F2 /* Debug */,
+				E4B69B4F0A3A1720003C02F2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E4B69B5F0A3A1757003C02F2 /* Build configuration list for PBXNativeTarget "fluffy-octo-potato" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E4B69B600A3A1757003C02F2 /* Debug */,
+				E4B69B610A3A1757003C02F2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E4B69B4C0A3A1720003C02F2 /* Project object */;
+}

@@ -6,7 +6,7 @@ endif
 
 # make sure the the OF_ROOT location is defined
 ifndef OF_ROOT
-    OF_ROOT=$(realpath ../../../GoogleDrive/FRES/Research/2017/OpenFX/GoogleDrive/FRES/Research/2017/OpenFX/GoogleDrive/FRES/Research/2017/OpenFX/GoogleDrive/FRES/Research/2017/OpenFX)
+    OF_ROOT=$(realpath ../../GoogleDrive/FRES/Research/2017/OpenFX/GoogleDrive/FRES/Research/2017/OpenFX/GoogleDrive/FRES/Research/2017/OpenFX/GoogleDrive/FRES/Research/2017/OpenFX/GoogleDrive/FRES/Research/2017/OpenFX)
 endif
 
 # call the project makefile!

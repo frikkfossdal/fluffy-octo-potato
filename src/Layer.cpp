@@ -30,26 +30,10 @@ std::vector<Triangles> Layer::findActive(std::vector<Triangles> _activeTriangles
         t++;
     }
     return _activeTriangles;
-    //Two things.
-    //1. Find active triangles
-    //2. Delete triangles finished processed triangles from activeTriangles
-    
 }
 
-//Rewrite this function. First, add all triangles to active that has zmin under layerHeight. Then remove all triangles that har a zmax under layerHeight
 void Layer::calculate(std::vector<Triangles> triangles){
-    //For every triangle
     for(auto t = triangles.begin(); t != triangles.end();){
-        //logic
-        //Remember: only do calculations on necassary triangles. I think it makes sence to do all the
-        //calculation this way. Start off with a full trianglelist, then remove from it as you are done
-        //with a triangle
-        
-        
-        //1. Check if the triangle intersects with the layerplane       --> zMin=<layerHeight
-        //2. If all of the triangle is under layerHeight -> delete It    --> zMax < layerHeight
-        //
-        //check if heighest point of triangle is under layer. If so, remove from active triangle list
         if(t->zMax > layerHeight && t->zMin < layerHeight)
         {
             //create temp buff of points that is used in intersection calculation
@@ -88,7 +72,6 @@ void Layer::calculate(std::vector<Triangles> triangles){
                 }
             }
             else{
-                //ignore for now
             }
         }
         t++;
@@ -96,19 +79,6 @@ void Layer::calculate(std::vector<Triangles> triangles){
 }
 void Layer::calculateInterPoints(ofVec3f target0, ofVec3f target1, ofVec3f orig)
 {
-    if(target0.z < 0)
-    {
-        
-    }
-    if(target1.z < 0)
-    {
-        
-    }
-    if(orig.z < 0){
-        
-    }
-    //There seems to be something fishy with how the values are treated in memory. For some reason,
-    // orig is calculated with crazy values. Check this.....
     ofVec3f vec0 = orig.operator-(target0);
     ofVec3f vec1 = orig.operator-(target1);
     
@@ -119,14 +89,10 @@ void Layer::calculateInterPoints(ofVec3f target0, ofVec3f target1, ofVec3f orig)
     float y0 = target0.y+vec0.y*t0;
     float y1 = target1.y+vec1.y*t1;
     
+    //some of interPoint0 are missing. Why? Are the vectors handled correctly?
     ofVec3f interPoint0 = ofVec3f(x0,y0,layerHeight);
     ofVec3f interPoint1 = ofVec3f(x1,y1, layerHeight);
 
     intersectionpoints.push_back(interPoint0);
     intersectionpoints.push_back(interPoint1);
-    
-    if(target0.squareDistance(interPoint0) > 50)
-    {
-        //std::cout << "trond e best" << endl; 
-    }
 }

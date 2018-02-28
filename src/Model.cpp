@@ -8,7 +8,7 @@
 #include "Model.hpp"
 
 Model::Model(){
-    threeDeeFile.loadModel("Rack.stl");
+    threeDeeFile.loadModel("Body1.stl");
     //
     fixPosition();
     setup();

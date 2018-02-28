@@ -6,9 +6,9 @@
 ################################################################################
 # OF ROOT
 #   The location of your root openFrameworks installation
-#       (default) OF_ROOT = ../../../GoogleDrive/FRES/Research/2017/OpenFX/GoogleDrive/FRES/Research/2017/OpenFX/GoogleDrive/FRES/Research/2017/OpenFX/GoogleDrive/FRES/Research/2017/OpenFX 
+#       (default) OF_ROOT = ../../GoogleDrive/FRES/Research/2017/OpenFX/GoogleDrive/FRES/Research/2017/OpenFX/GoogleDrive/FRES/Research/2017/OpenFX/GoogleDrive/FRES/Research/2017/OpenFX/GoogleDrive/FRES/Research/2017/OpenFX 
 ################################################################################
-# OF_ROOT = ../../../GoogleDrive/FRES/Research/2017/OpenFX/GoogleDrive/FRES/Research/2017/OpenFX/GoogleDrive/FRES/Research/2017/OpenFX/GoogleDrive/FRES/Research/2017/OpenFX
+# OF_ROOT = ../../GoogleDrive/FRES/Research/2017/OpenFX/GoogleDrive/FRES/Research/2017/OpenFX/GoogleDrive/FRES/Research/2017/OpenFX/GoogleDrive/FRES/Research/2017/OpenFX/GoogleDrive/FRES/Research/2017/OpenFX
 
 ################################################################################
 # PROJECT ROOT
