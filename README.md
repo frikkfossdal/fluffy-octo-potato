@@ -9,7 +9,7 @@ The algorithms behind the slicer is mostly motivated by the work presented in th
 
 TODO: Post the main slicer code and explain it
 
-# Todos
+# ToDo
 
 1. Create toolpaths from sliced meshes
 2. Implement simulation of the physical system.
