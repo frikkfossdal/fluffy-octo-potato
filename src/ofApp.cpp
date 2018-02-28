@@ -3,6 +3,8 @@
 //--------------------------------------------------------------
 void ofApp::setup(){
    //cam.enableOrtho();
+    slicerSettings.setup();
+    slicerSettings.setName("Slicer Control");
     cam.setDistance(100);
     objectToSlice.incSlice();
     index = 0;
@@ -16,6 +18,9 @@ void ofApp::update(){
 //--------------------------------------------------------------
 void ofApp::draw(){
     ofBackground(55);
+    
+    slicerSettings.draw();
+    
     cam.begin();
     objectToSlice.showModel();
     objectToSlice.showDisco(index);

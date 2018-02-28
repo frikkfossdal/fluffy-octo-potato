@@ -24,14 +24,25 @@ void Layer::show(){
 
 //Rewrite this function. First, add all triangles to active that has zmin under layerHeight. Then remove all triangles that har a zmax under layerHeight
 std::vector<Triangles> Layer::checkTriangles(std::vector<Triangles> triangles){
-    ofVec3f planeNormal = ofVec3f(0,0,layerHeight);
+    //For every triangle
+    int index = 0;
     for(auto t = triangles.begin(); t != triangles.end();){
+        //logic
+        //Remember: only do calculations on necassary triangles. I think it makes sence to do all the
+        //calculation this way. Start off with a full trianglelist, then remove from it as you are done
+        //with a triangle
+        
+        
+        //1. Check if the triangle intersects with the layerplane       --> zMin=<layerHeight
+        //2. If all of the triangle is under layerHeight -> delete It    --> zMax < layerHeight
+        //
         //check if heighest point of triangle is under layer. If so, remove from active triangle list
         if(t->zMax < layerHeight){
             t = triangles.erase(t);
         }
-        //Check if the lowest point in triangle is under layer. If not, dont use the value in the calculation under. 
-
+        else if(t->zMin > layerHeight){
+            //Dont do anything
+        }
         //else check
         else{
             //create temp buff of points that is used in intersection calculation
@@ -72,8 +83,11 @@ std::vector<Triangles> Layer::checkTriangles(std::vector<Triangles> triangles){
             else{
                 //ignore for now
             }
-            t++;
+            
         }
+        t++;
+        std::cout << index << endl;
+        index++;
     }
         
     return triangles;

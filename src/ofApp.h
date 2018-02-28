@@ -2,6 +2,7 @@
 
 #include "ofMain.h"
 #include "Model.hpp"
+#include "ofxGui.h"
 
 class ofApp : public ofBaseApp{
 
@@ -24,5 +25,7 @@ class ofApp : public ofBaseApp{
     
     Model objectToSlice;
     ofEasyCam cam;
-    int index; 
+    int index;
+    
+    ofxPanel slicerSettings;
 };
