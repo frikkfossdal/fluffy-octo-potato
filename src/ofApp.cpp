@@ -19,12 +19,10 @@ void ofApp::update(){
 //--------------------------------------------------------------
 void ofApp::draw(){
     ofBackground(55);
-    
     slicerSettings.draw();
-    
     cam.begin();
     objectToSlice.showModel();
-    
+    objectToSlice.showDisco();
     cam.end(); 
 }
 

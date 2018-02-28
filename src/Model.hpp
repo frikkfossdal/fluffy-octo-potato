@@ -32,7 +32,7 @@ public:
     void slice();
     void constructContour();
     void showModel();
-    void showDisco(); 
+    void showDisco();
     void incSlice();
     
 private:
@@ -41,6 +41,7 @@ private:
     void sortTriangles();
     void findPerim();
     void createLayers();
+    void fixPosition(); 
 };
 
 #endif /* Model_hpp */

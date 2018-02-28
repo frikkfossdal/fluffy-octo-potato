@@ -9,10 +9,12 @@
 
 Model::Model(){
     threeDeeFile.loadModel("Rack.stl");
+    //
+    fixPosition();
     setup();
 }
 void Model::setup(){
-    parameters.add(layerIndex.set("layer: ",0,0,100));
+    parameters.add(layerIndex.set("layer: ",0,0,190));
     
 }
 void Model::showModel(){
@@ -33,12 +35,13 @@ void Model::incSlice(){
     //3. Loop trough all layers and slice the triangles
     //First, decide where to control the active triangles. This is key if you fant your slicing to be fast.
     
-    std::vector<Triangles> activeTriangleList = triangleList;
+    std::vector<Triangles> activeTriangleList;
     for(auto it = layers.begin(); it !=layers.end(); it++){
         //two steps
         //1. add relevant triangles to active triangles. Delete if processing is finished
-        //2. calculate all triangle intersections 
-        activeTriangleList = it->checkTriangles(activeTriangleList); 
+        //2. calculate all triangle intersections
+        //activeTriangleList = it->checkTriangles(activeTriangleList);
+        it->calculate(triangleList);
     }
 }
 void Model::buildTriangles(){
@@ -100,5 +103,12 @@ void Model::createLayers(){
     {
         layers.push_back(Layer(layerHeight*i));
     }
+}
+void Model::fixPosition(){
+    //this needs to me modified to handle any "origin-point"
+    ofVec3f sceneMax = threeDeeFile.getSceneMax();
+    threeDeeFile.setScaleNormalization(false);
+    ofVec3f center = threeDeeFile.getSceneCenter();
+    threeDeeFile.setPosition(center.x, center.y, 0);
 }
 

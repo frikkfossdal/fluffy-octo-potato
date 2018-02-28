@@ -22,8 +22,22 @@ void Layer::show(){
     }
 }
 
+std::vector<Triangles> Layer::findActive(std::vector<Triangles> _activeTriangles, std::vector<Triangles> _triangleList){
+    for(auto t = _triangleList.begin(); t!=_triangleList.end();){
+        if(t->zMin < layerHeight){
+            _activeTriangles.push_back(*t);
+        }
+        t++;
+    }
+    return _activeTriangles;
+    //Two things.
+    //1. Find active triangles
+    //2. Delete triangles finished processed triangles from activeTriangles
+    
+}
+
 //Rewrite this function. First, add all triangles to active that has zmin under layerHeight. Then remove all triangles that har a zmax under layerHeight
-std::vector<Triangles> Layer::checkTriangles(std::vector<Triangles> triangles){
+void Layer::calculate(std::vector<Triangles> triangles){
     //For every triangle
     for(auto t = triangles.begin(); t != triangles.end();){
         //logic
@@ -37,10 +51,9 @@ std::vector<Triangles> Layer::checkTriangles(std::vector<Triangles> triangles){
         //
         //check if heighest point of triangle is under layer. If so, remove from active triangle list
         if(t->zMax < layerHeight){
-            t = triangles.erase(t);
         }
         else if(t->zMin > layerHeight){
-            //Dont do anything
+            
         }
         //else check
         else{
@@ -85,8 +98,6 @@ std::vector<Triangles> Layer::checkTriangles(std::vector<Triangles> triangles){
         }
         t++;
     }
-        
-    return triangles;
 }
 void Layer::calculateInterPoints(ofVec3f target0, ofVec3f target1, ofVec3f orig)
 {
@@ -101,8 +112,8 @@ void Layer::calculateInterPoints(ofVec3f target0, ofVec3f target1, ofVec3f orig)
     float y1 = target1.y+vec1.y*t1;
     
     ofVec3f interPoint0 = ofVec3f(x0,y0,layerHeight);
-    ofVec3f interPOint1 = ofVec3f(x1,y1, layerHeight);
+    ofVec3f interPoint1 = ofVec3f(x1,y1, layerHeight);
 
     intersectionpoints.push_back(interPoint0);
-    intersectionpoints.push_back(interPOint1);
+    intersectionpoints.push_back(interPoint1);
 }
