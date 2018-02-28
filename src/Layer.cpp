@@ -83,7 +83,6 @@ std::vector<Triangles> Layer::checkTriangles(std::vector<Triangles> triangles){
             else{
                 //ignore for now
             }
-            
         }
         t++;
         std::cout << index << endl;

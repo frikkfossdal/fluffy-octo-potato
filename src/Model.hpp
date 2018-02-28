@@ -21,12 +21,14 @@ public:
     std::vector<Layer> layers;
     float layerMax;
     float layerMin;
-    
-    
+    ofParameter<int> layerIndex;
+    ofParameterGroup parameters;
+
     //Constructors
     Model();
     
     //Methods
+    void setup(); 
     void slice();
     void constructContour();
     void showModel();

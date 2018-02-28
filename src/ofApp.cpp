@@ -3,11 +3,13 @@
 //--------------------------------------------------------------
 void ofApp::setup(){
    //cam.enableOrtho();
-    slicerSettings.setup();
-    slicerSettings.setName("Slicer Control");
     cam.setDistance(100);
     objectToSlice.incSlice();
     index = 0;
+    
+    slicerSettings.setup();
+    slicerSettings.setName("Slicer Control");
+    slicerSettings.add(objectToSlice.layerIndex);
 }
 
 //--------------------------------------------------------------

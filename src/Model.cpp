@@ -9,15 +9,20 @@
 
 Model::Model(){
     threeDeeFile.loadModel("Body1.stl");
+    setup();
+}
+void Model::setup(){
+    parameters.add(layerIndex.set("layer: ",0,0,300));
+    
 }
 void Model::showModel(){
     ofSetLineWidth(1);
-    ofSetColor(255);
+    ofSetColor(255,10);
     threeDeeFile.drawWireframe();
    
 }
 void Model::showDisco(int index){
-     layers[index].show();
+     layers[layerIndex].show();
 }
 
 void Model::incSlice(){
