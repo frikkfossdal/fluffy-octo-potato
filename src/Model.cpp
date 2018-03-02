@@ -8,13 +8,14 @@
 #include "Model.hpp"
 
 Model::Model(){
-    threeDeeFile.loadModel("Body1.stl");
+    threeDeeFile.loadModel("stress.stl");
+    threeDeeFile.setScale(4, 4, 4);
     //
     fixPosition();
     setup();
 }
 void Model::setup(){
-    parameters.add(layerIndex.set("layer: ",0,0,400));
+    parameters.add(layerIndex.set("layer: ",0,0,1000));
     
 }
 void Model::showModel(){

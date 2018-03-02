@@ -93,6 +93,6 @@ void Layer::calculateInterPoints(ofVec3f target0, ofVec3f target1, ofVec3f orig)
     ofVec3f interPoint0 = ofVec3f(x0,y0,layerHeight);
     ofVec3f interPoint1 = ofVec3f(x1,y1, layerHeight);
 
-    intersectionpoints.push_back(interPoint0);
+    //intersectionpoints.push_back(interPoint0);
     intersectionpoints.push_back(interPoint1);
 }
