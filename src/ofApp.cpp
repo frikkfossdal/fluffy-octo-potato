@@ -8,7 +8,11 @@ void ofApp::setup(){
     
     slicerSettings.setup();
     slicerSettings.setName("Slicer Control");
+    slicerSettings.add(button.setup("slice"));
+    slicerSettings.add(toggle.setup("showSlice",true));
     slicerSettings.add(objectToSlice.layerIndex);
+    
+    
 }
 
 //--------------------------------------------------------------
@@ -21,7 +25,7 @@ void ofApp::draw(){
     ofBackground(55);
     slicerSettings.draw();
     cam.begin();
-    //ofDrawGrid();
+    ofDrawGrid();
     objectToSlice.showModel();
     objectToSlice.showDisco();
     cam.end(); 
