@@ -44,6 +44,8 @@ void Layer::calculate(std::vector<Triangles> triangles){
             for(auto p = t->points.begin(); p != t->points.end(); p++){
                 //check what side the points are on
                 //there are three cases here
+                //are you sure you are filtering correctly? You are generating
+                //more points then you should 
                 //1. point is located over plane
                 if(p->z > layerHeight){
                     //1. point is located over plane
@@ -90,6 +92,7 @@ void Layer::calculateInterPoints(ofVec3f target0, ofVec3f target1, ofVec3f orig)
     float y1 = target1.y+vec1.y*t1;
     
     //some of interPoint0 are missing. Why? Are the vectors handled correctly?
+    
     ofVec3f interPoint0 = ofVec3f(x0,y0,layerHeight);
     ofVec3f interPoint1 = ofVec3f(x1,y1, layerHeight);
 
