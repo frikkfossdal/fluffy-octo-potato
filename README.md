@@ -5,7 +5,7 @@ Currently under heavy development.
 
 # The Slicer
 
-The algorithms behind the slicer is mostly motivated by the work presented in this [paper.](http://www.dainf.ct.utfpr.edu.br/%7Emurilo/public/CAD-slicing.pdf)
+The algorithms behind the slicer is mostly motivated by the work presented in this [paper.](http://www.dainf.ct.utfpr.edu.br/%7Emurilo/public/CAD-slicing.pdf) In the paper, the authors claims that they have developed a slicing algorithm that is time-wise optimal compared to other slicing algorithms known in litterature.
 
 ![Overview](img/currentOverview.png)
 
@@ -13,6 +13,8 @@ TODO: Post the main slicer code and explain it
 
 # ToDo
 
-1. Create toolpaths from sliced meshes
-2. Implement simulation of the physical system.
-3. Optimize the toolpaths for multiheaded system. Think a good start here could be to investigate how genetic algorithms are used  to optimize trajectories in robotics.
+1. Fix issue with slicer
+2. Add addaptive slicing for better surface quality
+3. Create toolpaths from sliced meshes
+4. Implement simulation of the physical system.
+5. Optimize the toolpaths for multiheaded system. Think a good start here could be to investigate how genetic algorithms are used  to optimize trajectories in robotics.
