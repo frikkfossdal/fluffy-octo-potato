@@ -5,7 +5,13 @@ Currently under heavy development.
 
 # The Slicer
 
-The algorithms behind the slicer is mostly motivated by the work presented in this [paper.](http://www.dainf.ct.utfpr.edu.br/%7Emurilo/public/CAD-slicing.pdf) In the paper, the authors claims that they have developed a slicing algorithm that is time-wise optimal compared to other slicing algorithms known in litterature.
+The algorithms behind the slicer is mostly motivated by the work presented in this [paper.](http://www.dainf.ct.utfpr.edu.br/%7Emurilo/public/CAD-slicing.pdf) In the paper, the authors claims that they have developed a slicing algorithm that is time-wise optimal compared to other slicing algorithms known in litterature. We´ll see about that! The slicing algorithm goes something like this:
+
+1. Mesh slicing:  Calculate triangle intersection points on each plane
+2. Construct contours: Create polygons from the intersection points
+3. Make sence of the polygons (Clockwice // Counterclockwise)
+
+Easy right? Not so much. Turns out that I really have to reassess some fundamental vector math. 
 
 ![Overview](img/currentOverview.png)
 
