@@ -7,6 +7,8 @@ Currently under heavy development.
 
 The algorithms behind the slicer is mostly motivated by the work presented in this [paper.](http://www.dainf.ct.utfpr.edu.br/%7Emurilo/public/CAD-slicing.pdf)
 
+![Overview](img/currentOverview.jpg)
+
 TODO: Post the main slicer code and explain it
 
 # ToDo
