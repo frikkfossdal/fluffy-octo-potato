@@ -9,9 +9,9 @@ The algorithms behind the slicer is mostly motivated by the work presented in th
 
 1. Mesh slicing:  Calculate triangle intersection points on each plane
 2. Construct contours: Create polygons from the intersection points
-3. Make sence of the polygons (Clockwice // Counterclockwise)
+3. Make sence of the polygons (Clockwice/Counterclockwise)
 
-Easy right? Not so much. Turns out that I really have to reassess some fundamental vector math. 
+Easy right? Not so much. Turns out that I really have to reassess some fundamental vector math.
 
 ![Overview](img/currentOverview.png)
 

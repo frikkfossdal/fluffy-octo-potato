@@ -4,7 +4,7 @@
 void ofApp::setup(){
    //cam.enableOrtho();
     cam.setDistance(100);
-    objectToSlice.incSlice();
+    //objectToSlice.incSlice();
     
     slicerSettings.setup();
     slicerSettings.setName("Slicer Control");
@@ -24,9 +24,10 @@ void ofApp::draw(){
     slicerSettings.draw();
     cam.begin();
     //ofDrawGrid();
-    objectToSlice.showModel();
-    objectToSlice.showDisco();
-    cam.end(); 
+    //objectToSlice.showModel();
+    //objectToSlice.showDisco();
+    cam.end();
+    
 }
 
 //--------------------------------------------------------------
