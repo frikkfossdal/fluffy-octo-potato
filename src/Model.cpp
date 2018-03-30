@@ -8,7 +8,7 @@
 #include "Model.hpp"
 
 Model::Model(){
-    threeDeeFile.loadModel("stress.stl");
+    threeDeeFile.loadModel("Body1.stl");
     threeDeeFile.setScale(4, 4, 4);
     //
     fixPosition();
@@ -16,7 +16,6 @@ Model::Model(){
 }
 void Model::setup(){
     parameters.add(layerIndex.set("layer: ",0,0,1000));
-    
 }
 void Model::showModel(){
     ofSetLineWidth(1);
@@ -103,6 +102,7 @@ void Model::createLayers(){
     {
         layers.push_back(Layer(layerHeight*i));
     }
+    layerIndex.set("layer: ", 0,0,numberOfLayers-1);
 }
 void Model::fixPosition(){
     //this needs to me modified to handle any "origin-point"

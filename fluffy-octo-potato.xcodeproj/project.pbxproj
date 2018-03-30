@@ -317,8 +317,8 @@
 				961049863D8C691271E7D396 /* Layer.cpp */,
 				E7318ACE4246DAAB94ABC6E1 /* Layer.hpp */,
 				2DDD15DAEC85EBCBCC1200F8 /* Triangles.cpp */,
-				F5AAC52851768570FE602C6B /* Model.hpp */,
 				5A830A79EDE6A5D227F0907B /* Triangles.hpp */,
+				F5AAC52851768570FE602C6B /* Model.hpp */,
 				C8430E4BD04F96280E680470 /* Model.cpp */,
 			);
 			path = src;

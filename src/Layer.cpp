@@ -18,7 +18,7 @@ void Layer::show(){
     for(auto it = intersectionpoints.begin(); it!=intersectionpoints.end(); it++)
     {
         ofSetColor(255, 0, 0);
-        ofDrawEllipse(it->x, it->y, it->z, 1, 1);
+        ofDrawEllipse(it->x, it->y, it->z, 5, 5);
     }
 }
 
@@ -31,7 +31,7 @@ std::vector<Triangles> Layer::findActive(std::vector<Triangles> _activeTriangles
     }
     return _activeTriangles;
 }
-
+//This is your main algorithm. Your bug must be somewhere in here 
 void Layer::calculate(std::vector<Triangles> triangles){
     for(auto t = triangles.begin(); t != triangles.end();){
         if(t->zMax > layerHeight && t->zMin < layerHeight)
@@ -42,11 +42,6 @@ void Layer::calculate(std::vector<Triangles> triangles){
             std::vector<ofVec3f> onPlane;
             
             for(auto p = t->points.begin(); p != t->points.end(); p++){
-                //check what side the points are on
-                //there are three cases here
-                //are you sure you are filtering correctly? You are generating
-                //more points then you should 
-                //1. point is located over plane
                 if(p->z > layerHeight){
                     //1. point is located over plane
                     topSide.push_back(ofVec3f(p->x, p->y, p->z));
@@ -96,6 +91,7 @@ void Layer::calculateInterPoints(ofVec3f target0, ofVec3f target1, ofVec3f orig)
     ofVec3f interPoint0 = ofVec3f(x0,y0,layerHeight);
     ofVec3f interPoint1 = ofVec3f(x1,y1, layerHeight);
 
-    //intersectionpoints.push_back(interPoint0);
-    intersectionpoints.push_back(interPoint1);
+    intersectionpoints.push_back(interPoint0);
+    //interPoints1 seems to have a lot of errors. Why?
+   // intersectionpoints.push_back(interPoint1);
 }
