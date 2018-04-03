@@ -8,9 +8,8 @@ void ofApp::setup(){
     
     slicerSettings.setup();
     slicerSettings.setName("Slicer Control");
-    slicerSettings.add(button.setup("slice"));
-    slicerSettings.add(toggle.setup("showSlice",true));
     slicerSettings.add(objectToSlice.layerIndex);
+    slicerSettings.add(objectToSlice.drawWireFrame);
 }
 
 //--------------------------------------------------------------
@@ -23,10 +22,6 @@ void ofApp::draw(){
     ofBackground(55);
     slicerSettings.draw();
     cam.begin();
-<<<<<<< Updated upstream
-=======
-    ofDrawGrid();
->>>>>>> Stashed changes
     objectToSlice.showModel();
     objectToSlice.showDisco();
     cam.end();

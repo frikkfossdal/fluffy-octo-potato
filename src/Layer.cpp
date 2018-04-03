@@ -14,13 +14,13 @@ Layer::Layer(float _layerHeight){
 }
 void Layer::show(){
     for(auto it = segments.begin(); it !=segments.end(); it++){
-        ofSetColor(0, 255, 0);
+        ofSetColor(200);
         it->draw();
     }
     for(auto it = intersectionpoints.begin(); it!=intersectionpoints.end(); it++)
     {
         ofSetColor(255, 0, 0);
-        ofDrawEllipse(it->x, it->y, it->z, 5, 5);
+        ofDrawEllipse(it->x, it->y, it->z, 1, 1);
     }
 }
 
@@ -33,7 +33,9 @@ std::vector<Triangles> Layer::findActive(std::vector<Triangles> _activeTriangles
     }
     return _activeTriangles;
 }
-//This is your main algorithm. Your bug must be somewhere in here 
+//This is your main algorithm. Your bug must be somewhere in here
+//This function loops trough all triangles in layer and calculates the intersection points
+//TODO: Only calculate "active" triangles
 void Layer::calculate(std::vector<Triangles> triangles){
     for(auto t = triangles.begin(); t != triangles.end();){
         if(t->zMax > layerHeight && t->zMin < layerHeight)
@@ -94,19 +96,12 @@ void Layer::calculateInterPoints(ofVec3f target0, ofVec3f target1, ofVec3f orig)
     ofVec3f interPoint1 = ofVec3f(x1,y1, layerHeight);
 
     intersectionpoints.push_back(interPoint0);
-<<<<<<< Updated upstream
-    //interPoints1 seems to have a lot of errors. Why?
-   // intersectionpoints.push_back(interPoint1);
+    intersectionpoints.push_back(interPoint1);
+    
+    ofPolyline line;
+    line.addVertex(interPoint0.x, interPoint0.y,interPoint0.z);
+    line.addVertex(interPoint1.x, interPoint1.y,interPoint1.z);
+    segments.push_back(line);
 }
 void calculateLines(){
-    
-    
-=======
-    intersectionpoints.push_back(interPoint1);
-    //push line segment.
-    ofPolyline segment;
-    segment.addVertex(interPoint0.x, interPoint0.y, interPoint0.z);
-    segment.addVertex(interPoint1.x,interPoint1.y, interPoint1.z);
-    segments.push_back(segment);
->>>>>>> Stashed changes
 }

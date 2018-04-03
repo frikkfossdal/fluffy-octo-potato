@@ -23,6 +23,7 @@ public:
     float layerMax;
     float layerMin;
     ofParameter<int> layerIndex;
+    ofParameter<bool> drawWireFrame; 
     ofParameterGroup parameters;
 
     //Constructors

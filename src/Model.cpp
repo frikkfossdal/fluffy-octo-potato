@@ -8,7 +8,7 @@
 #include "Model.hpp"
 
 Model::Model(){
-    threeDeeFile.loadModel("Body1.stl");
+    threeDeeFile.loadModel("Rack.stl");
     threeDeeFile.setScale(4, 4, 4);
     //
     fixPosition();
@@ -16,11 +16,14 @@ Model::Model(){
 }
 void Model::setup(){
     parameters.add(layerIndex.set("layer: ",0,0,1000));
+    parameters.add(drawWireFrame.set("wireframe: ", true));
 }
 void Model::showModel(){
     ofSetLineWidth(1);
     ofSetColor(255,10);
-    threeDeeFile.drawWireframe();
+    if(drawWireFrame == true){
+        threeDeeFile.drawWireframe();
+    }
 }
 void Model::showDisco(){
      layers[layerIndex].show();
