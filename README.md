@@ -19,8 +19,8 @@ TODO: Post the main slicer code and explain it
 
 # ToDo
 
-1. Fix issue with slicer
-2. Add addaptive slicing for better surface quality
-3. Create toolpaths from sliced meshes
-4. Implement simulation of the physical system.
+1. Relearn vector calculus and fix issue with intersection calculation
+2. Create toolpaths from sliced meshes
+3. Add addaptive slicing for better surface quality
+4. Implement simulation of the physical system (I think this is better in a separate applciation)
 5. Optimize the toolpaths for multiheaded system. Think a good start here could be to investigate how genetic algorithms are used  to optimize trajectories in robotics.

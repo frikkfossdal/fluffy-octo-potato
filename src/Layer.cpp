@@ -95,3 +95,7 @@ void Layer::calculateInterPoints(ofVec3f target0, ofVec3f target1, ofVec3f orig)
     //interPoints1 seems to have a lot of errors. Why?
    // intersectionpoints.push_back(interPoint1);
 }
+void calculateLines(){
+    
+    
+}

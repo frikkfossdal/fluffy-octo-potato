@@ -30,6 +30,7 @@ public:
     std::vector<Triangles> findActive(std::vector<Triangles> _activeTriangles, std::vector<Triangles> _triangleList);
 private:
     void calculateInterPoints(ofVec3f target0, ofVec3f target1, ofVec3f orig);
+    void calculateLines(); 
 };
 
 #endif /* Layer_hpp */
