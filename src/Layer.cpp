@@ -14,6 +14,8 @@ Layer::Layer(float _layerHeight){
 }
 void Layer::show(){
     for(auto it = segments.begin(); it !=segments.end(); it++){
+        ofSetColor(0, 255, 0);
+        it->draw();
     }
     for(auto it = intersectionpoints.begin(); it!=intersectionpoints.end(); it++)
     {
@@ -92,10 +94,19 @@ void Layer::calculateInterPoints(ofVec3f target0, ofVec3f target1, ofVec3f orig)
     ofVec3f interPoint1 = ofVec3f(x1,y1, layerHeight);
 
     intersectionpoints.push_back(interPoint0);
+<<<<<<< Updated upstream
     //interPoints1 seems to have a lot of errors. Why?
    // intersectionpoints.push_back(interPoint1);
 }
 void calculateLines(){
     
     
+=======
+    intersectionpoints.push_back(interPoint1);
+    //push line segment.
+    ofPolyline segment;
+    segment.addVertex(interPoint0.x, interPoint0.y, interPoint0.z);
+    segment.addVertex(interPoint1.x,interPoint1.y, interPoint1.z);
+    segments.push_back(segment);
+>>>>>>> Stashed changes
 }

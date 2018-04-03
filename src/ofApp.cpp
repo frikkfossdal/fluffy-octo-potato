@@ -1,4 +1,4 @@
-#include "ofApp.h"
+ #include "ofApp.h"
 
 //--------------------------------------------------------------
 void ofApp::setup(){
@@ -23,6 +23,10 @@ void ofApp::draw(){
     ofBackground(55);
     slicerSettings.draw();
     cam.begin();
+<<<<<<< Updated upstream
+=======
+    ofDrawGrid();
+>>>>>>> Stashed changes
     objectToSlice.showModel();
     objectToSlice.showDisco();
     cam.end();

@@ -320,6 +320,7 @@
 				5A830A79EDE6A5D227F0907B /* Triangles.hpp */,
 				F5AAC52851768570FE602C6B /* Model.hpp */,
 				C8430E4BD04F96280E680470 /* Model.cpp */,
+				F5AAC52851768570FE602C6B /* Model.hpp */,
 			);
 			path = src;
 			sourceTree = SOURCE_ROOT;
