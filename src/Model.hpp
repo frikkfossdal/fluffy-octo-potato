@@ -16,29 +16,33 @@ class Model : public ofThread {
 public:
     //Variables;
     ofxAssimpModelLoader threeDeeFile;
-    float layerHeight;
     int numberOfLayers; 
     std::vector<Triangles> triangleList;
     std::vector<Layer> layers;
     float layerMax;
     float layerMin;
+    //Model controls
     ofParameter<int> layerIndex;
-    ofParameter<bool> drawTriangles; 
+    ofParameter<ofVec3f> modelPosition;
     ofParameter<bool> drawWireFrame;
     ofParameter<bool> drawSegments;
-    ofParameter<bool> drawContours; 
-    ofParameterGroup parameters;
+    ofParameter<bool> drawContours;
+    ofParameter<bool> slice;
+    ofParameter<bool> drawTriangles;
+    ofParameter<float> layerHeight;
 
+    
+    ofParameterGroup parameters;
     //Constructors
     Model();
     
     //Methods
-    void setup(); 
-    void slice();
+    void setup();
+    void update();
+    void incSlice();
     void constructContour();
     void showModel();
-    void incSlice();
-    
+
 private:
     //Create the input triangle list and sort it according to layerheights
     void buildTriangles(); //step3

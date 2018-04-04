@@ -65,19 +65,13 @@ void Layer::calculate(std::vector<Triangles> triangles){
             if(topSide.size() > 1){
                 //Two points on topside.
                 if(bottomSide.size() > 0){
-                    //THIS IF IS A HACK. REMEMBER IT
-                    if(topSide[0].distance(topSide[1]) !=0){
-                       calculateInterPoints(topSide[0], topSide[1], bottomSide[0]);
-                    }
+                    calculateInterPoints(topSide[0], topSide[1], bottomSide[0]);
                 }
             }
             else if(bottomSide.size() > 1){
                 //Two points on bottomside
                 if(topSide.size() > 0){
-                    //THIS IF IS A HACK. REMEMBER IT
-                    if(bottomSide[0].distance(bottomSide[1]) !=0){
-                        calculateInterPoints(bottomSide[0], bottomSide[1], topSide[0]);
-                    }
+                    calculateInterPoints(bottomSide[0], bottomSide[1], topSide[0]);
                 }
             }
             else{

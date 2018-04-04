@@ -28,7 +28,7 @@ class ofApp : public ofBaseApp{
     int index;
     
     ofxPanel slicerSettings;
+    ofxPanel slicerControl; 
     ofxButton button;
     ofxToggle toggle;
-    
 };

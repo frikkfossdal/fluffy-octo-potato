@@ -9,17 +9,21 @@
 
 Model::Model(){
     threeDeeFile.loadModel("stress.stl");
-    threeDeeFile.setScale(1, 1, 1);
     fixPosition();
     setup();
 }
 void Model::setup(){
     parameters.add(layerIndex.set("layer: ",0,0,1000));
+    parameters.add(layerHeight.set("layerHeight: ", .1, 0, 1));
     parameters.add(drawTriangles.set("drawTriangles",false));
     parameters.add(drawWireFrame.set("drawWireFrame",true));
     parameters.add(drawSegments.set("drawSegments",false));
     parameters.add(drawContours.set("drawContours",false));
-    
+    parameters.add(slice.set("Start slicing", false));
+    parameters.add(modelPosition.set("position", ofVec3f(0,0,0), ofVec3f(0,0,0), ofVec3f(400,400,50)));
+}
+void Model::update(){
+    threeDeeFile.setPosition(modelPosition->x, modelPosition->y, modelPosition->z);
 }
 void Model::showModel(){
     ofSetLineWidth(1);
@@ -27,13 +31,13 @@ void Model::showModel(){
     if(drawWireFrame == true){
         threeDeeFile.drawWireframe();
     }
-    layers[layerIndex].show();
-    //triangleList[triangleIndex].show();
-    if(drawTriangles == true){
-        for(auto it = triangleList.begin(); it != triangleList.end(); it++){
-            it->show();
-        }
-    }
+//    Implement this when the UI is ready.
+//    layers[layerIndex].show();
+//    if(drawTriangles == true){
+//        for(auto it = triangleList.begin(); it != triangleList.end(); it++){
+//            it->show();
+//        }
+//    }
 }
 void Model::incSlice(){
     //1. Build triangle-list
@@ -52,15 +56,18 @@ void Model::incSlice(){
         it->calculate(triangleList);
     }
 }
-//FINALLY, THIS IS YOUR BUG. CREATE REAL TRIANGLES DUMBNUT
+
 void Model::buildTriangles(){
     //create vector containing all faces of mesh
     int meshIndex = 0;
     ofMesh mesh = threeDeeFile.getMesh(meshIndex);
+    
     std::vector<ofMeshFace> faces = mesh.getUniqueFaces();
     //loop through the faces and create triangle objects
+    int scl = 10;
     for(auto f = faces.begin(); f != faces.end(); f++){
         Triangles newTriangle(f->getVertex(0),f->getVertex(1), f->getVertex(2));
+        
         triangleList.push_back(newTriangle);
     }
     //sort triangleList in terms of z-height
@@ -88,7 +95,6 @@ void Model::findPerim(){
     layerMin = firstTriangle.zMin;
 }
 void Model::createLayers(){
-    layerHeight = 0.1;
     int numberOfLayers = (layerMax-layerMin)/layerHeight;
     for(int i = 0; i < numberOfLayers; i++)
     {
@@ -101,6 +107,6 @@ void Model::fixPosition(){
     ofVec3f sceneMax = threeDeeFile.getSceneMax();
     threeDeeFile.setScaleNormalization(false);
     ofVec3f center = threeDeeFile.getSceneCenter();
-    threeDeeFile.setPosition(center.x, center.y, 0);
+    //threeDeeFile.setPosition(center.x, center.y, 0);
 }
 
