@@ -2,7 +2,7 @@
 
 //--------------------------------------------------------------
 void ofApp::setup(){
-   //cam.enableOrtho();
+    //cam.enableOrtho();
     cam.setDistance(100);
     objectToSlice.incSlice();
     
@@ -25,7 +25,6 @@ void ofApp::draw(){
     objectToSlice.showModel();
     objectToSlice.showDisco();
     cam.end();
-    
 }
 
 //--------------------------------------------------------------
