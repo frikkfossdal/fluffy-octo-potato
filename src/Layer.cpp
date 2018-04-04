@@ -20,7 +20,7 @@ void Layer::show(){
     for(auto it = intersectionpoints.begin(); it!=intersectionpoints.end(); it++)
     {
         ofSetColor(255, 0, 0);
-        ofDrawEllipse(it->x, it->y, it->z, 1, 1);
+        ofDrawEllipse(it->x, it->y, it->z, .1, .1);
     }
 }
 
@@ -45,34 +45,44 @@ void Layer::calculate(std::vector<Triangles> triangles){
             std::vector<ofVec3f> bottomSide;
             std::vector<ofVec3f> onPlane;
             
+            //loop trough all points in triangle object
             for(auto p = t->points.begin(); p != t->points.end(); p++){
                 if(p->z > layerHeight){
-                    //1. point is located over plane
+                    //point is located over plane
                     topSide.push_back(ofVec3f(p->x, p->y, p->z));
                 }
                 else if(p->z < layerHeight){
-                    //2. point is located under plane
+                    //point is located under plane
                     bottomSide.push_back(ofVec3f(p->x, p->y, p->z));
                 }
                 else{
-                    //3. point is located on plane
+                    //point is located on plane
                     onPlane.push_back(ofVec3f(p->x, p->y, p->z));
                 }
             }
+            //Based on the result, calculate intersection points accordingly. Keep in mind that
+            //you are ignoring some potential cases here.
             if(topSide.size() > 1){
                 //Two points on topside.
-                //calculateInterPoints(topSide.at(0), topSide.at(1),bottomSide.at(0));
                 if(bottomSide.size() > 0){
-                    calculateInterPoints(topSide[0], topSide[1], bottomSide[0]);
+                    //THIS IF IS A HACK. REMEMBER IT
+                    if(topSide[0].distance(topSide[1]) !=0){
+                       calculateInterPoints(topSide[0], topSide[1], bottomSide[0]);
+                    }
                 }
             }
             else if(bottomSide.size() > 1){
                 //Two points on bottomside
                 if(topSide.size() > 0){
-                    calculateInterPoints(bottomSide[0], bottomSide[1], topSide[0]);
+                    //THIS IF IS A HACK. REMEMBER IT
+                    if(bottomSide[0].distance(bottomSide[1]) !=0){
+                        calculateInterPoints(bottomSide[0], bottomSide[1], topSide[0]);
+                    }
                 }
             }
             else{
+                //This would be the case where there are points that are coincident with
+                //the layer plane. Ignore this for now.
             }
         }
         t++;

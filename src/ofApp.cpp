@@ -9,7 +9,10 @@ void ofApp::setup(){
     slicerSettings.setup();
     slicerSettings.setName("Slicer Control");
     slicerSettings.add(objectToSlice.layerIndex);
+    slicerSettings.add(objectToSlice.drawTriangles);
     slicerSettings.add(objectToSlice.drawWireFrame);
+    slicerSettings.add(objectToSlice.drawSegments);
+    slicerSettings.add(objectToSlice.drawContours);
 }
 
 //--------------------------------------------------------------
@@ -19,20 +22,16 @@ void ofApp::update(){
 
 //--------------------------------------------------------------
 void ofApp::draw(){
-    ofBackground(55);
+    //ofBackground(55);
+    ofBackgroundGradient(ofColor(64), ofColor(55));
     slicerSettings.draw();
     cam.begin();
     objectToSlice.showModel();
-    objectToSlice.showDisco();
     cam.end();
 }
 
 //--------------------------------------------------------------
 void ofApp::keyPressed(int key){
-    index++;
-    if(index >300){
-        index = 0;
-    }
 }
 
 //--------------------------------------------------------------

@@ -23,7 +23,10 @@ public:
     float layerMax;
     float layerMin;
     ofParameter<int> layerIndex;
-    ofParameter<bool> drawWireFrame; 
+    ofParameter<bool> drawTriangles; 
+    ofParameter<bool> drawWireFrame;
+    ofParameter<bool> drawSegments;
+    ofParameter<bool> drawContours; 
     ofParameterGroup parameters;
 
     //Constructors
@@ -34,7 +37,6 @@ public:
     void slice();
     void constructContour();
     void showModel();
-    void showDisco();
     void incSlice();
     
 private:

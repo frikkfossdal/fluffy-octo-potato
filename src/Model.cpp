@@ -8,15 +8,18 @@
 #include "Model.hpp"
 
 Model::Model(){
-    threeDeeFile.loadModel("Rack.stl");
-    threeDeeFile.setScale(4, 4, 4);
-    //
+    threeDeeFile.loadModel("stress.stl");
+    threeDeeFile.setScale(1, 1, 1);
     fixPosition();
     setup();
 }
 void Model::setup(){
     parameters.add(layerIndex.set("layer: ",0,0,1000));
-    parameters.add(drawWireFrame.set("wireframe: ", true));
+    parameters.add(drawTriangles.set("drawTriangles",false));
+    parameters.add(drawWireFrame.set("drawWireFrame",true));
+    parameters.add(drawSegments.set("drawSegments",false));
+    parameters.add(drawContours.set("drawContours",false));
+    
 }
 void Model::showModel(){
     ofSetLineWidth(1);
@@ -24,11 +27,14 @@ void Model::showModel(){
     if(drawWireFrame == true){
         threeDeeFile.drawWireframe();
     }
+    layers[layerIndex].show();
+    //triangleList[triangleIndex].show();
+    if(drawTriangles == true){
+        for(auto it = triangleList.begin(); it != triangleList.end(); it++){
+            it->show();
+        }
+    }
 }
-void Model::showDisco(){
-     layers[layerIndex].show();
-}
-
 void Model::incSlice(){
     //1. Build triangle-list
     buildTriangles();
@@ -46,35 +52,18 @@ void Model::incSlice(){
         it->calculate(triangleList);
     }
 }
+//FINALLY, THIS IS YOUR BUG. CREATE REAL TRIANGLES DUMBNUT
 void Model::buildTriangles(){
+    //create vector containing all faces of mesh
     int meshIndex = 0;
-    ofMatrix4x4 modelMatrix = threeDeeFile.getModelMatrix();
-    ofMatrix4x4 meshMatrix = threeDeeFile.getMeshHelper(meshIndex).matrix;
-    ofMatrix4x4 concatMatrix;
-    concatMatrix.preMult(modelMatrix);
-    concatMatrix.preMult(meshMatrix);
-    
     ofMesh mesh = threeDeeFile.getMesh(meshIndex);
-    int loopIndex = 0;
-    int triIndex = 0;
-    std::vector<ofVec3f> triBuffer;
-    
-    for(int i=0; i<mesh.getNumVertices(); i++) {
-        ofVec3f & vert = mesh.getVertices()[i];
-        vert.set(concatMatrix.preMult(vert));
-        triBuffer.push_back(vert);
-        //build a triangle object
-        if(loopIndex == 2){
-            loopIndex = 0;
-            triangleList.push_back(Triangles(triBuffer[0], triBuffer[1], triBuffer[2]));
-            triBuffer.clear();
-        }
-        else
-        {
-        loopIndex++;
-        }
+    std::vector<ofMeshFace> faces = mesh.getUniqueFaces();
+    //loop through the faces and create triangle objects
+    for(auto f = faces.begin(); f != faces.end(); f++){
+        Triangles newTriangle(f->getVertex(0),f->getVertex(1), f->getVertex(2));
+        triangleList.push_back(newTriangle);
     }
-    //Sort all triangles
+    //sort triangleList in terms of z-height
     sortTriangles();
 }
 struct compareVector{
