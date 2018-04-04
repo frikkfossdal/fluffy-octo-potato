@@ -3,9 +3,13 @@ An Openframeworks application for doing multi-headed additive manufacturing. The
 
 Currently under heavy development.
 
+![Overview](img/currentOverview.png)
+
 # The Slicer
 
 The algorithms behind the slicer is mostly motivated by the work presented in this [paper.](http://www.dainf.ct.utfpr.edu.br/%7Emurilo/public/CAD-slicing.pdf) In the paper, the authors claims that they have developed a slicing algorithm that is time-wise optimal compared to other slicing algorithms known in litterature. We´ll see about that! The slicing algorithm goes something like this:
+
+
 
 1. Create a list containing all triangles of the mesh model.
 2. Mesh slicing:  Calculate triangle intersection points on each plane.
@@ -16,13 +20,15 @@ Easy right? Not so much. Turns out that I really have to reassess some fundament
 
 ### Getting the triangles 
 
-Getting the triangles was a bit of a struggle in Openframeworks. To import .stl files, I use the [ofxAssimpModelLoader](http://openframeworks.cc/documentation/ofxAssimpModelLoader/ofxAssimpModelLoader/) addon in openframeworks.  It took some tweaking to get the triangle faces, with it´s belonging vertices, extracted from the assimp class. All the triangles are sorted in ascending order in terms of the lowst point in the triangle. I´ve commented this in the code. NOTE: It would probaly be easier to use some kind of existing C++ framework for geometry like CGAL, but not as much fun! 
+Getting the triangles was a bit of a struggle in Openframeworks. To import .stl files, I use the [ofxAssimpModelLoader](http://openframeworks.cc/documentation/ofxAssimpModelLoader/ofxAssimpModelLoader/) addon in openframeworks.  It took some tweaking to get the triangle faces, with it´s belonging vertices, extracted from the assimp class. All the triangles are sorted in ascending order in terms of the lowest point in the triangle. I´ve commented this in the code. NOTE: It would probaly be easier to use some kind of existing C++ framework for geometry like CGAL, but not as much fun! 
 
 ### Calculate the triangle intersections 
 
+TODO: Add image of the intersecting points in a layer. 
+
 ### Creating the toolpaths
 
-![Overview](img/currentOverview.png)
+
 
 TODO: Post the main slicer code and explain it
 
