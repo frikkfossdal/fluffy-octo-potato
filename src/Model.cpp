@@ -22,9 +22,17 @@ void Model::setup(){
     parameters.add(slice.set("Start slicing", false));
     parameters.add(modelPosition.set("position", ofVec3f(0,0,0), ofVec3f(0,0,0), ofVec3f(400,400,50)));
     parameters.add(scl.set("Scale", 0, 0, 10));
+    sliceFinish = false;
 }
 void Model::update(){
     threeDeeFile.setPosition(modelPosition->x, modelPosition->y, modelPosition->z);
+    threeDeeFile.setScale(scl,scl,scl);
+    
+    //slice_button setup
+    if(slice == true){
+        incSlice();
+        slice = false;
+    }
 }
 void Model::showModel(){
     ofSetLineWidth(1);
@@ -33,13 +41,15 @@ void Model::showModel(){
         threeDeeFile.drawWireframe();
     }
     ofDrawRectangle(0, 0, 300, 300);
-    //Implement this when the UI is ready.
-//    layers[layerIndex].show();
-//   if(drawTriangles == true){
-//       for(auto it = triangleList.begin(); it != triangleList.end(); it++){
-//           it->show();
-//       }
-//  }
+    if(layers.size() > 10)
+    {
+        layers[layerIndex].show();
+        if(drawTriangles == true){
+            for(auto it = triangleList.begin(); it != triangleList.end(); it++){
+                it->show();
+            }
+        }
+    }
 }
 void Model::incSlice(){
     //1. Build triangle-list
@@ -50,6 +60,7 @@ void Model::incSlice(){
     //First, decide where to control the active triangles. This is key if you fant your slicing to be fast.
     
     std::vector<Triangles> activeTriangleList;
+
     for(auto it = layers.begin(); it !=layers.end(); it++){
         //two steps
         //1. add relevant triangles to active triangles. Delete if processing is finished
@@ -103,12 +114,11 @@ void Model::createLayers(){
         layers.push_back(Layer(layerHeight*i));
     }
     layerIndex.set("layer: ", 0,0,numberOfLayers-1);
+    sliceFinish = true;
 }
 void Model::fixPosition(){
     //this needs to me modified to handle any "origin-point"
     ofVec3f sceneMax = threeDeeFile.getSceneMax();
     threeDeeFile.setScaleNormalization(false);
-    ofVec3f center = threeDeeFile.getSceneCenter();
-    //threeDeeFile.setPosition(center.x, center.y, 0);
 }
 
