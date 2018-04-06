@@ -30,6 +30,7 @@ public:
     ofParameter<bool> slice;
     ofParameter<bool> drawTriangles;
     ofParameter<float> layerHeight;
+    ofParameter<float> scl; 
 
     
     ofParameterGroup parameters;

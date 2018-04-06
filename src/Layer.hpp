@@ -19,7 +19,6 @@ public:
     std::vector<ofPolyline> segments;
     std::vector<ofPolyline> contours;
     
-    
     //Constructor
     Layer();
     Layer(float _layerHeight);

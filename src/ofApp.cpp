@@ -3,23 +3,24 @@
 //--------------------------------------------------------------
 void ofApp::setup(){
     //cam.enableOrtho();
-    cam.setDistance(100);
+    //cam.setDistance(100);
     //objectToSlice.incSlice();
     
     slicerSettings.setup();
     slicerSettings.setName("Model Settings");
     slicerSettings.add(objectToSlice.modelPosition);
     slicerSettings.setPosition(20,20);
+    slicerSettings.add(objectToSlice.scl);
     slicerSettings.add(objectToSlice.layerHeight);
     slicerSettings.add(objectToSlice.drawTriangles);
     slicerSettings.add(objectToSlice.drawWireFrame);
     slicerSettings.add(objectToSlice.drawSegments);
     slicerSettings.add(objectToSlice.drawContours);
-    slicerSettings.add(objectToSlice.slice);
-   
+
     slicerControl.setup();
     slicerControl.setName("Slicer Control");
     slicerControl.setPosition(20, 300);
+    slicerControl.add(objectToSlice.slice);
     slicerControl.add(objectToSlice.layerIndex);
 }
 
@@ -35,12 +36,17 @@ void ofApp::draw(){
     slicerControl.draw();
     objectToSlice.update();
     cam.begin();
+    ofNoFill();
+    ofSetColor(255);
+    ofDrawRectangle(0,0, 400, 400);
     objectToSlice.showModel();
     cam.end();
 }
 
 //--------------------------------------------------------------
 void ofApp::keyPressed(int key){
+    std::cout << objectToSlice.threeDeeFile.getPosition() << endl;
+   cam.worldToScreen(ofVec3f(0,0,0));
 }
 
 //--------------------------------------------------------------

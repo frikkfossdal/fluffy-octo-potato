@@ -21,6 +21,7 @@ void Model::setup(){
     parameters.add(drawContours.set("drawContours",false));
     parameters.add(slice.set("Start slicing", false));
     parameters.add(modelPosition.set("position", ofVec3f(0,0,0), ofVec3f(0,0,0), ofVec3f(400,400,50)));
+    parameters.add(scl.set("Scale", 0, 0, 10));
 }
 void Model::update(){
     threeDeeFile.setPosition(modelPosition->x, modelPosition->y, modelPosition->z);
@@ -31,13 +32,14 @@ void Model::showModel(){
     if(drawWireFrame == true){
         threeDeeFile.drawWireframe();
     }
-//    Implement this when the UI is ready.
+    ofDrawRectangle(0, 0, 300, 300);
+    //Implement this when the UI is ready.
 //    layers[layerIndex].show();
-//    if(drawTriangles == true){
-//        for(auto it = triangleList.begin(); it != triangleList.end(); it++){
-//            it->show();
-//        }
-//    }
+//   if(drawTriangles == true){
+//       for(auto it = triangleList.begin(); it != triangleList.end(); it++){
+//           it->show();
+//       }
+//  }
 }
 void Model::incSlice(){
     //1. Build triangle-list
