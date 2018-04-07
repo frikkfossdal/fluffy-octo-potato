@@ -8,7 +8,7 @@
 #include "Model.hpp"
 
 Model::Model(){
-    threeDeeFile.loadModel("stress.stl");
+    threeDeeFile.loadModel("01.liver.stl");
     fixPosition();
     setup();
 }
@@ -29,6 +29,7 @@ void Model::update(){
     threeDeeFile.setScale(scl,scl,scl);
     
     //slice_button setup
+    //add logic that destroys the existing sliced object. 
     if(slice == true){
         incSlice();
         slice = false;
