@@ -6,7 +6,7 @@ Currently under heavy development.
 
 ![Overview](img/currentOverview.png)
 
-# The Slicer
+## The Slicer
 
 The algorithms behind the slicer is mostly motivated by the work presented in this [paper.](http://www.dainf.ct.utfpr.edu.br/%7Emurilo/public/CAD-slicing.pdf) In the paper, the authors claims that they have developed a slicing algorithm that is time-wise optimal compared to other slicing algorithms known in litterature./Users/frikkfossdal/GitHub/fluffy-octo-potato/README.md We´ll see about that! The slicing algorithm goes something like this:
 
@@ -31,10 +31,10 @@ TODO: Add image of the intersecting points in a layer.
 
 TODO: Post the main slicer code and explain it
 
-# ToDo
-
-1. Relearn vector calculus and fix issue with intersection calculation
-2. Create toolpaths from sliced meshes
-3. Add addaptive slicing for better surface quality
-4. Implement simulation of the physical system (I think this is better in a separate applciation)
-5. Optimize the toolpaths for multiheaded system. Think a good start here could be to investigate how genetic algorithms are used  to optimize trajectories in robotics.
+## TODO
+1. Fix positioning-issue. See comment in code
+2. Add progress bar to slicing. 
+3. Create toolpaths from sliced meshes
+4. Add addaptive slicing for better surface quality
+5. Implement simulation of the physical system (I think this is better in a separate applciation for now)
+6. Optimize the toolpaths for multiheaded system. Think a good start here could be to investigate how genetic algorithms are used  to optimize trajectories in robotics.

@@ -23,7 +23,7 @@ void Layer::show(){
         ofDrawEllipse(it->x, it->y, it->z, .1, .1);
     }
 }
-
+//Not in use yet. Implement later to increase calculation speed
 std::vector<Triangles> Layer::findActive(std::vector<Triangles> _activeTriangles, std::vector<Triangles> _triangleList){
     for(auto t = _triangleList.begin(); t!=_triangleList.end();){
         if(t->zMin < layerHeight){
@@ -33,9 +33,6 @@ std::vector<Triangles> Layer::findActive(std::vector<Triangles> _activeTriangles
     }
     return _activeTriangles;
 }
-//This is your main algorithm. Your bug must be somewhere in here
-//This function loops trough all triangles in layer and calculates the intersection points
-//TODO: Only calculate "active" triangles
 void Layer::calculate(std::vector<Triangles> triangles){
     for(auto t = triangles.begin(); t != triangles.end();){
         if(t->zMax > layerHeight && t->zMin < layerHeight)
@@ -76,12 +73,13 @@ void Layer::calculate(std::vector<Triangles> triangles){
             }
             else{
                 //This would be the case where there are points that are coincident with
-                //the layer plane. Ignore this for now.
+                //the layer plane. Ignore for now.
             }
         }
         t++;
     }
 }
+//Calculates the intersections points between triangle and layer.
 void Layer::calculateInterPoints(ofVec3f target0, ofVec3f target1, ofVec3f orig)
 {
     ofVec3f vec0 = orig.operator-(target0);
@@ -93,8 +91,6 @@ void Layer::calculateInterPoints(ofVec3f target0, ofVec3f target1, ofVec3f orig)
     float x1 = target1.x+vec1.x*t1;
     float y0 = target0.y+vec0.y*t0;
     float y1 = target1.y+vec1.y*t1;
-    
-    //some of interPoint0 are missing. Why? Are the vectors handled correctly?
     
     ofVec3f interPoint0 = ofVec3f(x0,y0,layerHeight);
     ofVec3f interPoint1 = ofVec3f(x1,y1, layerHeight);

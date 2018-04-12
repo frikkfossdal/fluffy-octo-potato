@@ -8,12 +8,12 @@
 #include "Model.hpp"
 
 Model::Model(){
-    threeDeeFile.loadModel("01.liver.stl");
+    threeDeeFile.loadModel("Test1.stl");
     fixPosition();
     setup();
 }
 void Model::setup(){
-    parameters.add(layerIndex.set("layer: ",0,0,1000));
+    parameters.add(layerIndex.set("layer: ",1,0,1000));
     parameters.add(layerHeight.set("layerHeight: ", .1, 0, 1));
     parameters.add(drawTriangles.set("drawTriangles",false));
     parameters.add(drawWireFrame.set("drawWireFrame",true));
@@ -21,7 +21,7 @@ void Model::setup(){
     parameters.add(drawContours.set("drawContours",false));
     parameters.add(slice.set("Start slicing", false));
     parameters.add(modelPosition.set("position", ofVec3f(0,0,0), ofVec3f(0,0,0), ofVec3f(400,400,50)));
-    parameters.add(scl.set("Scale", 0, 0, 10));
+    parameters.add(scl.set("Scale", 1, 0, 10));
     sliceFinish = false;
 }
 void Model::update(){
@@ -53,20 +53,15 @@ void Model::showModel(){
     }
 }
 void Model::incSlice(){
-    //1. Build triangle-list
-    buildTriangles();
-    //2. Create layers
-    createLayers();
-    //3. Loop trough all layers and slice the triangles
-    //First, decide where to control the active triangles. This is key if you fant your slicing to be fast.
+    //First, empty both triangleList and layerList
+    triangleList.clear();
+    layers.clear();
     
+    //Then, do slice-calculation
+    buildTriangles();
+    createLayers();
     std::vector<Triangles> activeTriangleList;
-
     for(auto it = layers.begin(); it !=layers.end(); it++){
-        //two steps
-        //1. add relevant triangles to active triangles. Delete if processing is finished
-        //2. calculate all triangle intersections
-        //activeTriangleList = it->checkTriangles(activeTriangleList);
         it->calculate(triangleList);
     }
 }
@@ -78,9 +73,8 @@ void Model::buildTriangles(){
     
     std::vector<ofMeshFace> faces = mesh.getUniqueFaces();
     //loop through the faces and create triangle objects
-    int scl = 10;
     for(auto f = faces.begin(); f != faces.end(); f++){
-        Triangles newTriangle(f->getVertex(0),f->getVertex(1), f->getVertex(2));
+        Triangles newTriangle(f->getVertex(0).operator+(threeDeeFile.getPosition()),f->getVertex(1).operator+(threeDeeFile.getPosition()), f->getVertex(2).operator+(threeDeeFile.getPosition()));
         
         triangleList.push_back(newTriangle);
     }
@@ -114,12 +108,15 @@ void Model::createLayers(){
     {
         layers.push_back(Layer(layerHeight*i));
     }
-    layerIndex.set("layer: ", 0,0,numberOfLayers-1);
+    layerIndex.set("layer: ", 1,0,numberOfLayers-1);
     sliceFinish = true;
 }
 void Model::fixPosition(){
-    //this needs to me modified to handle any "origin-point"
+    //You have to errors.
+    //1. The calculated triangles seems to be mirrored
+    //2. The position of the calculated triangles is wrong
     ofVec3f sceneMax = threeDeeFile.getSceneMax();
     threeDeeFile.setScaleNormalization(false);
+    threeDeeFile.enableNormals();
 }
 
