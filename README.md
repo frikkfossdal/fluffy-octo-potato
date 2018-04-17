@@ -32,22 +32,20 @@ We basically have three diferent situations.
 2. The triangle is intersecting with the plane. 
 3. The triangle is underneath the plane. This means that the slicer is finished processing it. 
 
-
-
-TODO: Remove finished triangles. This will speed up the algorithm and save time on more complex geometry. 
-
+Full disclosure at this point. I found it really hard to calculate the intersections. It turns out to be really easy and basic math, but it took me a while to 
+make it work. 
 The output from the intersecting algorihtm should look like this: 
 
 ![intersections](img/intersections.png)
 
-This feels really good! 
+And look at that. It actually works! I had some initial problems with missing points. Turned out that my triangle building function was not working  100%. Should be good now. Next up toolpaths  
 
+TODO: Remove finished triangles. This will speed up the algorithm and save time on more complex geometry. 
 
 ### Creating the toolpaths
 
+Last thing to do is to build the toolpaths. 
 
-
-TODO: Post the main slicer code and explain it
 
 ## TODO
 1. Fix positioning-issue. See comment in code
