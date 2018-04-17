@@ -23,7 +23,16 @@ Getting the triangles was a bit of a struggle in Openframeworks. To import .stl 
 
 ### Calculate the triangle intersections 
 
-TODO: Add image of the intersecting points in a layer. 
+Now we need to parse trough all the triangles and check if and where they intersect with each of the layer planes like this: ![triangleInter](img/triangleIntersection.png)
+
+We basically have three diferent situations. 
+1. The triangle is located on the topside of the layer plane 
+2. The triangle is intersecting with the plane. 
+3. The triangle is underneath the plane. This means that the slicer is finished processing it. 
+
+TODO: Remove finished triangles. 
+
+
 
 ### Creating the toolpaths
 
