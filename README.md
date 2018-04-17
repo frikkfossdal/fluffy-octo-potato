@@ -23,15 +23,24 @@ Getting the triangles was a bit of a struggle in Openframeworks. To import .stl 
 
 ### Calculate the triangle intersections 
 
-Now we need to parse trough all the triangles and check if and where they intersect with each of the layer planes like this: ![triangleInter](img/triangleIntersection.png)
+Now it´s time to create some contours. We now have to calculate the intersections between the triangles we made and the layer planes. Ive tried to make a visual of the plan here: 
+
+![triangleInter](img/triangleIntersection.png)
 
 We basically have three diferent situations. 
 1. The triangle is located on the topside of the layer plane 
 2. The triangle is intersecting with the plane. 
 3. The triangle is underneath the plane. This means that the slicer is finished processing it. 
 
-TODO: Remove finished triangles. 
 
+
+TODO: Remove finished triangles. This will speed up the algorithm and save time on more complex geometry. 
+
+The output from the intersecting algorihtm should look like this: 
+
+![intersections](img/intersections.png)
+
+This feels really good! 
 
 
 ### Creating the toolpaths
