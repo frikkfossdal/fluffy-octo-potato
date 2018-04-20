@@ -44,7 +44,9 @@ TODO: Remove finished triangles. This will speed up the algorithm and save time 
 
 ### Creating the toolpaths
 
-Last thing to do is to build the toolpaths. 
+TODO: Build toolpaths. Are you doing .gcode? 
+
+##
 
 
 ## TODO
