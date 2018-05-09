@@ -1,9 +1,7 @@
 #pragma once
 
 #include "ofMain.h"
-#include "ofxGui.h"
-#include "ofxSlicer.h"
-
+#include "Conductor.hpp"
 class ofApp : public ofBaseApp{
 
 	public:
@@ -24,5 +22,6 @@ class ofApp : public ofBaseApp{
     void gotMessage(ofMessage msg);
     
     ofEasyCam cam;
-    ofxSlicer slicer; 
+    Conductor conductor; 
+
 };

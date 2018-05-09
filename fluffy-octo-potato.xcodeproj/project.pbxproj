@@ -12,6 +12,8 @@
 		1D74B07B9EA957E5C635B66C /* ofxSlider.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9778B3A196AF0050B00316BD /* ofxSlider.cpp */; };
 		491A36D50D4598B6B510C110 /* ofxAssimpAnimation.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0EFD3A7FD41F31F3ACF5F957 /* ofxAssimpAnimation.cpp */; };
 		4920CDD1A25867D52BE0B75A /* ofxAssimpModelLoader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A753E2841520DF9D00A92E4A /* ofxAssimpModelLoader.cpp */; };
+		4CA1659820A2F5A400EB5867 /* Parameters.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4CA1659620A2F5A400EB5867 /* Parameters.cpp */; };
+		4CA1659C20A31DF300EB5867 /* Conductor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4CA1659A20A31DF300EB5867 /* Conductor.cpp */; };
 		572BFE01DCBFFF80CB33B6C8 /* ofxBaseGui.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5B2E1111CB1A13B9D1C341A0 /* ofxBaseGui.cpp */; };
 		6696B7EE61462711BCD85E06 /* ofxGuiGroup.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0446211FDB7529F3D2CE39F5 /* ofxGuiGroup.cpp */; };
 		6F0B74A7D8A3033E48F0E1A7 /* ofxButton.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8697D6FF9D8427D2C376B1CA /* ofxButton.cpp */; };
@@ -77,6 +79,10 @@
 		39CC9BBD40902712A6F2E073 /* light.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = light.h; path = ../../Openframeworks/addons/ofxAssimpModelLoader/libs/assimp/include/assimp/light.h; sourceTree = SOURCE_ROOT; };
 		3B301E08D89176B6A81A21D9 /* matrix4x4.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = matrix4x4.h; path = ../../Openframeworks/addons/ofxAssimpModelLoader/libs/assimp/include/assimp/matrix4x4.h; sourceTree = SOURCE_ROOT; };
 		419EB3F6139DEB0756F89674 /* ofxAssimpModelLoader.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ofxAssimpModelLoader.h; path = ../../Openframeworks/addons/ofxAssimpModelLoader/src/ofxAssimpModelLoader.h; sourceTree = SOURCE_ROOT; };
+		4CA1659620A2F5A400EB5867 /* Parameters.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Parameters.cpp; sourceTree = "<group>"; };
+		4CA1659720A2F5A400EB5867 /* Parameters.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Parameters.hpp; sourceTree = "<group>"; };
+		4CA1659A20A31DF300EB5867 /* Conductor.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Conductor.cpp; sourceTree = "<group>"; };
+		4CA1659B20A31DF300EB5867 /* Conductor.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Conductor.hpp; sourceTree = "<group>"; };
 		4CE03C8DA6972E37F32E4E8F /* ofxAssimpAnimation.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ofxAssimpAnimation.h; path = ../../Openframeworks/addons/ofxAssimpModelLoader/src/ofxAssimpAnimation.h; sourceTree = SOURCE_ROOT; };
 		515FF13B70065BD7AC4B2480 /* IOSystem.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = IOSystem.hpp; path = ../../Openframeworks/addons/ofxAssimpModelLoader/libs/assimp/include/assimp/IOSystem.hpp; sourceTree = SOURCE_ROOT; };
 		5596DBD8722225E3AAE69D2D /* ofxAssimpMeshHelper.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ofxAssimpMeshHelper.h; path = ../../Openframeworks/addons/ofxAssimpModelLoader/src/ofxAssimpMeshHelper.h; sourceTree = SOURCE_ROOT; };
@@ -362,6 +368,10 @@
 				E4B69E1D0A3A1BDC003C02F2 /* main.cpp */,
 				E4B69E1E0A3A1BDC003C02F2 /* ofApp.cpp */,
 				E4B69E1F0A3A1BDC003C02F2 /* ofApp.h */,
+				4CA1659620A2F5A400EB5867 /* Parameters.cpp */,
+				4CA1659720A2F5A400EB5867 /* Parameters.hpp */,
+				4CA1659A20A31DF300EB5867 /* Conductor.cpp */,
+				4CA1659B20A31DF300EB5867 /* Conductor.hpp */,
 			);
 			path = src;
 			sourceTree = SOURCE_ROOT;
@@ -484,6 +494,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E4B69E200A3A1BDC003C02F2 /* main.cpp in Sources */,
+				4CA1659820A2F5A400EB5867 /* Parameters.cpp in Sources */,
 				E4B69E210A3A1BDC003C02F2 /* ofApp.cpp in Sources */,
 				005B461031B6EE59AD08787F /* ofxAssimpMeshHelper.cpp in Sources */,
 				491A36D50D4598B6B510C110 /* ofxAssimpAnimation.cpp in Sources */,
@@ -501,6 +512,7 @@
 				0762D9B4D9CAA8E119331CE5 /* Triangles.cpp in Sources */,
 				DA825DF5BE21E62AF55A611B /* ofxSlicer.cpp in Sources */,
 				8038CF75298C65E03ACE1EB2 /* lib_implementation.cpp in Sources */,
+				4CA1659C20A31DF300EB5867 /* Conductor.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

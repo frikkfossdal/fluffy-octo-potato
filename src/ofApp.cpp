@@ -2,29 +2,22 @@
 
 //--------------------------------------------------------------
 void ofApp::setup(){
-    cam.setTarget(ofVec3f(300, 300));
-    slicer.loadFile("rack.stl");
+    conductor.setupGui();
 }
 
 //--------------------------------------------------------------
 void ofApp::update(){
+    conductor.updateGuiPar();
 
-    
 }
 
 //--------------------------------------------------------------
 void ofApp::draw(){
     ofBackground(55);
-    ofNoFill();
-    ofSetColor(255, 55);
-    cam.begin();
-    ofDrawRectangle(0, 0, 600, 600);
-    slicer.showAssimpModel();
-    cam.end();
+    conductor.drawAllGui();
 }
 //--------------------------------------------------------------
 void ofApp::keyPressed(int key){
-    slicer.slice(); 
 }
 
 //--------------------------------------------------------------
