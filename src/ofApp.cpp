@@ -2,52 +2,29 @@
 
 //--------------------------------------------------------------
 void ofApp::setup(){
-    //cam.enableOrtho();
-    //cam.setDistance(100);
-    //objectToSlice.incSlice();
-    
-    slicerSettings.setup();
-    slicerSettings.setName("Model Settings");
-    slicerSettings.add(objectToSlice.modelPosition);
-    slicerSettings.setPosition(20,20);
-    slicerSettings.add(objectToSlice.scl);
-    slicerSettings.add(objectToSlice.layerHeight);
-    slicerSettings.add(objectToSlice.drawTriangles);
-    slicerSettings.add(objectToSlice.drawWireFrame);
-    slicerSettings.add(objectToSlice.drawSegments);
-    slicerSettings.add(objectToSlice.drawContours);
-
-    slicerControl.setup();
-    slicerControl.setName("Slicer Control");
-    slicerControl.setPosition(20, 300);
-    slicerControl.add(objectToSlice.slice);
-    slicerControl.add(objectToSlice.layerIndex);
+    cam.setTarget(ofVec3f(300, 300));
+    slicer.loadFile("rack.stl");
 }
 
 //--------------------------------------------------------------
 void ofApp::update(){
 
+    
 }
 
 //--------------------------------------------------------------
 void ofApp::draw(){
     ofBackground(55);
-    //ofBackgroundGradient(ofColor(64), ofColor(55));
-    slicerSettings.draw();
-    slicerControl.draw();
-    objectToSlice.update();
-    cam.begin();
     ofNoFill();
-    ofSetColor(255);
-    ofDrawRectangle(0,0, 400, 400);
-    objectToSlice.showModel();
+    ofSetColor(255, 55);
+    cam.begin();
+    ofDrawRectangle(0, 0, 600, 600);
+    slicer.showAssimpModel();
     cam.end();
 }
-
 //--------------------------------------------------------------
 void ofApp::keyPressed(int key){
-    std::cout << objectToSlice.threeDeeFile.getPosition() << endl;
-   cam.worldToScreen(ofVec3f(0,0,0));
+    slicer.slice(); 
 }
 
 //--------------------------------------------------------------
