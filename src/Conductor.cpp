@@ -14,6 +14,7 @@ void Conductor::setupGui(){
     //setup slicer GUI parameters
     slicerParameters.add(loadFile.set("loadFile",false));
     slicerParameters.add(layerHeight.set("layer height", 0.1, 0, 0.8));
+    slicerParameters.add(scl.set("scale",1,0,1));
     slicerParameters.add(pos.set("position", ofVec2f(0,0), ofVec2f(0,0), ofVec2f(500,500)));
     slicerParameters.add(drawTriangles.set("calc. triangles", false));
     slicerParameters.add(drawSegments.set("calc. segments", false));
@@ -27,6 +28,7 @@ void Conductor::setupGui(){
 }
 void Conductor::drawAllGui(){
     slicerControl.draw();
+    ofSetColor(255);
     ofDrawBitmapString(filePath, ofGetWidth()-600, 20);
 }
 void Conductor::setupSlicer(){
@@ -34,8 +36,12 @@ void Conductor::setupSlicer(){
 }
 void Conductor::updateGuiPar(){
     //layerHeight adj.
-    float nearest = floorf(layerHeight*10 +0.5)/10.0f;
-    layerHeight = nearest;
+    float nearestLayHeig = floorf(layerHeight*10 +0.5)/10.0f;
+    layerHeight = nearestLayHeig;
+    //scl adj.
+    float nearestScl = floorf(scl*10 + 0.5)/10.0f;
+    scl = nearestScl;
+    
     //toggle slice
     if(slice==true){
         slicerObj.slice();
@@ -54,8 +60,21 @@ void Conductor::updateGuiPar(){
         }
         loadFile = false;
     }
-    
 }
+void Conductor::updateSlicer(){
+    slicerObj.model.setPosition(pos->x, pos->y, 0);
+    slicerObj.model.setScale(scl, scl, scl);
+}
+void Conductor::drawModel(){
+    ofSetColor(255);
+    slicerObj.showAssimpModel();
+    ofNoFill();
+    ofDrawBox(ofPoint(0,0,150), 600, 300, 300);
+    ofPoint center = slicerObj.model.getSceneCenter();
+    ofSetColor(255, 0, 0);
+    ofDrawCircle(center.x, center.y,center.z, 20);
+}
+//-------------------PRIVATE FUNCTIONS-----------------------------
 //checks if the file is a stl
 void Conductor::getFile(ofFileDialogResult result){
     string name = result.getName();

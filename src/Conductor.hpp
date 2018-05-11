@@ -22,6 +22,7 @@ public:
     ofParameterGroup slicerParameters;
     ofParameterGroup simulatorParameters;
     ofParameter<float> layerHeight;
+    ofParameter<float> scl; 
     ofParameter<bool> slice;
     ofParameter<bool> drawTriangles;
     ofParameter<bool> drawSegments;
@@ -40,6 +41,7 @@ public:
     void setupSlicer();
     //---------------DRAW FUNCTIONS----------------
     void drawAllGui();
+    void drawModel();
     
     //---------------UPDATE FUNCTIONS--------------
     void updateGuiPar();

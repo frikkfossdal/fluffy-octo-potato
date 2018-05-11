@@ -8,13 +8,16 @@ void ofApp::setup(){
 //--------------------------------------------------------------
 void ofApp::update(){
     conductor.updateGuiPar();
-
+    conductor.updateSlicer();
 }
 
 //--------------------------------------------------------------
 void ofApp::draw(){
     ofBackground(55);
     conductor.drawAllGui();
+    cam.begin();
+    conductor.drawModel();
+    cam.end();
 }
 //--------------------------------------------------------------
 void ofApp::keyPressed(int key){
