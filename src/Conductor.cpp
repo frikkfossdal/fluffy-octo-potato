@@ -20,6 +20,7 @@ void Conductor::setupGui(){
     slicerParameters.add(drawSegments.set("calc. segments", false));
     slicerParameters.add(slicerProgress.set("slicer prog", 0, 0, 100));
     slicerParameters.add(slice.set("Slice", false));
+    slicerParameters.add(layerIndex.set("layerIndex",1,1,100));
     //setup slicer GUI panel
     slicerControl.setup();
     slicerControl.setName("Slicer Control");
@@ -70,9 +71,10 @@ void Conductor::drawModel(){
     slicerObj.showAssimpModel();
     ofNoFill();
     ofDrawBox(ofPoint(0,0,150), 600, 300, 300);
-    ofPoint center = slicerObj.model.getSceneCenter();
-    ofSetColor(255, 0, 0);
-    ofDrawCircle(center.x, center.y,center.z, 20);
+    ofPoint center = slicerObj.model.getSceneCenter(); 
+    if(slicerObj.layers.size() > 10){   
+    slicerObj.showSegments(layerIndex);
+    }
 }
 //-------------------PRIVATE FUNCTIONS-----------------------------
 //checks if the file is a stl

@@ -27,7 +27,8 @@ public:
     ofParameter<bool> drawTriangles;
     ofParameter<bool> drawSegments;
     ofParameter<bool> loadFile;
-    ofParameter<int> slicerProgress; 
+    ofParameter<int> slicerProgress;
+    ofParameter<int> layerIndex; 
     string filePath;
     ofParameter<ofVec2f> pos;
     ofxPanel slicerControl; 
