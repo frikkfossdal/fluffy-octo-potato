@@ -22,14 +22,14 @@ public:
     ofParameterGroup slicerParameters;
     ofParameterGroup simulatorParameters;
     ofParameter<float> layerHeight;
-    ofParameter<float> scl; 
+    ofParameter<float> scl;
+    ofParameter<int> layerIndex;
     ofParameter<bool> slice;
-    ofParameter<bool> drawTriangles;
     ofParameter<bool> drawSegments;
     ofParameter<bool> loadFile;
-    ofParameter<int> slicerProgress;
-    ofParameter<int> layerIndex; 
     string filePath;
+    string fileName; 
+    
     ofParameter<ofVec2f> pos;
     ofxPanel slicerControl; 
     

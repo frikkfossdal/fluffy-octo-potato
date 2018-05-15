@@ -16,11 +16,10 @@ void Conductor::setupGui(){
     slicerParameters.add(layerHeight.set("layer height", 0.1, 0, 0.8));
     slicerParameters.add(scl.set("scale",1,0,1));
     slicerParameters.add(pos.set("position", ofVec2f(0,0), ofVec2f(0,0), ofVec2f(500,500)));
-    slicerParameters.add(drawTriangles.set("calc. triangles", false));
-    slicerParameters.add(drawSegments.set("calc. segments", false));
-    slicerParameters.add(slicerProgress.set("slicer prog", 0, 0, 100));
-    slicerParameters.add(slice.set("Slice", false));
     slicerParameters.add(layerIndex.set("layerIndex",1,1,100));
+    slicerParameters.add(drawSegments.set("calc. segments", false));
+    slicerParameters.add(slice.set("Slice", false));
+    
     //setup slicer GUI panel
     slicerControl.setup();
     slicerControl.setName("Slicer Control");
@@ -30,7 +29,19 @@ void Conductor::setupGui(){
 void Conductor::drawAllGui(){
     slicerControl.draw();
     ofSetColor(255);
-    ofDrawBitmapString(filePath, ofGetWidth()-600, 20);
+    
+    //--------------------MODEL INFO---------------------
+    ofDrawBitmapString("MODEL INFO", ofGetWidth()-200, 20);
+    ofDrawBitmapString("filename: " + fileName, ofGetWidth()-200, 40);
+    ofDrawBitmapString("layer height: " + ofToString(layerHeight), ofGetWidth()-200, 60);
+    ofDrawBitmapString("number of layers: " + ofToString(slicerObj.layers.size()) ,ofGetWidth() -200, 80);
+    ofDrawBitmapString("number of triangles: " + ofToString(slicerObj.layers.size()) ,ofGetWidth() -200, 80);
+    
+    //--------------------LAYER INFO---------------------
+    ofDrawBitmapString("LAYER INFO", ofGetWidth()-200, 120);
+    ofDrawBitmapString("layer index : " + ofToString(layerIndex), ofGetWidth()-200, 140);
+    ofDrawBitmapString("jobs on layer: " + ofToString("/"), ofGetWidth()-200, 160);
+    
 }
 void Conductor::setupSlicer(){
     
@@ -47,6 +58,8 @@ void Conductor::updateGuiPar(){
     if(slice==true){
         slicerObj.slice();
         slice = false;
+        //update layerIndex
+        slicerParameters.add(layerIndex.set("layerIndex",1,1,slicerObj.layers.size()-1));
     }
     if(loadFile == true){
         ofFileDialogResult result = ofSystemLoadDialog("Load file");
@@ -89,6 +102,7 @@ void Conductor::getFile(ofFileDialogResult result){
     if(fileExtension == "STL")
     {
         slicerObj.loadFile(filePath);
+        fileName = ofToString(file.getFileName());
     }
 }
 
