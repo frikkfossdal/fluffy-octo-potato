@@ -4,6 +4,10 @@
 //
 //  Created by Frikk Fossdal on 09.05.2018.
 //
+//TODO:
+//1. Fix threading start and stop. You are fucking close
+//2. Only visualize layers when slicing is finished. 
+//
 
 #include "Conductor.hpp"
 
@@ -35,13 +39,21 @@ void Conductor::drawAllGui(){
     ofDrawBitmapString("filename: " + fileName, ofGetWidth()-200, 40);
     ofDrawBitmapString("layer height: " + ofToString(layerHeight), ofGetWidth()-200, 60);
     ofDrawBitmapString("number of layers: " + ofToString(slicerObj.layers.size()) ,ofGetWidth() -200, 80);
-    ofDrawBitmapString("number of triangles: " + ofToString(slicerObj.layers.size()) ,ofGetWidth() -200, 80);
+    
+    //--------------------SLICER INFO---------------------
+    ofDrawBitmapString("SLICER INFO", ofGetWidth()-200, 120);
+    if(slicerObj.sliceFinished==true){
+        ofDrawBitmapString("slicer status: inactive", ofGetWidth()-200, 140);
+    }
+    if(slicerObj.sliceFinished==false){
+        ofDrawBitmapString("slicer status: slicing", ofGetWidth()-200, 140);
+    }
     
     //--------------------LAYER INFO---------------------
-    ofDrawBitmapString("LAYER INFO", ofGetWidth()-200, 120);
-    ofDrawBitmapString("layer index : " + ofToString(layerIndex), ofGetWidth()-200, 140);
-    ofDrawBitmapString("jobs on layer: " + ofToString("/"), ofGetWidth()-200, 160);
-    
+    ofDrawBitmapString("LAYER INFO", ofGetWidth()-200, 180);
+    ofDrawBitmapString("layer index : " + ofToString(layerIndex), ofGetWidth()-200, 200);
+    ofDrawBitmapString("jobs on layer: 9", ofGetWidth()-200, 220);
+    ofDrawBitmapString("layer time: 276s" , ofGetWidth()-200, 240);
 }
 void Conductor::setupSlicer(){
     
@@ -54,13 +66,6 @@ void Conductor::updateGuiPar(){
     float nearestScl = floorf(scl*10 + 0.5)/10.0f;
     scl = nearestScl;
     
-    //toggle slice
-    if(slice==true){
-        slicerObj.slice();
-        slice = false;
-        //update layerIndex
-        slicerParameters.add(layerIndex.set("layerIndex",1,1,slicerObj.layers.size()-1));
-    }
     if(loadFile == true){
         ofFileDialogResult result = ofSystemLoadDialog("Load file");
         //Check if the user opened a file
@@ -76,8 +81,26 @@ void Conductor::updateGuiPar(){
     }
 }
 void Conductor::updateSlicer(){
-    slicerObj.model.setPosition(pos->x, pos->y, 0);
-    slicerObj.model.setScale(scl, scl, scl);
+    //check if slicer has a model to work with
+    if(fileName != "")
+    {
+        //update position in slicer
+        slicerObj.model.setPosition(pos->x, pos->y, 0);
+        slicerObj.model.setScale(scl, scl, scl);
+        //Check if scale or position is changed. If so, restart slicing
+        if(prevPos != pos){
+            slicerObj.stopSlice();
+            slicerObj.cleanSlicer();
+            slicerObj.startSlice();
+        }
+        if(prevScl != scl){
+            slicerObj.stopSlice();
+            slicerObj.cleanSlicer();
+            slicerObj.startSlice(); 
+        }
+        prevPos = pos; 
+        prevScl = scl;
+    }
 }
 void Conductor::drawModel(){
     ofSetColor(255);

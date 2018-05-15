@@ -27,10 +27,11 @@ public:
     ofParameter<bool> slice;
     ofParameter<bool> drawSegments;
     ofParameter<bool> loadFile;
+    ofParameter<ofVec2f> pos;
     string filePath;
     string fileName; 
     
-    ofParameter<ofVec2f> pos;
+    
     ofxPanel slicerControl; 
     
     ofxSlicer slicerObj;
@@ -49,6 +50,9 @@ public:
     void updateSlicer();
     
 private:
+    //---------------PRIVATE VARIABLES-------------
+    ofVec2f prevPos;
+    float prevScl;
     //---------------GERERAL FUNCTIONS-------------
     void getFile(ofFileDialogResult result);
 };
