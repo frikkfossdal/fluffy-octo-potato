@@ -5,7 +5,8 @@
 //  Created by Frikk Fossdal on 09.05.2018.
 //
 //TODO:
-//1. Fix threading start and stop. You are fucking close
+//1. Fix threading start and stop. You are fucking close --> still not happy with this. Keep experimenting
+//2. Fix the structure of the conductor. Slice, then draw. Repeat.
 //2. Only visualize layers when slicing is finished. 
 //
 
@@ -21,8 +22,7 @@ void Conductor::setupGui(){
     slicerParameters.add(scl.set("scale",1,0,1));
     slicerParameters.add(pos.set("position", ofVec2f(0,0), ofVec2f(0,0), ofVec2f(500,500)));
     slicerParameters.add(layerIndex.set("layerIndex",1,1,100));
-    slicerParameters.add(drawSegments.set("calc. segments", false));
-    slicerParameters.add(slice.set("Slice", false));
+    slicerParameters.add(slice.set("start slicing", false));
     
     //setup slicer GUI panel
     slicerControl.setup();
@@ -42,10 +42,10 @@ void Conductor::drawAllGui(){
     
     //--------------------SLICER INFO---------------------
     ofDrawBitmapString("SLICER INFO", ofGetWidth()-200, 120);
-    if(slicerObj.sliceFinished==true){
+    if(slicerObj.isActive==false){
         ofDrawBitmapString("slicer status: inactive", ofGetWidth()-200, 140);
     }
-    if(slicerObj.sliceFinished==false){
+    if(slicerObj.isActive==true){
         ofDrawBitmapString("slicer status: slicing", ofGetWidth()-200, 140);
     }
     
@@ -58,14 +58,20 @@ void Conductor::drawAllGui(){
 void Conductor::setupSlicer(){
     
 }
-void Conductor::updateGuiPar(){
+void Conductor::parameterAdj(){
     //layerHeight adj.
     float nearestLayHeig = floorf(layerHeight*10 +0.5)/10.0f;
     layerHeight = nearestLayHeig;
     //scl adj.
     float nearestScl = floorf(scl*10 + 0.5)/10.0f;
     scl = nearestScl;
-    
+    //pos adj.
+    ofVec2f nearestPos = ofVec2f(floorf(pos->x*10 + 0.5)/10.0f,floorf(pos->y*10 + 0.5)/10.0f);
+    pos = nearestPos;
+
+}
+void Conductor::updateSlicer(){
+    //---------------LOAD FILE-------------
     if(loadFile == true){
         ofFileDialogResult result = ofSystemLoadDialog("Load file");
         //Check if the user opened a file
@@ -79,37 +85,41 @@ void Conductor::updateGuiPar(){
         }
         loadFile = false;
     }
-}
-void Conductor::updateSlicer(){
+    //---------------CONTROL THE SLICER-------------
     //check if slicer has a model to work with
-    if(fileName != "")
+    if(slicerObj.hasModel == true)
     {
-        //update position in slicer
-        slicerObj.model.setPosition(pos->x, pos->y, 0);
-        slicerObj.model.setScale(scl, scl, scl);
-        //Check if scale or position is changed. If so, restart slicing
-        if(prevPos != pos){
-            slicerObj.stopSlice();
-            slicerObj.cleanSlicer();
-            slicerObj.startSlice();
+        //check if some of the parameters has changed.
+        if(prevPos != pos || prevScl !=scl || prevFile != filePath){
+            slicerObj.model.setScale(scl, scl, scl);
+            slicerObj.model.setPosition(pos->x, pos->y, 0);
+            std::cout << "parameter changed" << endl;
         }
-        if(prevScl != scl){
-            slicerObj.stopSlice();
-            slicerObj.cleanSlicer();
-            slicerObj.startSlice(); 
+        //preliminary slicer activation
+        if(slice == true)
+        {
+            slice = false;
+            slicerObj.startSlice();
         }
         prevPos = pos; 
         prevScl = scl;
     }
 }
 void Conductor::drawModel(){
-    ofSetColor(255);
-    slicerObj.showAssimpModel();
+    if(slicerObj.hasModel == true)
+    {
+        slicerObj.showAssimpModel();
+    }
+}
+void Conductor::drawPrinterBox(){
     ofNoFill();
-    ofDrawBox(ofPoint(0,0,150), 600, 300, 300);
-    ofPoint center = slicerObj.model.getSceneCenter(); 
-    if(slicerObj.layers.size() > 10){   
-    slicerObj.showSegments(layerIndex);
+    ofSetColor(255,15);
+    ofDrawBox(0, 0, 150, 300, 600, 300);
+}
+void Conductor::drawSlicedModel(){
+    if(slicerObj.sliceFinished == true)
+    {
+        slicerObj.showSegments(layerIndex);
     }
 }
 //-------------------PRIVATE FUNCTIONS-----------------------------
@@ -126,6 +136,7 @@ void Conductor::getFile(ofFileDialogResult result){
     {
         slicerObj.loadFile(filePath);
         fileName = ofToString(file.getFileName());
+        prevFile = filePath;
     }
 }
 

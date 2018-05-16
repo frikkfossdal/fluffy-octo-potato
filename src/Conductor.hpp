@@ -24,16 +24,13 @@ public:
     ofParameter<float> layerHeight;
     ofParameter<float> scl;
     ofParameter<int> layerIndex;
-    ofParameter<bool> slice;
     ofParameter<bool> drawSegments;
     ofParameter<bool> loadFile;
+    ofParameter<bool> slice; 
     ofParameter<ofVec2f> pos;
     string filePath;
-    string fileName; 
-    
-    
-    ofxPanel slicerControl; 
-    
+    string fileName;
+    ofxPanel slicerControl;
     ofxSlicer slicerObj;
     
     //methods
@@ -44,17 +41,21 @@ public:
     //---------------DRAW FUNCTIONS----------------
     void drawAllGui();
     void drawModel();
+    void drawPrinterBox();
+    void drawSlicedModel(); 
     
     //---------------UPDATE FUNCTIONS--------------
-    void updateGuiPar();
+    void parameterAdj();
     void updateSlicer();
     
 private:
     //---------------PRIVATE VARIABLES-------------
     ofVec2f prevPos;
     float prevScl;
+    string prevFile;
     //---------------GERERAL FUNCTIONS-------------
     void getFile(ofFileDialogResult result);
+    void updateGui(bool _sliceFinished);
 };
 
 #endif /* Conductor_hpp */

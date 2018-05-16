@@ -7,7 +7,7 @@ void ofApp::setup(){
 
 //--------------------------------------------------------------
 void ofApp::update(){
-    conductor.updateGuiPar();
+    conductor.parameterAdj();
     conductor.updateSlicer();
 }
 
@@ -17,6 +17,8 @@ void ofApp::draw(){
     conductor.drawAllGui();
     cam.begin();
     conductor.drawModel();
+    conductor.drawPrinterBox();
+    conductor.drawSlicedModel();
     cam.end();
 }
 //--------------------------------------------------------------
