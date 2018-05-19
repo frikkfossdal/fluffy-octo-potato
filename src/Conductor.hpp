@@ -47,7 +47,6 @@ public:
     //---------------UPDATE FUNCTIONS--------------
     void parameterAdj();
     void updateSlicer();
-    
 private:
     //---------------PRIVATE VARIABLES-------------
     ofVec2f prevPos;

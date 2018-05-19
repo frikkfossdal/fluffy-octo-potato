@@ -23,5 +23,4 @@ class ofApp : public ofBaseApp{
     
     ofEasyCam cam;
     Conductor conductor; 
-
 };
