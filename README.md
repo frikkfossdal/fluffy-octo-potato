@@ -6,9 +6,11 @@ Currently under heavy development.
 
 ![Overview](img/currentOverview.png)
 
-## The Slicer 
+## Getting the toolpaths - Slicing 
 
 I created the slicer as a separate addon to Openframeworks. It´s documented [here](https://github.com/frikkfossdal/ofxSlicer). 
+
+## Optimizing the toolpaths 
 
 
 ## TODO
