@@ -12,6 +12,8 @@ I created the slicer as a separate addon to Openframeworks. It´s documented [he
 
 ## Optimizing the toolpaths 
 
+TODO: Explain the problem and how you are trying to solve it
+
 
 ## TODO
 1. Fix positioning-issue. See comment in code
