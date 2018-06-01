@@ -21,7 +21,7 @@ void Conductor::setupGui(){
     slicerParameters.add(layerHeight.set("layer height", 0.1, 0, 0.8));
     slicerParameters.add(scl.set("scale",1,0,1));
     slicerParameters.add(pos.set("position", ofVec2f(0,0), ofVec2f(0,0), ofVec2f(500,500)));
-    slicerParameters.add(layerIndex.set("layerIndex",1,1,100));
+    slicerParameters.add(layerIndex.set("layerIndex",1,1,1000));
     slicerParameters.add(slice.set("start slicing", false));
     
     //setup slicer GUI panel
