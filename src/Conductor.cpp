@@ -5,8 +5,7 @@
 //  Created by Frikk Fossdal on 09.05.2018.
 //
 //TODO:
-//1. Fix threading start and stop. You are fucking close --> still not happy with this. Keep experimenting
-//2. Fix the structure of the conductor. Slice, then draw. Repeat.
+//1. Fix the structure of the conductor. Slice, then draw. Repeat.
 //2. Only visualize layers when slicing is finished. 
 //
 
@@ -21,14 +20,13 @@ void Conductor::setupGui(){
     slicerParameters.add(layerHeight.set("layer height", 0.1, 0, 0.8));
     slicerParameters.add(scl.set("scale",1,0,1));
     slicerParameters.add(pos.set("position", ofVec2f(0,0), ofVec2f(0,0), ofVec2f(500,500)));
-    slicerParameters.add(layerIndex.set("layerIndex",1,1,1000));
+    slicerParameters.add(layerIndex.set("layerIndex",1,1,1800));
     slicerParameters.add(slice.set("start slicing", false));
     
     //setup slicer GUI panel
     slicerControl.setup();
     slicerControl.setName("Slicer Control");
     slicerControl.add(slicerParameters);
-    
 }
 void Conductor::drawAllGui(){
     slicerControl.draw();
