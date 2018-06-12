@@ -20,17 +20,19 @@ public:
     
     //variables
     ofParameterGroup slicerParameters;
-    ofParameterGroup simulatorParameters;
+    ofParameterGroup vizParameters;
     ofParameter<float> layerHeight;
     ofParameter<float> scl;
     ofParameter<int> layerIndex;
     ofParameter<bool> drawSegments;
+    ofParameter<bool> drawWire;
     ofParameter<bool> loadFile;
     ofParameter<bool> slice; 
     ofParameter<ofVec2f> pos;
     string filePath;
     string fileName;
     ofxPanel slicerControl;
+    ofxPanel vizControl; 
     ofxSlicer slicerObj;
     
     //methods
@@ -51,6 +53,7 @@ private:
     //---------------PRIVATE VARIABLES-------------
     ofVec2f prevPos;
     float prevScl;
+    float prevLayerHeight; 
     string prevFile;
     //---------------GERERAL FUNCTIONS-------------
     void getFile(ofFileDialogResult result);

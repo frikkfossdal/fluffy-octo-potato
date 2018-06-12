@@ -17,38 +17,51 @@ Conductor::Conductor(){
 void Conductor::setupGui(){
     //setup slicer GUI parameters
     slicerParameters.add(loadFile.set("loadFile",false));
-    slicerParameters.add(layerHeight.set("layer height", 0.1, 0, 0.8));
+    slicerParameters.add(layerHeight.set("layer height", 0.1, 0, 2));
     slicerParameters.add(scl.set("scale",1,0,1));
     slicerParameters.add(pos.set("position", ofVec2f(0,0), ofVec2f(0,0), ofVec2f(500,500)));
     slicerParameters.add(layerIndex.set("layerIndex",1,1,1800));
     slicerParameters.add(slice.set("start slicing", false));
     
+    //setUp vizualizer Parameters
+    vizParameters.add(drawSegments.set("draw segments",false));
+    vizParameters.add(drawWire.set("draw wireframe",false));
+    
     //setup slicer GUI panel
     slicerControl.setup();
     slicerControl.setName("Slicer Control");
     slicerControl.add(slicerParameters);
+    
+    //Setup vizualiser panel
+    vizControl.setup();
+    vizControl.setName("Visualizer Control");
+    vizControl.add(vizParameters);
 }
 void Conductor::drawAllGui(){
     slicerControl.draw();
+    vizControl.draw();
     ofSetColor(255);
     
     //--------------------MODEL INFO---------------------
     ofDrawBitmapString("MODEL INFO", ofGetWidth()-200, 20);
     ofDrawBitmapString("filename: " + fileName, ofGetWidth()-200, 40);
     ofDrawBitmapString("layer height: " + ofToString(layerHeight), ofGetWidth()-200, 60);
-    ofDrawBitmapString("number of layers: " + ofToString(slicerObj.layers.size()) ,ofGetWidth() -200, 80);
     
     //--------------------SLICER INFO---------------------
-    ofDrawBitmapString("SLICER INFO", ofGetWidth()-200, 120);
+    ofDrawBitmapString("SLICER INFO", ofGetWidth()-200, 100);
     if(slicerObj.isActive==false){
-        ofDrawBitmapString("slicer status: inactive", ofGetWidth()-200, 140);
+        ofSetColor(255);
+        ofDrawBitmapString("slicer status: inactive", ofGetWidth()-200, 120);
     }
     if(slicerObj.isActive==true){
-        ofDrawBitmapString("slicer status: slicing", ofGetWidth()-200, 140);
+        ofSetColor(0, 255, 0);
+        ofDrawBitmapString("slicer status: slicing", ofGetWidth()-200, 120);
+        ofSetColor(255);
     }
     
     //--------------------LAYER INFO---------------------
-    ofDrawBitmapString("LAYER INFO", ofGetWidth()-200, 180);
+    ofDrawBitmapString("LAYER INFO", ofGetWidth()-200, 160);
+        ofDrawBitmapString("number of layers: " + ofToString(slicerObj.layers.size()) ,ofGetWidth() -200, 180);
     ofDrawBitmapString("layer index : " + ofToString(layerIndex), ofGetWidth()-200, 200);
     ofDrawBitmapString("jobs on layer: 9", ofGetWidth()-200, 220);
     ofDrawBitmapString("layer time: 276s" , ofGetWidth()-200, 240);
@@ -88,9 +101,10 @@ void Conductor::updateSlicer(){
     if(slicerObj.hasModel == true)
     {
         //check if some of the parameters has changed.
-        if(prevPos != pos || prevScl !=scl || prevFile != filePath){
+        if(prevPos != pos || prevScl !=scl || prevFile != filePath || prevLayerHeight != layerHeight){
             slicerObj.model.setScale(scl, scl, scl);
             slicerObj.model.setPosition(pos->x, pos->y, 0);
+            slicerObj.layerHeight = layerHeight; 
             std::cout << "parameter changed" << endl;
         }
         //preliminary slicer activation
@@ -101,6 +115,7 @@ void Conductor::updateSlicer(){
         }
         prevPos = pos; 
         prevScl = scl;
+        prevLayerHeight = layerHeight;
     }
 }
 void Conductor::drawModel(){
