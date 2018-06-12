@@ -18,12 +18,10 @@ void ofApp::draw(){
     cam.begin();
     conductor.drawModel();
     conductor.drawPrinterBox();
-    conductor.drawSlicedModel();
     cam.end();
 }
 //--------------------------------------------------------------
 void ofApp::keyPressed(int key){
-    std::cout << "i am a break point" << endl; 
 }
 
 //--------------------------------------------------------------

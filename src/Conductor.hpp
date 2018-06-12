@@ -25,7 +25,9 @@ public:
     ofParameter<float> scl;
     ofParameter<int> layerIndex;
     ofParameter<bool> drawSegments;
-    ofParameter<bool> drawWire;
+    ofParameter<bool> drawIntersecPoints;
+    ofParameter<bool> drawTriangles;
+    ofParameter<bool> drawAssimpWire;
     ofParameter<bool> loadFile;
     ofParameter<bool> slice; 
     ofParameter<ofVec2f> pos;
@@ -44,7 +46,7 @@ public:
     void drawAllGui();
     void drawModel();
     void drawPrinterBox();
-    void drawSlicedModel(); 
+    void drawSlicedModel();
     
     //---------------UPDATE FUNCTIONS--------------
     void parameterAdj();

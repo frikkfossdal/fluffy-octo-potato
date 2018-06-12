@@ -24,16 +24,20 @@ void Conductor::setupGui(){
     slicerParameters.add(slice.set("start slicing", false));
     
     //setUp vizualizer Parameters
+    vizParameters.add(drawAssimpWire.set("draw Assimplwire", true));
     vizParameters.add(drawSegments.set("draw segments",false));
-    vizParameters.add(drawWire.set("draw wireframe",false));
+    vizParameters.add(drawIntersecPoints.set("draw intersec. points",false));
+    vizParameters.add(drawTriangles.set("draw triangles", false));
     
     //setup slicer GUI panel
     slicerControl.setup();
+    slicerControl.setPosition(10, 10);
     slicerControl.setName("Slicer Control");
     slicerControl.add(slicerParameters);
     
     //Setup vizualiser panel
     vizControl.setup();
+    vizControl.setPosition(10, 250);
     vizControl.setName("Visualizer Control");
     vizControl.add(vizParameters);
 }
@@ -65,6 +69,7 @@ void Conductor::drawAllGui(){
     ofDrawBitmapString("layer index : " + ofToString(layerIndex), ofGetWidth()-200, 200);
     ofDrawBitmapString("jobs on layer: 9", ofGetWidth()-200, 220);
     ofDrawBitmapString("layer time: 276s" , ofGetWidth()-200, 240);
+
 }
 void Conductor::setupSlicer(){
     
@@ -79,7 +84,6 @@ void Conductor::parameterAdj(){
     //pos adj.
     ofVec2f nearestPos = ofVec2f(floorf(pos->x*10 + 0.5)/10.0f,floorf(pos->y*10 + 0.5)/10.0f);
     pos = nearestPos;
-
 }
 void Conductor::updateSlicer(){
     //---------------LOAD FILE-------------
@@ -119,8 +123,19 @@ void Conductor::updateSlicer(){
     }
 }
 void Conductor::drawModel(){
-    if(slicerObj.hasModel == true)
-    {
+    //--------------------CHECH BOX---------------------
+    if(slicerObj.sliceFinished == true){
+        if(drawSegments == true){
+            slicerObj.showSegments(layerIndex);
+        }
+        if(drawTriangles == true){
+            slicerObj.showTriangles();
+        }
+        if(drawIntersecPoints == true){
+            slicerObj.showIntersections(layerIndex);
+        }
+    }
+    if(drawAssimpWire == true){
         slicerObj.showAssimpModel();
     }
 }
@@ -130,10 +145,7 @@ void Conductor::drawPrinterBox(){
     ofDrawBox(0, 0, 150, 300, 600, 300);
 }
 void Conductor::drawSlicedModel(){
-    if(slicerObj.sliceFinished == true)
-    {
-        slicerObj.showSegments(layerIndex);
-    }
+
 }
 //-------------------PRIVATE FUNCTIONS-----------------------------
 //checks if the file is a stl
