@@ -62,6 +62,7 @@ void Conductor::drawAllGui(){
         ofDrawBitmapString("slicer status: slicing", ofGetWidth()-200, 120);
         ofSetColor(255);
     }
+    ofDrawBitmapString(slicerObj.currentTask, ofGetWidth()-200, 130);
     
     //--------------------LAYER INFO---------------------
     ofDrawBitmapString("LAYER INFO", ofGetWidth()-200, 160);
