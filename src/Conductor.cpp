@@ -20,7 +20,7 @@ void Conductor::setupGui(){
     slicerParameters.add(layerHeight.set("layer height", 0.1, 0, 2));
     slicerParameters.add(scl.set("scale",1,0,1));
     slicerParameters.add(pos.set("position", ofVec2f(0,0), ofVec2f(0,0), ofVec2f(500,500)));
-    slicerParameters.add(layerIndex.set("layerIndex",1,1,1800));
+    slicerParameters.add(layerIndex.set("layerIndex",1,0,slicerObj.layers.size()));
     slicerParameters.add(slice.set("start slicing", false));
     
     //setUp vizualizer Parameters
@@ -87,6 +87,7 @@ void Conductor::parameterAdj(){
     pos = nearestPos;
 }
 void Conductor::updateSlicer(){
+    layerIndex.setMax(slicerObj.layers.size()-1);
     //---------------LOAD FILE-------------
     if(loadFile == true){
         ofFileDialogResult result = ofSystemLoadDialog("Load file");
@@ -109,7 +110,8 @@ void Conductor::updateSlicer(){
         if(prevPos != pos || prevScl !=scl || prevFile != filePath || prevLayerHeight != layerHeight){
             slicerObj.model.setScale(scl, scl, scl);
             slicerObj.model.setPosition(pos->x, pos->y, 0);
-            slicerObj.layerHeight = layerHeight; 
+            slicerObj.layerHeight = layerHeight;
+            
             std::cout << "parameter changed" << endl;
         }
         //preliminary slicer activation
