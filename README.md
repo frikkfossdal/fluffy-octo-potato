@@ -7,12 +7,13 @@ Currently under heavy development. Getting close with the slicing algorithm.
 
 ## Getting the toolpaths - Slicing 
 
-I created the slicer as a separate addon to Openframeworks. It´s documented [here](https://github.com/frikkfossdal/ofxSlicer). 
+I´m creating my own mesh slicer as a separate addon to Openframeworks. This was a lot tougher then I first thought and very much still a work in progress. It´s documented [here](https://github.com/frikkfossdal/ofxSlicer). 
+
+For now I´m using Cura to create my gcode, and some python scripts to organize the gcode into a .json file. 
 
 ## Optimizing the toolpaths 
 
 TODO: Explain the problem and how you are trying to solve it
-
 
 ## TODO
 
