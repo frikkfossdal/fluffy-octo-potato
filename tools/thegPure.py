@@ -3,25 +3,19 @@ import json
 import io
 import re
 
-#handle human and file 
-print(sys.argv[1], 'loaded')
-print('sorting gcode and cleaning coordinates')
-inputfile = sys.argv[1]
-outpulfile = sys.argv[2]
-gcode = open(inputfile, 'r')
-gcode = gcode.readlines() 
-
 #data_buffers
 layers = {}
-typesIndex = {}
+types = {}
 prevLayer = ''
 prevType = ''
-prevZheight = 0
+prevZheight = 0 
 prevFeed = 0
 
 #data indexes 
 layerIndex = 0
-operationIndex = 0
+typesIndex = 0
+operationIndex = 0 
+maxOperations = 0
 
 #test gcode
 
@@ -31,24 +25,56 @@ print(sys.argv[2])
 
 #strip the gcode to its bare coordinates 
 def gcodeToCoord(gcodeline):
+	global prevZheight
 	gcodeline = gcodeline.strip()
-	coord = re.findall(r'[XYZEF].?\d+.\d+', gcodeline)
+	#find z or add it if its missing
 	z = re.findall(r'[Z].?\d+.\d+', gcodeline)
 	if z:
 		prevZheight = z
-		print('hello',prevZheight)
+	if not z: 
+		gcodeline = gcodeline + " Z" + str(prevZheight)
+	#extract X, Y and Z
+	coord = re.findall(r'[XYZ].?\d+.\d+', gcodeline)
+	
+
+	return coord 
 	#if not z: 
 		#add prevZ to line 
 def operationTracker(gcodeline): 
+	global layerIndex
+	global typesIndex
+	global maxOperations
 	if 'LAYER:' in gcodeline:
 		layerIndex += 1
+		print('LAYER NUMBER: ', layerIndex)
+		print('NUMBER OF OPS: ', typesIndex)
+		typesIndex = 0
 
 	if 'TYPE:' in gcodeline:
 		typesIndex += 1
+		#print(typesIndex)
 
 	if('G0' in gcodeline or 'G1' in gcodeline):
-		gcodeToCoord(gcodeline)
+		gcodeline = gcodeToCoord(gcodeline)
+		#print(gcodeline)
 
+def main():
+	#handle human and file
+	print(sys.argv[1], 'loaded')
+	print('sorting gcode and cleaning coordinates')
+	inputfile = sys.argv[1]
+	outpulfile = sys.argv[2]
+	gcode = open(inputfile, 'r')
+	gcode = gcode.readlines()
+
+	#empty global variables 
+	prevZheight = 0
+
+	#loop trough gcode and rebuild it
+	for line in gcode: 
+		operationTracker(line)
+
+
+if __name__ == '__main__':
 #loop trough all lines in file
-for line in gcode:
-	operationTracker(line)
+	main()
