@@ -6,6 +6,7 @@ import re
 #data_buffers
 layers = {}
 types = {}
+gcode = []
 prevLayer = ''
 prevType = ''
 prevZheight = 0 
@@ -35,11 +36,8 @@ def gcodeToCoord(gcodeline):
 		gcodeline = gcodeline + " Z" + str(prevZheight)
 	#extract X, Y and Z
 	coord = re.findall(r'[XYZ].?\d+.\d+', gcodeline)
-	
-
 	return coord 
-	#if not z: 
-		#add prevZ to line 
+#keep track of layerCount, operations and gcode
 def operationTracker(gcodeline): 
 	global layerIndex
 	global typesIndex
@@ -56,6 +54,7 @@ def operationTracker(gcodeline):
 
 	if('G0' in gcodeline or 'G1' in gcodeline):
 		gcodeline = gcodeToCoord(gcodeline)
+		gcode.append(gcodeline)
 		#print(gcodeline)
 
 def main():
@@ -73,7 +72,10 @@ def main():
 	#loop trough gcode and rebuild it
 	for line in gcode: 
 		operationTracker(line)
-
+	f1 = open(outpulfile, 'w')
+	json = json.dumps(layers,indent=5, sort_keys=True)
+	f1.write(json)
+	f1.close()
 
 if __name__ == '__main__':
 #loop trough all lines in file
