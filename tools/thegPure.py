@@ -44,8 +44,10 @@ def operationTracker(gcodeline):
 	global maxOperations
 	if 'LAYER:' in gcodeline:
 		layerIndex += 1
-		print('LAYER NUMBER: ', layerIndex)
-		print('NUMBER OF OPS: ', typesIndex)
+		layers[layerIndex-1]: gcode
+		#print('LAYER NUMBER: ', layerIndex,' processed', end="",flush=True)
+		print('Processing layer: ', layerIndex,  '\r', end='')
+		#print('NUMBER OF OPS: ', typesIndex)
 		typesIndex = 0
 
 	if 'TYPE:' in gcodeline:
@@ -62,7 +64,7 @@ def main():
 	print(sys.argv[1], 'loaded')
 	print('sorting gcode and cleaning coordinates')
 	inputfile = sys.argv[1]
-	outpulfile = sys.argv[2]
+	outputfile = sys.argv[2]
 	gcode = open(inputfile, 'r')
 	gcode = gcode.readlines()
 
@@ -72,10 +74,13 @@ def main():
 	#loop trough gcode and rebuild it
 	for line in gcode: 
 		operationTracker(line)
-	f1 = open(outpulfile, 'w')
-	json = json.dumps(layers,indent=5, sort_keys=True)
-	f1.write(json)
+
+	f1 = open(outputfile, 'w')
+	something = json.dumps(layers,indent=5, sort_keys=True)
+	f1.write(something)
 	f1.close()
+	print("")
+	print(layers)
 
 if __name__ == '__main__':
 #loop trough all lines in file
