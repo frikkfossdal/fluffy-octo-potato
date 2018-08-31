@@ -5,18 +5,11 @@ import re
 
 #data_buffers
 layers = {}
-types = {}
-gcode = []
+
 prevLayer = ''
 prevType = ''
 prevZheight = 0 
 prevFeed = 0
-
-#data indexes 
-layerIndex = 0
-typesIndex = 0
-operationIndex = 0 
-maxOperations = 0
 
 #test gcode
 
@@ -37,27 +30,10 @@ def gcodeToCoord(gcodeline):
 	#extract X, Y and Z
 	coord = re.findall(r'[XYZ].?\d+.\d+', gcodeline)
 	return coord 
+def cleanType(line):
+	line = line.replace(';TYPE:', '')
+	return line
 #keep track of layerCount, operations and gcode
-def operationTracker(gcodeline): 
-	global layerIndex
-	global typesIndex
-	global maxOperations
-	if 'LAYER:' in gcodeline:
-		layerIndex += 1
-		layers[layerIndex-1]: gcode
-		#print('LAYER NUMBER: ', layerIndex,' processed', end="",flush=True)
-		print('Processing layer: ', layerIndex,  '\r', end='')
-		#print('NUMBER OF OPS: ', typesIndex)
-		typesIndex = 0
-
-	if 'TYPE:' in gcodeline:
-		typesIndex += 1
-		#print(typesIndex)
-
-	if('G0' in gcodeline or 'G1' in gcodeline):
-		gcodeline = gcodeToCoord(gcodeline)
-		gcode.append(gcodeline)
-		#print(gcodeline)
 
 def main():
 	#handle human and file
@@ -71,16 +47,44 @@ def main():
 	#empty global variables 
 	prevZheight = 0
 
+	
+	layerIndex = 0 
+	typesIndex = 0
+	firstLayerfound = False
+	gcodeBuffer = []
+	typesBuffer = {}
+
 	#loop trough gcode and rebuild it
 	for line in gcode: 
-		operationTracker(line)
+		line = line.strip()
+		if ';LAYER:' in line:
+			if layerIndex > 1:
+				key = 'LAYER: '+ str(layerIndex-1)
+				layers[key] = typesBuffer
+				typesBuffer = {}
+				layerIndex += 1
+			else: 
+				layerIndex += 1
+		if ';TYPE:' in line:
+			if typesIndex > 1:
+				key1 = str(typesIndex) + ': ' + cleanType(line)
+				typesBuffer[key1] = 'gcodeBuffer'
+				typesIndex += 1
+				gcodeBuffer = []
+			else: 
+				typesBuffer[cleanType(line)] = 'gcodeBuffer'
+				typesIndex += 1
+				gcodeBuffer = []
+		if 'G0' in line or 'G1' in line:
+			#print('gcode')
+			if firstLayerfound:
+				gcodeBuffer.append(gcodeToCoord(line))
 
+	#make json and output file
 	f1 = open(outputfile, 'w')
-	something = json.dumps(layers,indent=5, sort_keys=True)
+	something = json.dumps(layers,indent=5, sort_keys=False)
 	f1.write(something)
 	f1.close()
-	print("")
-	print(layers)
 
 if __name__ == '__main__':
 #loop trough all lines in file
