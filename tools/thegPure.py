@@ -46,45 +46,55 @@ def main():
 
 	#empty global variables 
 	prevZheight = 0
-
-	
 	layerIndex = 0 
 	typesIndex = 0
 	firstLayerfound = False
 	gcodeBuffer = []
 	typesBuffer = {}
+	typeKey = ''
+	prevTypeKey = ''
 
 	#loop trough gcode and rebuild it
 	for line in gcode: 
 		line = line.strip()
 		if ';LAYER:' in line:
-			if layerIndex > 1:
+			if layerIndex > 0:
 				key = 'LAYER: '+ str(layerIndex-1)
 				layers[key] = typesBuffer
 				typesBuffer = {}
+				typesIndex = 0
 				layerIndex += 1
 			else: 
 				layerIndex += 1
+				typesIndex = 0
+				typesBuffer = {}
+				firstLayerfound = True
+		#build new type element
 		if ';TYPE:' in line:
-			if typesIndex > 1:
-				key1 = str(typesIndex) + ': ' + cleanType(line)
-				typesBuffer[key1] = 'gcodeBuffer'
-				typesIndex += 1
-				gcodeBuffer = []
-			else: 
-				typesBuffer[cleanType(line)] = 'gcodeBuffer'
-				typesIndex += 1
-				gcodeBuffer = []
+			typeKey = str(typesIndex) + ': ' + cleanType(line) 
+			if typesIndex > 0:
+				#add gcode buffer to previous type
+				typesBuffer[prevTypeKey] = gcodeBuffer
+			gcodeBuffer = []
+			typesIndex += 1
+			prevTypeKey = typeKey
+
+		#add coordinates to current type
 		if 'G0' in line or 'G1' in line:
 			#print('gcode')
 			if firstLayerfound:
 				gcodeBuffer.append(gcodeToCoord(line))
+		#output
+		print(layerIndex, end='\r')
 
 	#make json and output file
+	print('setting up json file')
 	f1 = open(outputfile, 'w')
+	print('dumping cleaned gcode to: ', outputfile)
 	something = json.dumps(layers,indent=5, sort_keys=False)
 	f1.write(something)
 	f1.close()
+	print('done!')
 
 if __name__ == '__main__':
 #loop trough all lines in file
