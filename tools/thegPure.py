@@ -48,6 +48,8 @@ def main():
 	prevZheight = 0
 	layerIndex = 0 
 	typesIndex = 0
+	totalNumJobs = 0
+	totalNumLayers = 0
 	firstLayerfound = False
 	gcodeBuffer = []
 	typesBuffer = {}
@@ -69,6 +71,7 @@ def main():
 				typesIndex = 0
 				typesBuffer = {}
 				firstLayerfound = True
+			totalNumLayers += 1
 		#build new type element
 		if ';TYPE:' in line:
 			typeKey = str(typesIndex) + ': ' + cleanType(line) 
@@ -78,14 +81,17 @@ def main():
 			gcodeBuffer = []
 			typesIndex += 1
 			prevTypeKey = typeKey
+			totalNumJobs += 1
 
 		#add coordinates to current type
 		if 'G0' in line or 'G1' in line:
 			#print('gcode')
 			if firstLayerfound:
 				gcodeBuffer.append(gcodeToCoord(line))
-		#output
+		#current layer index output
 		print(layerIndex, end='\r')
+	print('TOTAL NUM LAYERS: ', totalNumLayers)
+	print('TOTAL NUM TASKS: ', totalNumJobs)
 
 	#make json and output file
 	print('setting up json file')
