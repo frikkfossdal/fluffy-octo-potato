@@ -2,9 +2,6 @@
 
 An application for creating and optimizing toolpaths for a 3D printing system consisting of multiple indevidual nozzles. 
 
-## Status
-Currently under heavy development. 
-
 ## Getting the toolpaths - Slicing 
 
 I´m creating my own mesh slicer as a separate addon to Openframeworks. This was a lot tougher then I first thought and very much still a work in progress. It´s documented [here](https://github.com/frikkfossdal/ofxSlicer). 
